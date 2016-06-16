@@ -255,6 +255,14 @@ public class CkDkim {
     chilkatJNI.CkDkim_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkDkim_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkDkim_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean AddDkimSignature(CkByteData mimeIn, CkByteData outBytes) {
     return chilkatJNI.CkDkim_AddDkimSignature(swigCPtr, this, CkByteData.getCPtr(mimeIn), mimeIn, CkByteData.getCPtr(outBytes), outBytes);
   }

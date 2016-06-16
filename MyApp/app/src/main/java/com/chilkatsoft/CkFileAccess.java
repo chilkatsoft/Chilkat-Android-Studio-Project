@@ -219,6 +219,18 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_FileWrite(swigCPtr, this, CkByteData.getCPtr(data), data);
   }
 
+  public boolean GenBlockId(int index, int length, String encoding, CkString outStr) {
+    return chilkatJNI.CkFileAccess_GenBlockId(swigCPtr, this, index, length, encoding, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String genBlockId(int index, int length, String encoding) {
+    return chilkatJNI.CkFileAccess_genBlockId(swigCPtr, this, index, length, encoding);
+  }
+
+  public int GetNumBlocks(int blockSize) {
+    return chilkatJNI.CkFileAccess_GetNumBlocks(swigCPtr, this, blockSize);
+  }
+
   public boolean GetTempFilename(String dirName, String prefix, CkString outStr) {
     return chilkatJNI.CkFileAccess_GetTempFilename(swigCPtr, this, dirName, prefix, CkString.getCPtr(outStr), outStr);
   }
@@ -253,6 +265,10 @@ public class CkFileAccess {
 
   public String readBinaryToEncoded(String filename, String encoding) {
     return chilkatJNI.CkFileAccess_readBinaryToEncoded(swigCPtr, this, filename, encoding);
+  }
+
+  public boolean ReadBlock(int blockIndex, int blockSize, CkByteData outBytes) {
+    return chilkatJNI.CkFileAccess_ReadBlock(swigCPtr, this, blockIndex, blockSize, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public boolean ReadEntireFile(String filename, CkByteData outBytes) {

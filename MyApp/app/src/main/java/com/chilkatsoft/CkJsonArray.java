@@ -201,4 +201,16 @@ public class CkJsonArray {
     return chilkatJNI.CkJsonArray_stringAt(swigCPtr, this, index);
   }
 
+  public boolean Emit(CkString outStr) {
+    return chilkatJNI.CkJsonArray_Emit(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String emit() {
+    return chilkatJNI.CkJsonArray_emit(swigCPtr, this);
+  }
+
+  public int TypeAt(int index) {
+    return chilkatJNI.CkJsonArray_TypeAt(swigCPtr, this, index);
+  }
+
 }

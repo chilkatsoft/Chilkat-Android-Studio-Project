@@ -459,6 +459,14 @@ public class CkMht {
     chilkatJNI.CkMht_put_WebSitePassword(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkMht_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkMht_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void AddCacheRoot(String dir) {
     chilkatJNI.CkMht_AddCacheRoot(swigCPtr, this, dir);
   }

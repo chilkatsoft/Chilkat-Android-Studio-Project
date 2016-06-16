@@ -367,6 +367,14 @@ public class CkUpload {
     chilkatJNI.CkUpload_put_SslProtocol(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkUpload_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkUpload_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void AbortUpload() {
     chilkatJNI.CkUpload_AbortUpload(swigCPtr, this);
   }

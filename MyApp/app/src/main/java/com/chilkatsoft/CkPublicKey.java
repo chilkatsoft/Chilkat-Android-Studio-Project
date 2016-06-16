@@ -235,4 +235,52 @@ public class CkPublicKey {
     return chilkatJNI.CkPublicKey_SaveXmlFile(swigCPtr, this, path);
   }
 
+  public boolean LoadFromBinary(CkByteData keyBytes) {
+    return chilkatJNI.CkPublicKey_LoadFromBinary(swigCPtr, this, CkByteData.getCPtr(keyBytes), keyBytes);
+  }
+
+  public boolean LoadFromString(String keyString) {
+    return chilkatJNI.CkPublicKey_LoadFromString(swigCPtr, this, keyString);
+  }
+
+  public boolean LoadFromFile(String path) {
+    return chilkatJNI.CkPublicKey_LoadFromFile(swigCPtr, this, path);
+  }
+
+  public boolean GetDer(boolean preferPkcs1, CkByteData outBytes) {
+    return chilkatJNI.CkPublicKey_GetDer(swigCPtr, this, preferPkcs1, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public boolean GetPem(boolean preferPkcs1, CkString outStr) {
+    return chilkatJNI.CkPublicKey_GetPem(swigCPtr, this, preferPkcs1, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getPem(boolean preferPkcs1) {
+    return chilkatJNI.CkPublicKey_getPem(swigCPtr, this, preferPkcs1);
+  }
+
+  public String pem(boolean preferPkcs1) {
+    return chilkatJNI.CkPublicKey_pem(swigCPtr, this, preferPkcs1);
+  }
+
+  public boolean GetEncoded(boolean preferPkcs1, String encoding, CkString outStr) {
+    return chilkatJNI.CkPublicKey_GetEncoded(swigCPtr, this, preferPkcs1, encoding, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getEncoded(boolean preferPkcs1, String encoding) {
+    return chilkatJNI.CkPublicKey_getEncoded(swigCPtr, this, preferPkcs1, encoding);
+  }
+
+  public String encoded(boolean preferPkcs1, String encoding) {
+    return chilkatJNI.CkPublicKey_encoded(swigCPtr, this, preferPkcs1, encoding);
+  }
+
+  public boolean SaveDerFile(boolean preferPkcs1, String path) {
+    return chilkatJNI.CkPublicKey_SaveDerFile(swigCPtr, this, preferPkcs1, path);
+  }
+
+  public boolean SavePemFile(boolean preferPkcs1, String path) {
+    return chilkatJNI.CkPublicKey_SavePemFile(swigCPtr, this, preferPkcs1, path);
+  }
+
 }

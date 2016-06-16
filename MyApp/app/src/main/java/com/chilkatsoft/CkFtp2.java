@@ -119,6 +119,14 @@ public class CkFtp2 {
     return chilkatJNI.CkFtp2_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkFtp2_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkFtp2_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void get_Account(CkString str) {
     chilkatJNI.CkFtp2_get_Account(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -1593,6 +1601,15 @@ public class CkFtp2 {
     return chilkatJNI.CkFtp2_IsUnlocked(swigCPtr, this);
   }
 
+  public boolean LargeFileUpload(String localPath, String remotePath, int chunkSize) {
+    return chilkatJNI.CkFtp2_LargeFileUpload(swigCPtr, this, localPath, remotePath, chunkSize);
+  }
+
+  public CkTask LargeFileUploadAsync(String localPath, String remotePath, int chunkSize) {
+    long cPtr = chilkatJNI.CkFtp2_LargeFileUploadAsync(swigCPtr, this, localPath, remotePath, chunkSize);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean LoginAfterConnectOnly() {
     return chilkatJNI.CkFtp2_LoginAfterConnectOnly(swigCPtr, this);
   }
@@ -1742,6 +1759,10 @@ public class CkFtp2 {
 
   public void SetOldestDateStr(String oldestDateTimeStr) {
     chilkatJNI.CkFtp2_SetOldestDateStr(swigCPtr, this, oldestDateTimeStr);
+  }
+
+  public boolean SetOption(String option) {
+    return chilkatJNI.CkFtp2_SetOption(swigCPtr, this, option);
   }
 
   public boolean SetRemoteFileDateTime(SYSTEMTIME dt, String remoteFilename) {

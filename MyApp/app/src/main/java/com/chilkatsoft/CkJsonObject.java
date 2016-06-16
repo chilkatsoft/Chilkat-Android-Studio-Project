@@ -115,6 +115,18 @@ public class CkJsonObject {
     return chilkatJNI.CkJsonObject_SaveLastError(swigCPtr, this, path);
   }
 
+  public void get_DelimiterChar(CkString str) {
+    chilkatJNI.CkJsonObject_get_DelimiterChar(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String delimiterChar() {
+    return chilkatJNI.CkJsonObject_delimiterChar(swigCPtr, this);
+  }
+
+  public void put_DelimiterChar(String newVal) {
+    chilkatJNI.CkJsonObject_put_DelimiterChar(swigCPtr, this, newVal);
+  }
+
   public boolean get_EmitCompact() {
     return chilkatJNI.CkJsonObject_get_EmitCompact(swigCPtr, this);
   }
@@ -187,6 +199,28 @@ public class CkJsonObject {
     return chilkatJNI.CkJsonObject_AddStringAt(swigCPtr, this, index, name, value);
   }
 
+  public CkJsonArray AppendArray(String name) {
+    long cPtr = chilkatJNI.CkJsonObject_AppendArray(swigCPtr, this, name);
+    return (cPtr == 0) ? null : new CkJsonArray(cPtr, true);
+  }
+
+  public boolean AppendBool(String name, boolean value) {
+    return chilkatJNI.CkJsonObject_AppendBool(swigCPtr, this, name, value);
+  }
+
+  public boolean AppendInt(String name, int value) {
+    return chilkatJNI.CkJsonObject_AppendInt(swigCPtr, this, name, value);
+  }
+
+  public CkJsonObject AppendObject(String name) {
+    long cPtr = chilkatJNI.CkJsonObject_AppendObject(swigCPtr, this, name);
+    return (cPtr == 0) ? null : new CkJsonObject(cPtr, true);
+  }
+
+  public boolean AppendString(String name, String value) {
+    return chilkatJNI.CkJsonObject_AppendString(swigCPtr, this, name, value);
+  }
+
   public CkJsonArray ArrayAt(int index) {
     long cPtr = chilkatJNI.CkJsonObject_ArrayAt(swigCPtr, this, index);
     return (cPtr == 0) ? null : new CkJsonArray(cPtr, true);
@@ -221,9 +255,25 @@ public class CkJsonObject {
     return chilkatJNI.CkJsonObject_emit(swigCPtr, this);
   }
 
+  public boolean FirebaseApplyEvent(String name, String data) {
+    return chilkatJNI.CkJsonObject_FirebaseApplyEvent(swigCPtr, this, name, data);
+  }
+
+  public boolean FirebasePatch(String jsonPath, String jsonData) {
+    return chilkatJNI.CkJsonObject_FirebasePatch(swigCPtr, this, jsonPath, jsonData);
+  }
+
+  public boolean FirebasePut(String jsonPath, String value) {
+    return chilkatJNI.CkJsonObject_FirebasePut(swigCPtr, this, jsonPath, value);
+  }
+
   public CkJsonObject GetDocRoot() {
     long cPtr = chilkatJNI.CkJsonObject_GetDocRoot(swigCPtr, this);
     return (cPtr == 0) ? null : new CkJsonObject(cPtr, true);
+  }
+
+  public boolean HasMember(String jsonPath) {
+    return chilkatJNI.CkJsonObject_HasMember(swigCPtr, this, jsonPath);
   }
 
   public int IndexOf(String name) {
@@ -338,6 +388,10 @@ public class CkJsonObject {
 
   public String stringOf(String jsonPath) {
     return chilkatJNI.CkJsonObject_stringOf(swigCPtr, this, jsonPath);
+  }
+
+  public int TypeAt(int index) {
+    return chilkatJNI.CkJsonObject_TypeAt(swigCPtr, this, index);
   }
 
 }

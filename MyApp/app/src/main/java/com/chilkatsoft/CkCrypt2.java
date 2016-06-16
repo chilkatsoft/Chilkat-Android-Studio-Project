@@ -119,6 +119,14 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkCrypt2_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkCrypt2_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public int get_BlockSize() {
     return chilkatJNI.CkCrypt2_get_BlockSize(swigCPtr, this);
   }

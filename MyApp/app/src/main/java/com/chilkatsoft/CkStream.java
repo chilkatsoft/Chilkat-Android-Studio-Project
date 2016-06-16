@@ -119,6 +119,26 @@ public class CkStream {
     return chilkatJNI.CkStream_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkStream_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkStream_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public boolean get_CanRead() {
+    return chilkatJNI.CkStream_get_CanRead(swigCPtr, this);
+  }
+
+  public boolean get_CanWrite() {
+    return chilkatJNI.CkStream_get_CanWrite(swigCPtr, this);
+  }
+
+  public boolean get_DataAvailable() {
+    return chilkatJNI.CkStream_get_DataAvailable(swigCPtr, this);
+  }
+
   public int get_DefaultChunkSize() {
     return chilkatJNI.CkStream_get_DefaultChunkSize(swigCPtr, this);
   }
@@ -133,6 +153,14 @@ public class CkStream {
 
   public boolean get_IsWriteClosed() {
     return chilkatJNI.CkStream_get_IsWriteClosed(swigCPtr, this);
+  }
+
+  public int get_Length32() {
+    return chilkatJNI.CkStream_get_Length32(swigCPtr, this);
+  }
+
+  public void put_Length32(int newVal) {
+    chilkatJNI.CkStream_put_Length32(swigCPtr, this, newVal);
   }
 
   public int get_ReadFailReason() {
@@ -201,18 +229,6 @@ public class CkStream {
 
   public void put_WriteTimeoutMs(int newVal) {
     chilkatJNI.CkStream_put_WriteTimeoutMs(swigCPtr, this, newVal);
-  }
-
-  public boolean get_CanRead() {
-    return chilkatJNI.CkStream_get_CanRead(swigCPtr, this);
-  }
-
-  public boolean get_CanWrite() {
-    return chilkatJNI.CkStream_get_CanWrite(swigCPtr, this);
-  }
-
-  public boolean get_DataAvailable() {
-    return chilkatJNI.CkStream_get_DataAvailable(swigCPtr, this);
   }
 
   public boolean ReadBytes(CkByteData outBytes) {
@@ -354,6 +370,10 @@ public class CkStream {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean WriteClose() {
+    return chilkatJNI.CkStream_WriteClose(swigCPtr, this);
+  }
+
   public boolean WriteString(String str) {
     return chilkatJNI.CkStream_WriteString(swigCPtr, this, str);
   }
@@ -361,10 +381,6 @@ public class CkStream {
   public CkTask WriteStringAsync(String str) {
     long cPtr = chilkatJNI.CkStream_WriteStringAsync(swigCPtr, this, str);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
-  }
-
-  public boolean WriteClose() {
-    return chilkatJNI.CkStream_WriteClose(swigCPtr, this);
   }
 
 }

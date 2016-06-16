@@ -119,6 +119,14 @@ public class CkScp {
     return chilkatJNI.CkScp_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkScp_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkScp_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public int get_HeartbeatMs() {
     return chilkatJNI.CkScp_get_HeartbeatMs(swigCPtr, this);
   }
@@ -147,6 +155,18 @@ public class CkScp {
     chilkatJNI.CkScp_put_SyncMustMatch(swigCPtr, this, newVal);
   }
 
+  public void get_SyncMustMatchDir(CkString str) {
+    chilkatJNI.CkScp_get_SyncMustMatchDir(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncMustMatchDir() {
+    return chilkatJNI.CkScp_syncMustMatchDir(swigCPtr, this);
+  }
+
+  public void put_SyncMustMatchDir(String newVal) {
+    chilkatJNI.CkScp_put_SyncMustMatchDir(swigCPtr, this, newVal);
+  }
+
   public void get_SyncMustNotMatch(CkString str) {
     chilkatJNI.CkScp_get_SyncMustNotMatch(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -157,6 +177,18 @@ public class CkScp {
 
   public void put_SyncMustNotMatch(String newVal) {
     chilkatJNI.CkScp_put_SyncMustNotMatch(swigCPtr, this, newVal);
+  }
+
+  public void get_SyncMustNotMatchDir(CkString str) {
+    chilkatJNI.CkScp_get_SyncMustNotMatchDir(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncMustNotMatchDir() {
+    return chilkatJNI.CkScp_syncMustNotMatchDir(swigCPtr, this);
+  }
+
+  public void put_SyncMustNotMatchDir(String newVal) {
+    chilkatJNI.CkScp_put_SyncMustNotMatchDir(swigCPtr, this, newVal);
   }
 
   public void get_SyncedFiles(CkString str) {

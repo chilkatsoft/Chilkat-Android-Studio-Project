@@ -71,4 +71,8 @@ public class CkBaseProgress {
     if (getClass() == CkBaseProgress.class) chilkatJNI.CkBaseProgress_TaskCompleted(swigCPtr, this, CkTask.getCPtr(task), task); else chilkatJNI.CkBaseProgress_TaskCompletedSwigExplicitCkBaseProgress(swigCPtr, this, CkTask.getCPtr(task), task);
   }
 
+  public void TextData(String data) {
+    if (getClass() == CkBaseProgress.class) chilkatJNI.CkBaseProgress_TextData(swigCPtr, this, data); else chilkatJNI.CkBaseProgress_TextDataSwigExplicitCkBaseProgress(swigCPtr, this, data);
+  }
+
 }

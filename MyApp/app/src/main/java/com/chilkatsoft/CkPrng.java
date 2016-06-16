@@ -143,6 +143,14 @@ public class CkPrng {
     return chilkatJNI.CkPrng_exportEntropy(swigCPtr, this);
   }
 
+  public boolean FirebasePushId(CkString outStr) {
+    return chilkatJNI.CkPrng_FirebasePushId(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String firebasePushId() {
+    return chilkatJNI.CkPrng_firebasePushId(swigCPtr, this);
+  }
+
   public boolean GenRandom(int numBytes, String encoding, CkString outStr) {
     return chilkatJNI.CkPrng_GenRandom(swigCPtr, this, numBytes, encoding, CkString.getCPtr(outStr), outStr);
   }

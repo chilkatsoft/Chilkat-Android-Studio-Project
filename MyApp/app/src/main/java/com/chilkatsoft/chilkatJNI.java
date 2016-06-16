@@ -22,6 +22,8 @@ public class chilkatJNI {
   public final static native void CkBaseProgress_ProgressInfoSwigExplicitCkBaseProgress(long jarg1, CkBaseProgress jarg1_, String jarg2, String jarg3);
   public final static native void CkBaseProgress_TaskCompleted(long jarg1, CkBaseProgress jarg1_, long jarg2, CkTask jarg2_);
   public final static native void CkBaseProgress_TaskCompletedSwigExplicitCkBaseProgress(long jarg1, CkBaseProgress jarg1_, long jarg2, CkTask jarg2_);
+  public final static native void CkBaseProgress_TextData(long jarg1, CkBaseProgress jarg1_, String jarg2);
+  public final static native void CkBaseProgress_TextDataSwigExplicitCkBaseProgress(long jarg1, CkBaseProgress jarg1_, String jarg2);
   public final static native void CkBaseProgress_director_connect(CkBaseProgress obj, long cptr, boolean mem_own, boolean weak_global);
   public final static native void CkBaseProgress_change_ownership(CkBaseProgress obj, long cptr, boolean take_or_release);
   public final static native long new_CkSFtpProgress();
@@ -402,6 +404,7 @@ public class chilkatJNI {
   public final static native void CkAtom_put_LastMethodSuccess(long jarg1, CkAtom jarg1_, boolean jarg2);
   public final static native boolean CkAtom_SaveLastError(long jarg1, CkAtom jarg1_, String jarg2);
   public final static native int CkAtom_get_NumEntries(long jarg1, CkAtom jarg1_);
+  public final static native boolean CkAtom_get_AbortCurrent(long jarg1, CkAtom jarg1_);
   public final static native int CkAtom_AddElement(long jarg1, CkAtom jarg1_, String jarg2, String jarg3);
   public final static native int CkAtom_AddElementDate(long jarg1, CkAtom jarg1_, String jarg2, long jarg3, SYSTEMTIME jarg3_);
   public final static native int CkAtom_AddElementDateStr(long jarg1, CkAtom jarg1_, String jarg2, String jarg3);
@@ -509,6 +512,8 @@ public class chilkatJNI {
   public final static native boolean CkBz2_SaveLastError(long jarg1, CkBz2 jarg1_, String jarg2);
   public final static native int CkBz2_get_HeartbeatMs(long jarg1, CkBz2 jarg1_);
   public final static native void CkBz2_put_HeartbeatMs(long jarg1, CkBz2 jarg1_, int jarg2);
+  public final static native boolean CkBz2_get_AbortCurrent(long jarg1, CkBz2 jarg1_);
+  public final static native void CkBz2_put_AbortCurrent(long jarg1, CkBz2 jarg1_, boolean jarg2);
   public final static native boolean CkBz2_CompressFile(long jarg1, CkBz2 jarg1_, String jarg2, String jarg3);
   public final static native long CkBz2_CompressFileAsync(long jarg1, CkBz2 jarg1_, String jarg2, String jarg3);
   public final static native boolean CkBz2_CompressFileToMem(long jarg1, CkBz2 jarg1_, String jarg2, long jarg3, CkByteData jarg3_);
@@ -1028,6 +1033,8 @@ public class chilkatJNI {
   public final static native boolean CkCrypt2_get_LastMethodSuccess(long jarg1, CkCrypt2 jarg1_);
   public final static native void CkCrypt2_put_LastMethodSuccess(long jarg1, CkCrypt2 jarg1_, boolean jarg2);
   public final static native boolean CkCrypt2_SaveLastError(long jarg1, CkCrypt2 jarg1_, String jarg2);
+  public final static native boolean CkCrypt2_get_AbortCurrent(long jarg1, CkCrypt2 jarg1_);
+  public final static native void CkCrypt2_put_AbortCurrent(long jarg1, CkCrypt2 jarg1_, boolean jarg2);
   public final static native int CkCrypt2_get_BlockSize(long jarg1, CkCrypt2 jarg1_);
   public final static native boolean CkCrypt2_get_CadesEnabled(long jarg1, CkCrypt2 jarg1_);
   public final static native void CkCrypt2_put_CadesEnabled(long jarg1, CkCrypt2 jarg1_, boolean jarg2);
@@ -1470,6 +1477,8 @@ public class chilkatJNI {
   public final static native void CkDkim_put_DomainKeySelector(long jarg1, CkDkim jarg1_, String jarg2);
   public final static native int CkDkim_get_HeartbeatMs(long jarg1, CkDkim jarg1_);
   public final static native void CkDkim_put_HeartbeatMs(long jarg1, CkDkim jarg1_, int jarg2);
+  public final static native boolean CkDkim_get_AbortCurrent(long jarg1, CkDkim jarg1_);
+  public final static native void CkDkim_put_AbortCurrent(long jarg1, CkDkim jarg1_, boolean jarg2);
   public final static native boolean CkDkim_AddDkimSignature(long jarg1, CkDkim jarg1_, long jarg2, CkByteData jarg2_, long jarg3, CkByteData jarg3_);
   public final static native boolean CkDkim_AddDomainKeySignature(long jarg1, CkDkim jarg1_, long jarg2, CkByteData jarg2_, long jarg3, CkByteData jarg3_);
   public final static native boolean CkDkim_LoadDkimPk(long jarg1, CkDkim jarg1_, String jarg2, String jarg3);
@@ -2054,6 +2063,9 @@ public class chilkatJNI {
   public final static native boolean CkFileAccess_FileSeek(long jarg1, CkFileAccess jarg1_, int jarg2, int jarg3);
   public final static native int CkFileAccess_FileSize(long jarg1, CkFileAccess jarg1_, String jarg2);
   public final static native boolean CkFileAccess_FileWrite(long jarg1, CkFileAccess jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native boolean CkFileAccess_GenBlockId(long jarg1, CkFileAccess jarg1_, int jarg2, int jarg3, String jarg4, long jarg5, CkString jarg5_);
+  public final static native String CkFileAccess_genBlockId(long jarg1, CkFileAccess jarg1_, int jarg2, int jarg3, String jarg4);
+  public final static native int CkFileAccess_GetNumBlocks(long jarg1, CkFileAccess jarg1_, int jarg2);
   public final static native boolean CkFileAccess_GetTempFilename(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
   public final static native String CkFileAccess_getTempFilename(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3);
   public final static native String CkFileAccess_tempFilename(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3);
@@ -2063,6 +2075,7 @@ public class chilkatJNI {
   public final static native boolean CkFileAccess_OpenForWrite(long jarg1, CkFileAccess jarg1_, String jarg2);
   public final static native boolean CkFileAccess_ReadBinaryToEncoded(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
   public final static native String CkFileAccess_readBinaryToEncoded(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkFileAccess_ReadBlock(long jarg1, CkFileAccess jarg1_, int jarg2, int jarg3, long jarg4, CkByteData jarg4_);
   public final static native boolean CkFileAccess_ReadEntireFile(long jarg1, CkFileAccess jarg1_, String jarg2, long jarg3, CkByteData jarg3_);
   public final static native boolean CkFileAccess_ReadEntireTextFile(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
   public final static native String CkFileAccess_readEntireTextFile(long jarg1, CkFileAccess jarg1_, String jarg2, String jarg3);
@@ -2097,6 +2110,8 @@ public class chilkatJNI {
   public final static native boolean CkFtp2_get_LastMethodSuccess(long jarg1, CkFtp2 jarg1_);
   public final static native void CkFtp2_put_LastMethodSuccess(long jarg1, CkFtp2 jarg1_, boolean jarg2);
   public final static native boolean CkFtp2_SaveLastError(long jarg1, CkFtp2 jarg1_, String jarg2);
+  public final static native boolean CkFtp2_get_AbortCurrent(long jarg1, CkFtp2 jarg1_);
+  public final static native void CkFtp2_put_AbortCurrent(long jarg1, CkFtp2 jarg1_, boolean jarg2);
   public final static native void CkFtp2_get_Account(long jarg1, CkFtp2 jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkFtp2_account(long jarg1, CkFtp2 jarg1_);
   public final static native void CkFtp2_put_Account(long jarg1, CkFtp2 jarg1_, String jarg2);
@@ -2451,6 +2466,8 @@ public class chilkatJNI {
   public final static native String CkFtp2_xmlDirListing(long jarg1, CkFtp2 jarg1_, String jarg2);
   public final static native long CkFtp2_GetXmlDirListingAsync(long jarg1, CkFtp2 jarg1_, String jarg2);
   public final static native boolean CkFtp2_IsUnlocked(long jarg1, CkFtp2 jarg1_);
+  public final static native boolean CkFtp2_LargeFileUpload(long jarg1, CkFtp2 jarg1_, String jarg2, String jarg3, int jarg4);
+  public final static native long CkFtp2_LargeFileUploadAsync(long jarg1, CkFtp2 jarg1_, String jarg2, String jarg3, int jarg4);
   public final static native boolean CkFtp2_LoginAfterConnectOnly(long jarg1, CkFtp2 jarg1_);
   public final static native long CkFtp2_LoginAfterConnectOnlyAsync(long jarg1, CkFtp2 jarg1_);
   public final static native int CkFtp2_MGetFiles(long jarg1, CkFtp2 jarg1_, String jarg2, String jarg3);
@@ -2485,6 +2502,7 @@ public class chilkatJNI {
   public final static native long CkFtp2_SetModeZAsync(long jarg1, CkFtp2 jarg1_);
   public final static native void CkFtp2_SetOldestDate(long jarg1, CkFtp2 jarg1_, long jarg2, SYSTEMTIME jarg2_);
   public final static native void CkFtp2_SetOldestDateStr(long jarg1, CkFtp2 jarg1_, String jarg2);
+  public final static native boolean CkFtp2_SetOption(long jarg1, CkFtp2 jarg1_, String jarg2);
   public final static native boolean CkFtp2_SetRemoteFileDateTime(long jarg1, CkFtp2 jarg1_, long jarg2, SYSTEMTIME jarg2_, String jarg3);
   public final static native boolean CkFtp2_SetRemoteFileDateTimeStr(long jarg1, CkFtp2 jarg1_, String jarg2, String jarg3);
   public final static native long CkFtp2_SetRemoteFileDateTimeStrAsync(long jarg1, CkFtp2 jarg1_, String jarg2, String jarg3);
@@ -2555,8 +2573,8 @@ public class chilkatJNI {
   public final static native String CkGlobal_threadPoolLogPath(long jarg1, CkGlobal jarg1_);
   public final static native void CkGlobal_put_ThreadPoolLogPath(long jarg1, CkGlobal jarg1_, String jarg2);
   public final static native boolean CkGlobal_DnsClearCache(long jarg1, CkGlobal jarg1_);
-  public final static native boolean CkGlobal_UnlockBundle(long jarg1, CkGlobal jarg1_, String jarg2);
   public final static native boolean CkGlobal_FinalizeThreadPool(long jarg1, CkGlobal jarg1_);
+  public final static native boolean CkGlobal_UnlockBundle(long jarg1, CkGlobal jarg1_, String jarg2);
   public final static native long new_CkGzip();
   public final static native void delete_CkGzip(long jarg1);
   public final static native void CkGzip_LastErrorXml(long jarg1, CkGzip jarg1_, long jarg2, CkString jarg2_);
@@ -2598,6 +2616,8 @@ public class chilkatJNI {
   public final static native void CkGzip_put_LastModStr(long jarg1, CkGzip jarg1_, String jarg2);
   public final static native boolean CkGzip_get_UseCurrentDate(long jarg1, CkGzip jarg1_);
   public final static native void CkGzip_put_UseCurrentDate(long jarg1, CkGzip jarg1_, boolean jarg2);
+  public final static native boolean CkGzip_get_AbortCurrent(long jarg1, CkGzip jarg1_);
+  public final static native void CkGzip_put_AbortCurrent(long jarg1, CkGzip jarg1_, boolean jarg2);
   public final static native boolean CkGzip_CompressFile(long jarg1, CkGzip jarg1_, String jarg2, String jarg3);
   public final static native long CkGzip_CompressFileAsync(long jarg1, CkGzip jarg1_, String jarg2, String jarg3);
   public final static native boolean CkGzip_CompressFile2(long jarg1, CkGzip jarg1_, String jarg2, String jarg3, String jarg4);
@@ -3003,6 +3023,8 @@ public class chilkatJNI {
   public final static native String CkHttp_userAgent(long jarg1, CkHttp jarg1_);
   public final static native void CkHttp_put_UserAgent(long jarg1, CkHttp jarg1_, String jarg2);
   public final static native boolean CkHttp_get_WasRedirected(long jarg1, CkHttp jarg1_);
+  public final static native boolean CkHttp_get_AbortCurrent(long jarg1, CkHttp jarg1_);
+  public final static native void CkHttp_put_AbortCurrent(long jarg1, CkHttp jarg1_, boolean jarg2);
   public final static native void CkHttp_AddCacheRoot(long jarg1, CkHttp jarg1_, String jarg2);
   public final static native boolean CkHttp_AddQuickHeader(long jarg1, CkHttp jarg1_, String jarg2, String jarg3);
   public final static native long CkHttp_BgResponseObject(long jarg1, CkHttp jarg1_);
@@ -3342,6 +3364,8 @@ public class chilkatJNI {
   public final static native boolean CkImap_get_LastMethodSuccess(long jarg1, CkImap jarg1_);
   public final static native void CkImap_put_LastMethodSuccess(long jarg1, CkImap jarg1_, boolean jarg2);
   public final static native boolean CkImap_SaveLastError(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native boolean CkImap_get_AbortCurrent(long jarg1, CkImap jarg1_);
+  public final static native void CkImap_put_AbortCurrent(long jarg1, CkImap jarg1_, boolean jarg2);
   public final static native boolean CkImap_get_AppendSeen(long jarg1, CkImap jarg1_);
   public final static native void CkImap_put_AppendSeen(long jarg1, CkImap jarg1_, boolean jarg2);
   public final static native int CkImap_get_AppendUid(long jarg1, CkImap jarg1_);
@@ -3547,7 +3571,16 @@ public class chilkatJNI {
   public final static native String CkImap_getMailboxStatus(long jarg1, CkImap jarg1_, String jarg2);
   public final static native String CkImap_mailboxStatus(long jarg1, CkImap jarg1_, String jarg2);
   public final static native long CkImap_GetMailboxStatusAsync(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native boolean CkImap_GetQuota(long jarg1, CkImap jarg1_, String jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkImap_getQuota(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native String CkImap_quota(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native long CkImap_GetQuotaAsync(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native boolean CkImap_GetQuotaRoot(long jarg1, CkImap jarg1_, String jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkImap_getQuotaRoot(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native String CkImap_quotaRoot(long jarg1, CkImap jarg1_, String jarg2);
+  public final static native long CkImap_GetQuotaRootAsync(long jarg1, CkImap jarg1_, String jarg2);
   public final static native long CkImap_GetSslServerCert(long jarg1, CkImap jarg1_);
+  public final static native boolean CkImap_HasCapability(long jarg1, CkImap jarg1_, String jarg2, String jarg3);
   public final static native boolean CkImap_IdleCheck(long jarg1, CkImap jarg1_, int jarg2, long jarg3, CkString jarg3_);
   public final static native String CkImap_idleCheck(long jarg1, CkImap jarg1_, int jarg2);
   public final static native long CkImap_IdleCheckAsync(long jarg1, CkImap jarg1_, int jarg2);
@@ -3591,6 +3624,8 @@ public class chilkatJNI {
   public final static native long CkImap_SetFlagsAsync(long jarg1, CkImap jarg1_, long jarg2, CkMessageSet jarg2_, String jarg3, int jarg4);
   public final static native boolean CkImap_SetMailFlag(long jarg1, CkImap jarg1_, long jarg2, CkEmail jarg2_, String jarg3, int jarg4);
   public final static native long CkImap_SetMailFlagAsync(long jarg1, CkImap jarg1_, long jarg2, CkEmail jarg2_, String jarg3, int jarg4);
+  public final static native boolean CkImap_SetQuota(long jarg1, CkImap jarg1_, String jarg2, String jarg3, int jarg4);
+  public final static native long CkImap_SetQuotaAsync(long jarg1, CkImap jarg1_, String jarg2, String jarg3, int jarg4);
   public final static native boolean CkImap_SetSslClientCert(long jarg1, CkImap jarg1_, long jarg2, CkCert jarg2_);
   public final static native boolean CkImap_SetSslClientCertPem(long jarg1, CkImap jarg1_, String jarg2, String jarg3);
   public final static native boolean CkImap_SetSslClientCertPfx(long jarg1, CkImap jarg1_, String jarg2, String jarg3);
@@ -3743,6 +3778,8 @@ public class chilkatJNI {
   public final static native boolean CkMailMan_get_LastMethodSuccess(long jarg1, CkMailMan jarg1_);
   public final static native void CkMailMan_put_LastMethodSuccess(long jarg1, CkMailMan jarg1_, boolean jarg2);
   public final static native boolean CkMailMan_SaveLastError(long jarg1, CkMailMan jarg1_, String jarg2);
+  public final static native boolean CkMailMan_get_AbortCurrent(long jarg1, CkMailMan jarg1_);
+  public final static native void CkMailMan_put_AbortCurrent(long jarg1, CkMailMan jarg1_, boolean jarg2);
   public final static native boolean CkMailMan_get_AllOrNone(long jarg1, CkMailMan jarg1_);
   public final static native void CkMailMan_put_AllOrNone(long jarg1, CkMailMan jarg1_, boolean jarg2);
   public final static native boolean CkMailMan_get_AutoFix(long jarg1, CkMailMan jarg1_);
@@ -4200,6 +4237,8 @@ public class chilkatJNI {
   public final static native void CkMht_get_WebSitePassword(long jarg1, CkMht jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkMht_webSitePassword(long jarg1, CkMht jarg1_);
   public final static native void CkMht_put_WebSitePassword(long jarg1, CkMht jarg1_, String jarg2);
+  public final static native boolean CkMht_get_AbortCurrent(long jarg1, CkMht jarg1_);
+  public final static native void CkMht_put_AbortCurrent(long jarg1, CkMht jarg1_, boolean jarg2);
   public final static native void CkMht_AddCacheRoot(long jarg1, CkMht jarg1_, String jarg2);
   public final static native void CkMht_AddCustomHeader(long jarg1, CkMht jarg1_, String jarg2, String jarg3);
   public final static native void CkMht_AddExternalStyleSheet(long jarg1, CkMht jarg1_, String jarg2);
@@ -4682,6 +4721,14 @@ public class chilkatJNI {
   public final static native boolean CkPrivateKey_SaveRsaDerFile(long jarg1, CkPrivateKey jarg1_, String jarg2);
   public final static native boolean CkPrivateKey_SaveRsaPemFile(long jarg1, CkPrivateKey jarg1_, String jarg2);
   public final static native boolean CkPrivateKey_SaveXmlFile(long jarg1, CkPrivateKey jarg1_, String jarg2);
+  public final static native boolean CkPrivateKey_GetPkcs1(long jarg1, CkPrivateKey jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native boolean CkPrivateKey_GetPkcs1Pem(long jarg1, CkPrivateKey jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkPrivateKey_getPkcs1Pem(long jarg1, CkPrivateKey jarg1_);
+  public final static native String CkPrivateKey_pkcs1Pem(long jarg1, CkPrivateKey jarg1_);
+  public final static native boolean CkPrivateKey_LoadPkcs1(long jarg1, CkPrivateKey jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native boolean CkPrivateKey_LoadPkcs1File(long jarg1, CkPrivateKey jarg1_, String jarg2);
+  public final static native boolean CkPrivateKey_SavePkcs1File(long jarg1, CkPrivateKey jarg1_, String jarg2);
+  public final static native boolean CkPrivateKey_SavePemFile(long jarg1, CkPrivateKey jarg1_, String jarg2);
   public final static native long new_CkPrng();
   public final static native void delete_CkPrng(long jarg1);
   public final static native void CkPrng_LastErrorXml(long jarg1, CkPrng jarg1_, long jarg2, CkString jarg2_);
@@ -4710,6 +4757,8 @@ public class chilkatJNI {
   public final static native boolean CkPrng_AddEntropyBytes(long jarg1, CkPrng jarg1_, long jarg2, CkByteData jarg2_);
   public final static native boolean CkPrng_ExportEntropy(long jarg1, CkPrng jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkPrng_exportEntropy(long jarg1, CkPrng jarg1_);
+  public final static native boolean CkPrng_FirebasePushId(long jarg1, CkPrng jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkPrng_firebasePushId(long jarg1, CkPrng jarg1_);
   public final static native boolean CkPrng_GenRandom(long jarg1, CkPrng jarg1_, int jarg2, String jarg3, long jarg4, CkString jarg4_);
   public final static native String CkPrng_genRandom(long jarg1, CkPrng jarg1_, int jarg2, String jarg3);
   public final static native boolean CkPrng_GenRandomBytes(long jarg1, CkPrng jarg1_, int jarg2, long jarg3, CkByteData jarg3_);
@@ -4774,6 +4823,18 @@ public class chilkatJNI {
   public final static native boolean CkPublicKey_SaveOpenSslPemFile(long jarg1, CkPublicKey jarg1_, String jarg2);
   public final static native boolean CkPublicKey_SaveRsaDerFile(long jarg1, CkPublicKey jarg1_, String jarg2);
   public final static native boolean CkPublicKey_SaveXmlFile(long jarg1, CkPublicKey jarg1_, String jarg2);
+  public final static native boolean CkPublicKey_LoadFromBinary(long jarg1, CkPublicKey jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native boolean CkPublicKey_LoadFromString(long jarg1, CkPublicKey jarg1_, String jarg2);
+  public final static native boolean CkPublicKey_LoadFromFile(long jarg1, CkPublicKey jarg1_, String jarg2);
+  public final static native boolean CkPublicKey_GetDer(long jarg1, CkPublicKey jarg1_, boolean jarg2, long jarg3, CkByteData jarg3_);
+  public final static native boolean CkPublicKey_GetPem(long jarg1, CkPublicKey jarg1_, boolean jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkPublicKey_getPem(long jarg1, CkPublicKey jarg1_, boolean jarg2);
+  public final static native String CkPublicKey_pem(long jarg1, CkPublicKey jarg1_, boolean jarg2);
+  public final static native boolean CkPublicKey_GetEncoded(long jarg1, CkPublicKey jarg1_, boolean jarg2, String jarg3, long jarg4, CkString jarg4_);
+  public final static native String CkPublicKey_getEncoded(long jarg1, CkPublicKey jarg1_, boolean jarg2, String jarg3);
+  public final static native String CkPublicKey_encoded(long jarg1, CkPublicKey jarg1_, boolean jarg2, String jarg3);
+  public final static native boolean CkPublicKey_SaveDerFile(long jarg1, CkPublicKey jarg1_, boolean jarg2, String jarg3);
+  public final static native boolean CkPublicKey_SavePemFile(long jarg1, CkPublicKey jarg1_, boolean jarg2, String jarg3);
   public final static native long new_CkRsa();
   public final static native void delete_CkRsa(long jarg1);
   public final static native void CkRsa_LastErrorXml(long jarg1, CkRsa jarg1_, long jarg2, CkString jarg2_);
@@ -4949,6 +5010,8 @@ public class chilkatJNI {
   public final static native boolean CkScp_get_LastMethodSuccess(long jarg1, CkScp jarg1_);
   public final static native void CkScp_put_LastMethodSuccess(long jarg1, CkScp jarg1_, boolean jarg2);
   public final static native boolean CkScp_SaveLastError(long jarg1, CkScp jarg1_, String jarg2);
+  public final static native boolean CkScp_get_AbortCurrent(long jarg1, CkScp jarg1_);
+  public final static native void CkScp_put_AbortCurrent(long jarg1, CkScp jarg1_, boolean jarg2);
   public final static native int CkScp_get_HeartbeatMs(long jarg1, CkScp jarg1_);
   public final static native void CkScp_put_HeartbeatMs(long jarg1, CkScp jarg1_, int jarg2);
   public final static native int CkScp_get_PercentDoneScale(long jarg1, CkScp jarg1_);
@@ -4956,9 +5019,15 @@ public class chilkatJNI {
   public final static native void CkScp_get_SyncMustMatch(long jarg1, CkScp jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkScp_syncMustMatch(long jarg1, CkScp jarg1_);
   public final static native void CkScp_put_SyncMustMatch(long jarg1, CkScp jarg1_, String jarg2);
+  public final static native void CkScp_get_SyncMustMatchDir(long jarg1, CkScp jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkScp_syncMustMatchDir(long jarg1, CkScp jarg1_);
+  public final static native void CkScp_put_SyncMustMatchDir(long jarg1, CkScp jarg1_, String jarg2);
   public final static native void CkScp_get_SyncMustNotMatch(long jarg1, CkScp jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkScp_syncMustNotMatch(long jarg1, CkScp jarg1_);
   public final static native void CkScp_put_SyncMustNotMatch(long jarg1, CkScp jarg1_, String jarg2);
+  public final static native void CkScp_get_SyncMustNotMatchDir(long jarg1, CkScp jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkScp_syncMustNotMatchDir(long jarg1, CkScp jarg1_);
+  public final static native void CkScp_put_SyncMustNotMatchDir(long jarg1, CkScp jarg1_, String jarg2);
   public final static native void CkScp_get_SyncedFiles(long jarg1, CkScp jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkScp_syncedFiles(long jarg1, CkScp jarg1_);
   public final static native void CkScp_put_SyncedFiles(long jarg1, CkScp jarg1_, String jarg2);
@@ -5120,6 +5189,11 @@ public class chilkatJNI {
   public final static native void CkSFtp_put_UploadChunkSize(long jarg1, CkSFtp jarg1_, int jarg2);
   public final static native boolean CkSFtp_get_UtcMode(long jarg1, CkSFtp jarg1_);
   public final static native void CkSFtp_put_UtcMode(long jarg1, CkSFtp jarg1_, boolean jarg2);
+  public final static native boolean CkSFtp_get_AbortCurrent(long jarg1, CkSFtp jarg1_);
+  public final static native void CkSFtp_put_AbortCurrent(long jarg1, CkSFtp jarg1_, boolean jarg2);
+  public final static native void CkSFtp_get_SyncDirectives(long jarg1, CkSFtp jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkSFtp_syncDirectives(long jarg1, CkSFtp jarg1_);
+  public final static native void CkSFtp_put_SyncDirectives(long jarg1, CkSFtp jarg1_, String jarg2);
   public final static native int CkSFtp_AccumulateBytes(long jarg1, CkSFtp jarg1_, String jarg2, int jarg3);
   public final static native long CkSFtp_AccumulateBytesAsync(long jarg1, CkSFtp jarg1_, String jarg2, int jarg3);
   public final static native boolean CkSFtp_Add64(long jarg1, CkSFtp jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
@@ -5336,6 +5410,8 @@ public class chilkatJNI {
   public final static native boolean CkSocket_get_LastMethodSuccess(long jarg1, CkSocket jarg1_);
   public final static native void CkSocket_put_LastMethodSuccess(long jarg1, CkSocket jarg1_, boolean jarg2);
   public final static native boolean CkSocket_SaveLastError(long jarg1, CkSocket jarg1_, String jarg2);
+  public final static native boolean CkSocket_get_AbortCurrent(long jarg1, CkSocket jarg1_);
+  public final static native void CkSocket_put_AbortCurrent(long jarg1, CkSocket jarg1_, boolean jarg2);
   public final static native int CkSocket_get_AcceptFailReason(long jarg1, CkSocket jarg1_);
   public final static native boolean CkSocket_get_AsyncAcceptFinished(long jarg1, CkSocket jarg1_);
   public final static native void CkSocket_get_AsyncAcceptLog(long jarg1, CkSocket jarg1_, long jarg2, CkString jarg2_);
@@ -5512,6 +5588,7 @@ public class chilkatJNI {
   public final static native boolean CkSocket_AsyncSendBytes(long jarg1, CkSocket jarg1_, long jarg2, CkByteData jarg2_);
   public final static native boolean CkSocket_AsyncSendString(long jarg1, CkSocket jarg1_, String jarg2);
   public final static native boolean CkSocket_BindAndListen(long jarg1, CkSocket jarg1_, int jarg2, int jarg3);
+  public final static native long CkSocket_BindAndListenAsync(long jarg1, CkSocket jarg1_, int jarg2, int jarg3);
   public final static native boolean CkSocket_BuildHttpGetRequest(long jarg1, CkSocket jarg1_, String jarg2, long jarg3, CkString jarg3_);
   public final static native String CkSocket_buildHttpGetRequest(long jarg1, CkSocket jarg1_, String jarg2);
   public final static native int CkSocket_CheckWriteable(long jarg1, CkSocket jarg1_, int jarg2);
@@ -5697,6 +5774,8 @@ public class chilkatJNI {
   public final static native void CkSpider_put_UserAgent(long jarg1, CkSpider jarg1_, String jarg2);
   public final static native int CkSpider_get_WindDownCount(long jarg1, CkSpider jarg1_);
   public final static native void CkSpider_put_WindDownCount(long jarg1, CkSpider jarg1_, int jarg2);
+  public final static native boolean CkSpider_get_AbortCurrent(long jarg1, CkSpider jarg1_);
+  public final static native void CkSpider_put_AbortCurrent(long jarg1, CkSpider jarg1_, boolean jarg2);
   public final static native void CkSpider_AddAvoidOutboundLinkPattern(long jarg1, CkSpider jarg1_, String jarg2);
   public final static native void CkSpider_AddAvoidPattern(long jarg1, CkSpider jarg1_, String jarg2);
   public final static native void CkSpider_AddMustMatchPattern(long jarg1, CkSpider jarg1_, String jarg2);
@@ -5847,6 +5926,8 @@ public class chilkatJNI {
   public final static native void CkSsh_put_UserAuthBanner(long jarg1, CkSsh jarg1_, String jarg2);
   public final static native boolean CkSsh_get_EnableCompression(long jarg1, CkSsh jarg1_);
   public final static native void CkSsh_put_EnableCompression(long jarg1, CkSsh jarg1_, boolean jarg2);
+  public final static native boolean CkSsh_get_AbortCurrent(long jarg1, CkSsh jarg1_);
+  public final static native void CkSsh_put_AbortCurrent(long jarg1, CkSsh jarg1_, boolean jarg2);
   public final static native boolean CkSsh_AuthenticatePk(long jarg1, CkSsh jarg1_, String jarg2, long jarg3, CkSshKey jarg3_);
   public final static native long CkSsh_AuthenticatePkAsync(long jarg1, CkSsh jarg1_, String jarg2, long jarg3, CkSshKey jarg3_);
   public final static native boolean CkSsh_AuthenticatePw(long jarg1, CkSsh jarg1_, String jarg2, String jarg3);
@@ -6100,6 +6181,8 @@ public class chilkatJNI {
   public final static native void CkSshTunnel_put_TunnelLogPath(long jarg1, CkSshTunnel jarg1_, String jarg2);
   public final static native void CkSshTunnel_get_HostKeyFingerprint(long jarg1, CkSshTunnel jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkSshTunnel_hostKeyFingerprint(long jarg1, CkSshTunnel jarg1_);
+  public final static native boolean CkSshTunnel_get_AbortCurrent(long jarg1, CkSshTunnel jarg1_);
+  public final static native void CkSshTunnel_put_AbortCurrent(long jarg1, CkSshTunnel jarg1_, boolean jarg2);
   public final static native boolean CkSshTunnel_AuthenticatePk(long jarg1, CkSshTunnel jarg1_, String jarg2, long jarg3, CkSshKey jarg3_);
   public final static native long CkSshTunnel_AuthenticatePkAsync(long jarg1, CkSshTunnel jarg1_, String jarg2, long jarg3, CkSshKey jarg3_);
   public final static native boolean CkSshTunnel_AuthenticatePw(long jarg1, CkSshTunnel jarg1_, String jarg2, String jarg3);
@@ -6451,6 +6534,8 @@ public class chilkatJNI {
   public final static native boolean CkUnixCompress_SaveLastError(long jarg1, CkUnixCompress jarg1_, String jarg2);
   public final static native int CkUnixCompress_get_HeartbeatMs(long jarg1, CkUnixCompress jarg1_);
   public final static native void CkUnixCompress_put_HeartbeatMs(long jarg1, CkUnixCompress jarg1_, int jarg2);
+  public final static native boolean CkUnixCompress_get_AbortCurrent(long jarg1, CkUnixCompress jarg1_);
+  public final static native void CkUnixCompress_put_AbortCurrent(long jarg1, CkUnixCompress jarg1_, boolean jarg2);
   public final static native boolean CkUnixCompress_CompressFile(long jarg1, CkUnixCompress jarg1_, String jarg2, String jarg3);
   public final static native long CkUnixCompress_CompressFileAsync(long jarg1, CkUnixCompress jarg1_, String jarg2, String jarg3);
   public final static native boolean CkUnixCompress_CompressFileToMem(long jarg1, CkUnixCompress jarg1_, String jarg2, long jarg3, CkByteData jarg3_);
@@ -6492,6 +6577,8 @@ public class chilkatJNI {
   public final static native void CkUrl_get_Query(long jarg1, CkUrl jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkUrl_query(long jarg1, CkUrl jarg1_);
   public final static native boolean CkUrl_get_Ssl(long jarg1, CkUrl jarg1_);
+  public final static native void CkUrl_get_PathWithQueryParams(long jarg1, CkUrl jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkUrl_pathWithQueryParams(long jarg1, CkUrl jarg1_);
   public final static native boolean CkUrl_ParseUrl(long jarg1, CkUrl jarg1_, String jarg2);
   public final static native long new_CkUpload();
   public final static native void delete_CkUpload(long jarg1);
@@ -6577,6 +6664,8 @@ public class chilkatJNI {
   public final static native void CkUpload_get_SslProtocol(long jarg1, CkUpload jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkUpload_sslProtocol(long jarg1, CkUpload jarg1_);
   public final static native void CkUpload_put_SslProtocol(long jarg1, CkUpload jarg1_, String jarg2);
+  public final static native boolean CkUpload_get_AbortCurrent(long jarg1, CkUpload jarg1_);
+  public final static native void CkUpload_put_AbortCurrent(long jarg1, CkUpload jarg1_, boolean jarg2);
   public final static native void CkUpload_AbortUpload(long jarg1, CkUpload jarg1_);
   public final static native void CkUpload_AddCustomHeader(long jarg1, CkUpload jarg1_, String jarg2, String jarg3);
   public final static native void CkUpload_AddFileReference(long jarg1, CkUpload jarg1_, String jarg2, String jarg3);
@@ -6896,6 +6985,8 @@ public class chilkatJNI {
   public final static native boolean CkZip_get_LastMethodSuccess(long jarg1, CkZip jarg1_);
   public final static native void CkZip_put_LastMethodSuccess(long jarg1, CkZip jarg1_, boolean jarg2);
   public final static native boolean CkZip_SaveLastError(long jarg1, CkZip jarg1_, String jarg2);
+  public final static native boolean CkZip_get_AbortCurrent(long jarg1, CkZip jarg1_);
+  public final static native void CkZip_put_AbortCurrent(long jarg1, CkZip jarg1_, boolean jarg2);
   public final static native void CkZip_get_AppendFromDir(long jarg1, CkZip jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkZip_appendFromDir(long jarg1, CkZip jarg1_);
   public final static native void CkZip_put_AppendFromDir(long jarg1, CkZip jarg1_, String jarg2);
@@ -7174,10 +7265,10 @@ public class chilkatJNI {
   public final static native String CkOAuth1_tokenSecret(long jarg1, CkOAuth1 jarg1_);
   public final static native void CkOAuth1_put_TokenSecret(long jarg1, CkOAuth1 jarg1_, String jarg2);
   public final static native boolean CkOAuth1_AddParam(long jarg1, CkOAuth1 jarg1_, String jarg2, String jarg3);
-  public final static native boolean CkOAuth1_Generate(long jarg1, CkOAuth1 jarg1_);
-  public final static native boolean CkOAuth1_RemoveParam(long jarg1, CkOAuth1 jarg1_, String jarg2);
   public final static native boolean CkOAuth1_GenNonce(long jarg1, CkOAuth1 jarg1_, int jarg2);
   public final static native boolean CkOAuth1_GenTimestamp(long jarg1, CkOAuth1 jarg1_);
+  public final static native boolean CkOAuth1_Generate(long jarg1, CkOAuth1 jarg1_);
+  public final static native boolean CkOAuth1_RemoveParam(long jarg1, CkOAuth1 jarg1_, String jarg2);
   public final static native long new_CkJsonObject();
   public final static native void delete_CkJsonObject(long jarg1);
   public final static native void CkJsonObject_LastErrorXml(long jarg1, CkJsonObject jarg1_, long jarg2, CkString jarg2_);
@@ -7199,6 +7290,9 @@ public class chilkatJNI {
   public final static native boolean CkJsonObject_get_LastMethodSuccess(long jarg1, CkJsonObject jarg1_);
   public final static native void CkJsonObject_put_LastMethodSuccess(long jarg1, CkJsonObject jarg1_, boolean jarg2);
   public final static native boolean CkJsonObject_SaveLastError(long jarg1, CkJsonObject jarg1_, String jarg2);
+  public final static native void CkJsonObject_get_DelimiterChar(long jarg1, CkJsonObject jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJsonObject_delimiterChar(long jarg1, CkJsonObject jarg1_);
+  public final static native void CkJsonObject_put_DelimiterChar(long jarg1, CkJsonObject jarg1_, String jarg2);
   public final static native boolean CkJsonObject_get_EmitCompact(long jarg1, CkJsonObject jarg1_);
   public final static native void CkJsonObject_put_EmitCompact(long jarg1, CkJsonObject jarg1_, boolean jarg2);
   public final static native boolean CkJsonObject_get_EmitCrLf(long jarg1, CkJsonObject jarg1_);
@@ -7217,6 +7311,11 @@ public class chilkatJNI {
   public final static native boolean CkJsonObject_AddNumberAt(long jarg1, CkJsonObject jarg1_, int jarg2, String jarg3, String jarg4);
   public final static native boolean CkJsonObject_AddObjectAt(long jarg1, CkJsonObject jarg1_, int jarg2, String jarg3);
   public final static native boolean CkJsonObject_AddStringAt(long jarg1, CkJsonObject jarg1_, int jarg2, String jarg3, String jarg4);
+  public final static native long CkJsonObject_AppendArray(long jarg1, CkJsonObject jarg1_, String jarg2);
+  public final static native boolean CkJsonObject_AppendBool(long jarg1, CkJsonObject jarg1_, String jarg2, boolean jarg3);
+  public final static native boolean CkJsonObject_AppendInt(long jarg1, CkJsonObject jarg1_, String jarg2, int jarg3);
+  public final static native long CkJsonObject_AppendObject(long jarg1, CkJsonObject jarg1_, String jarg2);
+  public final static native boolean CkJsonObject_AppendString(long jarg1, CkJsonObject jarg1_, String jarg2, String jarg3);
   public final static native long CkJsonObject_ArrayAt(long jarg1, CkJsonObject jarg1_, int jarg2);
   public final static native long CkJsonObject_ArrayOf(long jarg1, CkJsonObject jarg1_, String jarg2);
   public final static native boolean CkJsonObject_BoolAt(long jarg1, CkJsonObject jarg1_, int jarg2);
@@ -7225,7 +7324,11 @@ public class chilkatJNI {
   public final static native boolean CkJsonObject_DeleteAt(long jarg1, CkJsonObject jarg1_, int jarg2);
   public final static native boolean CkJsonObject_Emit(long jarg1, CkJsonObject jarg1_, long jarg2, CkString jarg2_);
   public final static native String CkJsonObject_emit(long jarg1, CkJsonObject jarg1_);
+  public final static native boolean CkJsonObject_FirebaseApplyEvent(long jarg1, CkJsonObject jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkJsonObject_FirebasePatch(long jarg1, CkJsonObject jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkJsonObject_FirebasePut(long jarg1, CkJsonObject jarg1_, String jarg2, String jarg3);
   public final static native long CkJsonObject_GetDocRoot(long jarg1, CkJsonObject jarg1_);
+  public final static native boolean CkJsonObject_HasMember(long jarg1, CkJsonObject jarg1_, String jarg2);
   public final static native int CkJsonObject_IndexOf(long jarg1, CkJsonObject jarg1_, String jarg2);
   public final static native int CkJsonObject_IntAt(long jarg1, CkJsonObject jarg1_, int jarg2);
   public final static native int CkJsonObject_IntOf(long jarg1, CkJsonObject jarg1_, String jarg2);
@@ -7254,6 +7357,7 @@ public class chilkatJNI {
   public final static native String CkJsonObject_stringAt(long jarg1, CkJsonObject jarg1_, int jarg2);
   public final static native boolean CkJsonObject_StringOf(long jarg1, CkJsonObject jarg1_, String jarg2, long jarg3, CkString jarg3_);
   public final static native String CkJsonObject_stringOf(long jarg1, CkJsonObject jarg1_, String jarg2);
+  public final static native int CkJsonObject_TypeAt(long jarg1, CkJsonObject jarg1_, int jarg2);
   public final static native long new_CkJsonArray();
   public final static native void delete_CkJsonArray(long jarg1);
   public final static native void CkJsonArray_LastErrorXml(long jarg1, CkJsonArray jarg1_, long jarg2, CkString jarg2_);
@@ -7296,6 +7400,9 @@ public class chilkatJNI {
   public final static native boolean CkJsonArray_SetStringAt(long jarg1, CkJsonArray jarg1_, int jarg2, String jarg3);
   public final static native boolean CkJsonArray_StringAt(long jarg1, CkJsonArray jarg1_, int jarg2, long jarg3, CkString jarg3_);
   public final static native String CkJsonArray_stringAt(long jarg1, CkJsonArray jarg1_, int jarg2);
+  public final static native boolean CkJsonArray_Emit(long jarg1, CkJsonArray jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJsonArray_emit(long jarg1, CkJsonArray jarg1_);
+  public final static native int CkJsonArray_TypeAt(long jarg1, CkJsonArray jarg1_, int jarg2);
   public final static native long new_CkStream();
   public final static native void delete_CkStream(long jarg1);
   public final static native void CkStream_LastErrorXml(long jarg1, CkStream jarg1_, long jarg2, CkString jarg2_);
@@ -7318,10 +7425,17 @@ public class chilkatJNI {
   public final static native boolean CkStream_get_LastMethodSuccess(long jarg1, CkStream jarg1_);
   public final static native void CkStream_put_LastMethodSuccess(long jarg1, CkStream jarg1_, boolean jarg2);
   public final static native boolean CkStream_SaveLastError(long jarg1, CkStream jarg1_, String jarg2);
+  public final static native boolean CkStream_get_AbortCurrent(long jarg1, CkStream jarg1_);
+  public final static native void CkStream_put_AbortCurrent(long jarg1, CkStream jarg1_, boolean jarg2);
+  public final static native boolean CkStream_get_CanRead(long jarg1, CkStream jarg1_);
+  public final static native boolean CkStream_get_CanWrite(long jarg1, CkStream jarg1_);
+  public final static native boolean CkStream_get_DataAvailable(long jarg1, CkStream jarg1_);
   public final static native int CkStream_get_DefaultChunkSize(long jarg1, CkStream jarg1_);
   public final static native void CkStream_put_DefaultChunkSize(long jarg1, CkStream jarg1_, int jarg2);
   public final static native boolean CkStream_get_EndOfStream(long jarg1, CkStream jarg1_);
   public final static native boolean CkStream_get_IsWriteClosed(long jarg1, CkStream jarg1_);
+  public final static native int CkStream_get_Length32(long jarg1, CkStream jarg1_);
+  public final static native void CkStream_put_Length32(long jarg1, CkStream jarg1_, int jarg2);
   public final static native int CkStream_get_ReadFailReason(long jarg1, CkStream jarg1_);
   public final static native int CkStream_get_ReadTimeoutMs(long jarg1, CkStream jarg1_);
   public final static native void CkStream_put_ReadTimeoutMs(long jarg1, CkStream jarg1_, int jarg2);
@@ -7339,9 +7453,6 @@ public class chilkatJNI {
   public final static native int CkStream_get_WriteFailReason(long jarg1, CkStream jarg1_);
   public final static native int CkStream_get_WriteTimeoutMs(long jarg1, CkStream jarg1_);
   public final static native void CkStream_put_WriteTimeoutMs(long jarg1, CkStream jarg1_, int jarg2);
-  public final static native boolean CkStream_get_CanRead(long jarg1, CkStream jarg1_);
-  public final static native boolean CkStream_get_CanWrite(long jarg1, CkStream jarg1_);
-  public final static native boolean CkStream_get_DataAvailable(long jarg1, CkStream jarg1_);
   public final static native boolean CkStream_ReadBytes(long jarg1, CkStream jarg1_, long jarg2, CkByteData jarg2_);
   public final static native long CkStream_ReadBytesAsync(long jarg1, CkStream jarg1_);
   public final static native boolean CkStream_ReadBytesENC(long jarg1, CkStream jarg1_, String jarg2, long jarg3, CkString jarg3_);
@@ -7374,9 +7485,355 @@ public class chilkatJNI {
   public final static native long CkStream_WriteBytesAsync(long jarg1, CkStream jarg1_, long jarg2, CkByteData jarg2_);
   public final static native boolean CkStream_WriteBytesENC(long jarg1, CkStream jarg1_, String jarg2, String jarg3);
   public final static native long CkStream_WriteBytesENCAsync(long jarg1, CkStream jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkStream_WriteClose(long jarg1, CkStream jarg1_);
   public final static native boolean CkStream_WriteString(long jarg1, CkStream jarg1_, String jarg2);
   public final static native long CkStream_WriteStringAsync(long jarg1, CkStream jarg1_, String jarg2);
-  public final static native boolean CkStream_WriteClose(long jarg1, CkStream jarg1_);
+  public final static native long new_CkAuthAws();
+  public final static native void delete_CkAuthAws(long jarg1);
+  public final static native void CkAuthAws_LastErrorXml(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAws_LastErrorHtml(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAws_LastErrorText(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAws_get_LastErrorHtml(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_lastErrorHtml(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_get_LastErrorText(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_lastErrorText(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_get_LastErrorXml(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_lastErrorXml(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_get_Version(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_version(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_get_DebugLogFilePath(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_debugLogFilePath(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_DebugLogFilePath(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native boolean CkAuthAws_get_VerboseLogging(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_VerboseLogging(long jarg1, CkAuthAws jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAws_get_LastMethodSuccess(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_LastMethodSuccess(long jarg1, CkAuthAws jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAws_SaveLastError(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_AccessKey(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_accessKey(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_AccessKey(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_CanonicalizedResourceV2(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_canonicalizedResourceV2(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_CanonicalizedResourceV2(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_PrecomputedMd5(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_precomputedMd5(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_PrecomputedMd5(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_PrecomputedSha256(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_precomputedSha256(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_PrecomputedSha256(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_Region(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_region(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_Region(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_SecretKey(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_secretKey(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_SecretKey(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native void CkAuthAws_get_ServiceName(long jarg1, CkAuthAws jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAws_serviceName(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_ServiceName(long jarg1, CkAuthAws jarg1_, String jarg2);
+  public final static native int CkAuthAws_get_SignatureVersion(long jarg1, CkAuthAws jarg1_);
+  public final static native void CkAuthAws_put_SignatureVersion(long jarg1, CkAuthAws jarg1_, int jarg2);
+  public final static native long new_CkRest();
+  public final static native void delete_CkRest(long jarg1);
+  public final static native void CkRest_LastErrorXml(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkRest_LastErrorHtml(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkRest_LastErrorText(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkRest_put_EventCallbackObject(long jarg1, CkRest jarg1_, long jarg2, CkBaseProgress jarg2_);
+  public final static native void CkRest_get_LastErrorHtml(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_lastErrorHtml(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_LastErrorText(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_lastErrorText(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_LastErrorXml(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_lastErrorXml(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_Version(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_version(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_DebugLogFilePath(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_debugLogFilePath(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_DebugLogFilePath(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_get_VerboseLogging(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_VerboseLogging(long jarg1, CkRest jarg1_, boolean jarg2);
+  public final static native boolean CkRest_get_LastMethodSuccess(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_LastMethodSuccess(long jarg1, CkRest jarg1_, boolean jarg2);
+  public final static native boolean CkRest_SaveLastError(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native void CkRest_get_Authorization(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_authorization(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_Authorization(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native int CkRest_get_HeartbeatMs(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_HeartbeatMs(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native void CkRest_get_Host(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_host(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_Host(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native int CkRest_get_IdleTimeoutMs(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_IdleTimeoutMs(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native void CkRest_get_LastRequestHeader(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_lastRequestHeader(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_LastRequestStartLine(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_lastRequestStartLine(long jarg1, CkRest jarg1_);
+  public final static native int CkRest_get_NumResponseHeaders(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_PartSelector(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_partSelector(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_PartSelector(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native void CkRest_get_ResponseHeader(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_responseHeader(long jarg1, CkRest jarg1_);
+  public final static native int CkRest_get_ResponseStatusCode(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_get_ResponseStatusText(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_responseStatusText(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_get_StreamNonChunked(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_StreamNonChunked(long jarg1, CkRest jarg1_, boolean jarg2);
+  public final static native int CkRest_get_ConnectFailReason(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_get_PercentDoneOnSend(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_put_PercentDoneOnSend(long jarg1, CkRest jarg1_, boolean jarg2);
+  public final static native boolean CkRest_AddHeader(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_AddQueryParam(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_AddQueryParams(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_ClearAllHeaders(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_ClearAllQueryParams(long jarg1, CkRest jarg1_);
+  public final static native void CkRest_ClearResponseBodyStream(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_Connect(long jarg1, CkRest jarg1_, String jarg2, int jarg3, boolean jarg4, boolean jarg5);
+  public final static native long CkRest_ConnectAsync(long jarg1, CkRest jarg1_, String jarg2, int jarg3, boolean jarg4, boolean jarg5);
+  public final static native boolean CkRest_Disconnect(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native long CkRest_DisconnectAsync(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native boolean CkRest_FullRequestBinary(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkByteData jarg4_, long jarg5, CkString jarg5_);
+  public final static native String CkRest_fullRequestBinary(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkByteData jarg4_);
+  public final static native long CkRest_FullRequestBinaryAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkByteData jarg4_);
+  public final static native boolean CkRest_FullRequestFormUrlEncoded(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
+  public final static native String CkRest_fullRequestFormUrlEncoded(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_FullRequestFormUrlEncodedAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_FullRequestMultipart(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
+  public final static native String CkRest_fullRequestMultipart(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_FullRequestMultipartAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_FullRequestNoBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkString jarg4_);
+  public final static native String CkRest_fullRequestNoBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_FullRequestNoBodyAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_FullRequestStream(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkStream jarg4_, long jarg5, CkString jarg5_);
+  public final static native String CkRest_fullRequestStream(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkStream jarg4_);
+  public final static native long CkRest_FullRequestStreamAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkStream jarg4_);
+  public final static native boolean CkRest_FullRequestString(long jarg1, CkRest jarg1_, String jarg2, String jarg3, String jarg4, long jarg5, CkString jarg5_);
+  public final static native String CkRest_fullRequestString(long jarg1, CkRest jarg1_, String jarg2, String jarg3, String jarg4);
+  public final static native long CkRest_FullRequestStringAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, String jarg4);
+  public final static native boolean CkRest_ReadRespBodyBinary(long jarg1, CkRest jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native long CkRest_ReadRespBodyBinaryAsync(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_ReadRespBodyStream(long jarg1, CkRest jarg1_, long jarg2, CkStream jarg2_, boolean jarg3);
+  public final static native long CkRest_ReadRespBodyStreamAsync(long jarg1, CkRest jarg1_, long jarg2, CkStream jarg2_, boolean jarg3);
+  public final static native boolean CkRest_ReadRespBodyString(long jarg1, CkRest jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkRest_readRespBodyString(long jarg1, CkRest jarg1_);
+  public final static native long CkRest_ReadRespBodyStringAsync(long jarg1, CkRest jarg1_);
+  public final static native int CkRest_ReadResponseHeader(long jarg1, CkRest jarg1_);
+  public final static native long CkRest_ReadResponseHeaderAsync(long jarg1, CkRest jarg1_);
+  public final static native long CkRest_RedirectUrl(long jarg1, CkRest jarg1_);
+  public final static native boolean CkRest_RemoveHeader(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_RemoveQueryParam(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_ResponseHdrByName(long jarg1, CkRest jarg1_, String jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkRest_responseHdrByName(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_ResponseHdrName(long jarg1, CkRest jarg1_, int jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkRest_responseHdrName(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native boolean CkRest_ResponseHdrValue(long jarg1, CkRest jarg1_, int jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkRest_responseHdrValue(long jarg1, CkRest jarg1_, int jarg2);
+  public final static native boolean CkRest_SendReqBinaryBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkByteData jarg4_);
+  public final static native long CkRest_SendReqBinaryBodyAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkByteData jarg4_);
+  public final static native boolean CkRest_SendReqFormUrlEncoded(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_SendReqFormUrlEncodedAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_SendReqMultipart(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_SendReqMultipartAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_SendReqNoBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native long CkRest_SendReqNoBodyAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_SendReqStreamBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkStream jarg4_);
+  public final static native long CkRest_SendReqStreamBodyAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, long jarg4, CkStream jarg4_);
+  public final static native boolean CkRest_SendReqStringBody(long jarg1, CkRest jarg1_, String jarg2, String jarg3, String jarg4);
+  public final static native long CkRest_SendReqStringBodyAsync(long jarg1, CkRest jarg1_, String jarg2, String jarg3, String jarg4);
+  public final static native boolean CkRest_SetAuthAws(long jarg1, CkRest jarg1_, long jarg2, CkAuthAws jarg2_);
+  public final static native boolean CkRest_SetAuthAzureAD(long jarg1, CkRest jarg1_, long jarg2, CkAuthAzureAD jarg2_);
+  public final static native boolean CkRest_SetAuthAzureStorage(long jarg1, CkRest jarg1_, long jarg2, CkAuthAzureStorage jarg2_);
+  public final static native boolean CkRest_SetAuthBasic(long jarg1, CkRest jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkRest_SetAuthGoogle(long jarg1, CkRest jarg1_, long jarg2, CkAuthGoogle jarg2_);
+  public final static native boolean CkRest_SetAuthOAuth1(long jarg1, CkRest jarg1_, long jarg2, CkOAuth1 jarg2_, boolean jarg3);
+  public final static native boolean CkRest_SetMultipartBodyBinary(long jarg1, CkRest jarg1_, long jarg2, CkByteData jarg2_);
+  public final static native boolean CkRest_SetMultipartBodyStream(long jarg1, CkRest jarg1_, long jarg2, CkStream jarg2_);
+  public final static native boolean CkRest_SetMultipartBodyString(long jarg1, CkRest jarg1_, String jarg2);
+  public final static native boolean CkRest_SetResponseBodyStream(long jarg1, CkRest jarg1_, int jarg2, boolean jarg3, long jarg4, CkStream jarg4_);
+  public final static native boolean CkRest_UseConnection(long jarg1, CkRest jarg1_, long jarg2, CkSocket jarg2_, boolean jarg3);
+  public final static native long new_CkAuthGoogle();
+  public final static native void delete_CkAuthGoogle(long jarg1);
+  public final static native void CkAuthGoogle_LastErrorXml(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthGoogle_LastErrorHtml(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthGoogle_LastErrorText(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthGoogle_put_EventCallbackObject(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkBaseProgress jarg2_);
+  public final static native void CkAuthGoogle_get_LastErrorHtml(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_lastErrorHtml(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_get_LastErrorText(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_lastErrorText(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_get_LastErrorXml(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_lastErrorXml(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_get_Version(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_version(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_get_DebugLogFilePath(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_debugLogFilePath(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_DebugLogFilePath(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native boolean CkAuthGoogle_get_VerboseLogging(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_VerboseLogging(long jarg1, CkAuthGoogle jarg1_, boolean jarg2);
+  public final static native boolean CkAuthGoogle_get_LastMethodSuccess(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_LastMethodSuccess(long jarg1, CkAuthGoogle jarg1_, boolean jarg2);
+  public final static native boolean CkAuthGoogle_SaveLastError(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native void CkAuthGoogle_get_AccessToken(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_accessToken(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_AccessToken(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native void CkAuthGoogle_get_EmailAddress(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_emailAddress(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_EmailAddress(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native int CkAuthGoogle_get_ExpireNumSeconds(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_ExpireNumSeconds(long jarg1, CkAuthGoogle jarg1_, int jarg2);
+  public final static native void CkAuthGoogle_get_JsonKey(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_jsonKey(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_JsonKey(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native int CkAuthGoogle_get_NumSecondsRemaining(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_get_Scope(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_scope(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_Scope(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native void CkAuthGoogle_get_SubEmailAddress(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthGoogle_subEmailAddress(long jarg1, CkAuthGoogle jarg1_);
+  public final static native void CkAuthGoogle_put_SubEmailAddress(long jarg1, CkAuthGoogle jarg1_, String jarg2);
+  public final static native boolean CkAuthGoogle_get_Valid(long jarg1, CkAuthGoogle jarg1_);
+  public final static native long CkAuthGoogle_GetP12(long jarg1, CkAuthGoogle jarg1_);
+  public final static native boolean CkAuthGoogle_ObtainAccessToken(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkSocket jarg2_);
+  public final static native long CkAuthGoogle_ObtainAccessTokenAsync(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkSocket jarg2_);
+  public final static native boolean CkAuthGoogle_SetP12(long jarg1, CkAuthGoogle jarg1_, long jarg2, CkPfx jarg2_);
+  public final static native long new_CkAuthAzureStorage();
+  public final static native void delete_CkAuthAzureStorage(long jarg1);
+  public final static native void CkAuthAzureStorage_LastErrorXml(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureStorage_LastErrorHtml(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureStorage_LastErrorText(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureStorage_get_LastErrorHtml(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_lastErrorHtml(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_get_LastErrorText(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_lastErrorText(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_get_LastErrorXml(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_lastErrorXml(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_get_Version(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_version(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_get_DebugLogFilePath(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_debugLogFilePath(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_DebugLogFilePath(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native boolean CkAuthAzureStorage_get_VerboseLogging(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_VerboseLogging(long jarg1, CkAuthAzureStorage jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAzureStorage_get_LastMethodSuccess(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_LastMethodSuccess(long jarg1, CkAuthAzureStorage jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAzureStorage_SaveLastError(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native void CkAuthAzureStorage_get_AccessKey(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_accessKey(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_AccessKey(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native void CkAuthAzureStorage_get_Account(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_account(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_Account(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native void CkAuthAzureStorage_get_Scheme(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_scheme(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_Scheme(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native void CkAuthAzureStorage_get_Service(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_service(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_Service(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native void CkAuthAzureStorage_get_XMsVersion(long jarg1, CkAuthAzureStorage jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureStorage_xMsVersion(long jarg1, CkAuthAzureStorage jarg1_);
+  public final static native void CkAuthAzureStorage_put_XMsVersion(long jarg1, CkAuthAzureStorage jarg1_, String jarg2);
+  public final static native long new_CkAuthAzureAD();
+  public final static native void delete_CkAuthAzureAD(long jarg1);
+  public final static native void CkAuthAzureAD_LastErrorXml(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureAD_LastErrorHtml(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureAD_LastErrorText(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkAuthAzureAD_put_EventCallbackObject(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkBaseProgress jarg2_);
+  public final static native void CkAuthAzureAD_get_LastErrorHtml(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_lastErrorHtml(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_get_LastErrorText(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_lastErrorText(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_get_LastErrorXml(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_lastErrorXml(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_get_Version(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_version(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_get_DebugLogFilePath(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_debugLogFilePath(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_DebugLogFilePath(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native boolean CkAuthAzureAD_get_VerboseLogging(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_VerboseLogging(long jarg1, CkAuthAzureAD jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAzureAD_get_LastMethodSuccess(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_LastMethodSuccess(long jarg1, CkAuthAzureAD jarg1_, boolean jarg2);
+  public final static native boolean CkAuthAzureAD_SaveLastError(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native void CkAuthAzureAD_get_TenantId(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_tenantId(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_TenantId(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native void CkAuthAzureAD_get_ClientId(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_clientId(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_ClientId(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native void CkAuthAzureAD_get_ClientSecret(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_clientSecret(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_ClientSecret(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native void CkAuthAzureAD_get_Resource(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_resource(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_Resource(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native void CkAuthAzureAD_get_AccessToken(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkAuthAzureAD_accessToken(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native void CkAuthAzureAD_put_AccessToken(long jarg1, CkAuthAzureAD jarg1_, String jarg2);
+  public final static native int CkAuthAzureAD_get_NumSecondsRemaining(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native boolean CkAuthAzureAD_get_Valid(long jarg1, CkAuthAzureAD jarg1_);
+  public final static native boolean CkAuthAzureAD_ObtainAccessToken(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkSocket jarg2_);
+  public final static native long CkAuthAzureAD_ObtainAccessTokenAsync(long jarg1, CkAuthAzureAD jarg1_, long jarg2, CkSocket jarg2_);
+  public final static native long new_CkStringBuilder();
+  public final static native void delete_CkStringBuilder(long jarg1);
+  public final static native int CkStringBuilder_get_Length(long jarg1, CkStringBuilder jarg1_);
+  public final static native boolean CkStringBuilder_Append(long jarg1, CkStringBuilder jarg1_, String jarg2);
+  public final static native boolean CkStringBuilder_AppendInt(long jarg1, CkStringBuilder jarg1_, int jarg2);
+  public final static native boolean CkStringBuilder_AppendInt64(long jarg1, CkStringBuilder jarg1_, long jarg2);
+  public final static native boolean CkStringBuilder_AppendEncoded(long jarg1, CkStringBuilder jarg1_, long jarg2, CkByteData jarg2_, String jarg3);
+  public final static native void CkStringBuilder_Clear(long jarg1, CkStringBuilder jarg1_);
+  public final static native void CkStringBuilder_Replace(long jarg1, CkStringBuilder jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkStringBuilder_GetAsString(long jarg1, CkStringBuilder jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkStringBuilder_getAsString(long jarg1, CkStringBuilder jarg1_);
+  public final static native String CkStringBuilder_asString(long jarg1, CkStringBuilder jarg1_);
+  public final static native boolean CkStringBuilder_Equals(long jarg1, CkStringBuilder jarg1_, String jarg2, boolean jarg3);
+  public final static native boolean CkStringBuilder_Contains(long jarg1, CkStringBuilder jarg1_, String jarg2, boolean jarg3);
+  public final static native long new_CkJwt();
+  public final static native void delete_CkJwt(long jarg1);
+  public final static native void CkJwt_LastErrorXml(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkJwt_LastErrorHtml(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkJwt_LastErrorText(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native void CkJwt_get_LastErrorHtml(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJwt_lastErrorHtml(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_get_LastErrorText(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJwt_lastErrorText(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_get_LastErrorXml(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJwt_lastErrorXml(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_get_Version(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJwt_version(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_get_DebugLogFilePath(long jarg1, CkJwt jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkJwt_debugLogFilePath(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_put_DebugLogFilePath(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native boolean CkJwt_get_VerboseLogging(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_put_VerboseLogging(long jarg1, CkJwt jarg1_, boolean jarg2);
+  public final static native boolean CkJwt_get_LastMethodSuccess(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_put_LastMethodSuccess(long jarg1, CkJwt jarg1_, boolean jarg2);
+  public final static native boolean CkJwt_SaveLastError(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native boolean CkJwt_get_AutoCompact(long jarg1, CkJwt jarg1_);
+  public final static native void CkJwt_put_AutoCompact(long jarg1, CkJwt jarg1_, boolean jarg2);
+  public final static native boolean CkJwt_CreateJwt(long jarg1, CkJwt jarg1_, String jarg2, String jarg3, String jarg4, long jarg5, CkString jarg5_);
+  public final static native String CkJwt_createJwt(long jarg1, CkJwt jarg1_, String jarg2, String jarg3, String jarg4);
+  public final static native boolean CkJwt_CreateJwtPk(long jarg1, CkJwt jarg1_, String jarg2, String jarg3, long jarg4, CkPrivateKey jarg4_, long jarg5, CkString jarg5_);
+  public final static native String CkJwt_createJwtPk(long jarg1, CkJwt jarg1_, String jarg2, String jarg3, long jarg4, CkPrivateKey jarg4_);
+  public final static native int CkJwt_GenNumericDate(long jarg1, CkJwt jarg1_, int jarg2);
+  public final static native boolean CkJwt_GetHeader(long jarg1, CkJwt jarg1_, String jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkJwt_getHeader(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native String CkJwt_header(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native boolean CkJwt_GetPayload(long jarg1, CkJwt jarg1_, String jarg2, long jarg3, CkString jarg3_);
+  public final static native String CkJwt_getPayload(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native String CkJwt_payload(long jarg1, CkJwt jarg1_, String jarg2);
+  public final static native boolean CkJwt_IsTimeValid(long jarg1, CkJwt jarg1_, String jarg2, int jarg3);
+  public final static native boolean CkJwt_VerifyJwt(long jarg1, CkJwt jarg1_, String jarg2, String jarg3);
+  public final static native boolean CkJwt_VerifyJwtPk(long jarg1, CkJwt jarg1_, String jarg2, long jarg3, CkPublicKey jarg3_);
+  public final static native long new_CkServerSentEvent();
+  public final static native void delete_CkServerSentEvent(long jarg1);
+  public final static native void CkServerSentEvent_get_Data(long jarg1, CkServerSentEvent jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkServerSentEvent_data(long jarg1, CkServerSentEvent jarg1_);
+  public final static native void CkServerSentEvent_get_EventName(long jarg1, CkServerSentEvent jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkServerSentEvent_eventName(long jarg1, CkServerSentEvent jarg1_);
+  public final static native void CkServerSentEvent_get_LastEventId(long jarg1, CkServerSentEvent jarg1_, long jarg2, CkString jarg2_);
+  public final static native String CkServerSentEvent_lastEventId(long jarg1, CkServerSentEvent jarg1_);
+  public final static native int CkServerSentEvent_get_Retry(long jarg1, CkServerSentEvent jarg1_);
+  public final static native boolean CkServerSentEvent_LoadEvent(long jarg1, CkServerSentEvent jarg1_, String jarg2);
   public final static native long CkSFtpProgress_SWIGUpcast(long jarg1);
   public final static native long CkMailManProgress_SWIGUpcast(long jarg1);
   public final static native long CkHttpProgress_SWIGUpcast(long jarg1);
@@ -7396,6 +7853,9 @@ public class chilkatJNI {
   public static void SwigDirector_CkBaseProgress_TaskCompleted(CkBaseProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
   }
+  public static void SwigDirector_CkBaseProgress_TextData(CkBaseProgress jself, String data) {
+    jself.TextData(data);
+  }
   public static boolean SwigDirector_CkSFtpProgress_AbortCheck(CkSFtpProgress jself) {
     return jself.AbortCheck();
   }
@@ -7407,6 +7867,9 @@ public class chilkatJNI {
   }
   public static void SwigDirector_CkSFtpProgress_TaskCompleted(CkSFtpProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
+  }
+  public static void SwigDirector_CkSFtpProgress_TextData(CkSFtpProgress jself, String data) {
+    jself.TextData(data);
   }
   public static void SwigDirector_CkSFtpProgress_UploadRate(CkSFtpProgress jself, long byteCount, long bytesPerSec) {
     jself.UploadRate(byteCount, bytesPerSec);
@@ -7426,6 +7889,9 @@ public class chilkatJNI {
   public static void SwigDirector_CkMailManProgress_TaskCompleted(CkMailManProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
   }
+  public static void SwigDirector_CkMailManProgress_TextData(CkMailManProgress jself, String data) {
+    jself.TextData(data);
+  }
   public static void SwigDirector_CkMailManProgress_EmailReceived(CkMailManProgress jself, String subject, String fromAddr, String fromName, String returnPath, String date, String uidl, int sizeInBytes) {
     jself.EmailReceived(subject, fromAddr, fromName, returnPath, date, uidl, sizeInBytes);
   }
@@ -7440,6 +7906,9 @@ public class chilkatJNI {
   }
   public static void SwigDirector_CkHttpProgress_TaskCompleted(CkHttpProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
+  }
+  public static void SwigDirector_CkHttpProgress_TextData(CkHttpProgress jself, String data) {
+    jself.TextData(data);
   }
   public static boolean SwigDirector_CkHttpProgress_HttpRedirect(CkHttpProgress jself, String originalUrl, String redirectUrl) {
     return jself.HttpRedirect(originalUrl, redirectUrl);
@@ -7476,6 +7945,9 @@ public class chilkatJNI {
   }
   public static void SwigDirector_CkFtp2Progress_TaskCompleted(CkFtp2Progress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
+  }
+  public static void SwigDirector_CkFtp2Progress_TextData(CkFtp2Progress jself, String data) {
+    jself.TextData(data);
   }
   public static boolean SwigDirector_CkFtp2Progress_BeginDownloadFile(CkFtp2Progress jself, String pathUtf8) {
     return jself.BeginDownloadFile(pathUtf8);
@@ -7518,6 +7990,9 @@ public class chilkatJNI {
   }
   public static void SwigDirector_CkZipProgress_TaskCompleted(CkZipProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
+  }
+  public static void SwigDirector_CkZipProgress_TextData(CkZipProgress jself, String data) {
+    jself.TextData(data);
   }
   public static boolean SwigDirector_CkZipProgress_DirToBeAdded(CkZipProgress jself, String filePath) {
     return jself.DirToBeAdded(filePath);
@@ -7572,6 +8047,9 @@ public class chilkatJNI {
   }
   public static void SwigDirector_CkTarProgress_TaskCompleted(CkTarProgress jself, long task) {
     jself.TaskCompleted(new CkTask(task, false));
+  }
+  public static void SwigDirector_CkTarProgress_TextData(CkTarProgress jself, String data) {
+    jself.TextData(data);
   }
   public static boolean SwigDirector_CkTarProgress_NextTarFile(CkTarProgress jself, String path, long fileSize, boolean bIsDirectory) {
     return jself.NextTarFile(path, fileSize, bIsDirectory);

@@ -443,6 +443,14 @@ public class CkSshTunnel {
     return chilkatJNI.CkSshTunnel_hostKeyFingerprint(swigCPtr, this);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSshTunnel_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSshTunnel_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean AuthenticatePk(String username, CkSshKey privateKey) {
     return chilkatJNI.CkSshTunnel_AuthenticatePk(swigCPtr, this, username, CkSshKey.getCPtr(privateKey), privateKey);
   }

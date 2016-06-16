@@ -1071,6 +1071,14 @@ public class CkHttp {
     return chilkatJNI.CkHttp_get_WasRedirected(swigCPtr, this);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkHttp_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkHttp_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void AddCacheRoot(String dir) {
     chilkatJNI.CkHttp_AddCacheRoot(swigCPtr, this, dir);
   }

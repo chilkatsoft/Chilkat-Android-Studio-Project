@@ -195,6 +195,14 @@ public class CkGzip {
     chilkatJNI.CkGzip_put_UseCurrentDate(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkGzip_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkGzip_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean CompressFile(String srcPath, String destPath) {
     return chilkatJNI.CkGzip_CompressFile(swigCPtr, this, srcPath, destPath);
   }

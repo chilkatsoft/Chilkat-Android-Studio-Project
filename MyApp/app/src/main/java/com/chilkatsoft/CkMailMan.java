@@ -119,6 +119,14 @@ public class CkMailMan {
     return chilkatJNI.CkMailMan_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkMailMan_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkMailMan_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean get_AllOrNone() {
     return chilkatJNI.CkMailMan_get_AllOrNone(swigCPtr, this);
   }

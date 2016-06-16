@@ -103,6 +103,14 @@ public class CkUrl {
     return chilkatJNI.CkUrl_get_Ssl(swigCPtr, this);
   }
 
+  public void get_PathWithQueryParams(CkString str) {
+    chilkatJNI.CkUrl_get_PathWithQueryParams(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String pathWithQueryParams() {
+    return chilkatJNI.CkUrl_pathWithQueryParams(swigCPtr, this);
+  }
+
   public boolean ParseUrl(String url) {
     return chilkatJNI.CkUrl_ParseUrl(swigCPtr, this, url);
   }

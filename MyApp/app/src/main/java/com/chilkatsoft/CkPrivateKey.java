@@ -316,4 +316,36 @@ public class CkPrivateKey {
     return chilkatJNI.CkPrivateKey_SaveXmlFile(swigCPtr, this, path);
   }
 
+  public boolean GetPkcs1(CkByteData outBytes) {
+    return chilkatJNI.CkPrivateKey_GetPkcs1(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public boolean GetPkcs1Pem(CkString outStr) {
+    return chilkatJNI.CkPrivateKey_GetPkcs1Pem(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getPkcs1Pem() {
+    return chilkatJNI.CkPrivateKey_getPkcs1Pem(swigCPtr, this);
+  }
+
+  public String pkcs1Pem() {
+    return chilkatJNI.CkPrivateKey_pkcs1Pem(swigCPtr, this);
+  }
+
+  public boolean LoadPkcs1(CkByteData data) {
+    return chilkatJNI.CkPrivateKey_LoadPkcs1(swigCPtr, this, CkByteData.getCPtr(data), data);
+  }
+
+  public boolean LoadPkcs1File(String path) {
+    return chilkatJNI.CkPrivateKey_LoadPkcs1File(swigCPtr, this, path);
+  }
+
+  public boolean SavePkcs1File(String path) {
+    return chilkatJNI.CkPrivateKey_SavePkcs1File(swigCPtr, this, path);
+  }
+
+  public boolean SavePemFile(String path) {
+    return chilkatJNI.CkPrivateKey_SavePemFile(swigCPtr, this, path);
+  }
+
 }

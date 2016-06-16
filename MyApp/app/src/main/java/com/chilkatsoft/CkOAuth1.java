@@ -295,20 +295,20 @@ public class CkOAuth1 {
     return chilkatJNI.CkOAuth1_AddParam(swigCPtr, this, name, value);
   }
 
-  public boolean Generate() {
-    return chilkatJNI.CkOAuth1_Generate(swigCPtr, this);
-  }
-
-  public boolean RemoveParam(String name) {
-    return chilkatJNI.CkOAuth1_RemoveParam(swigCPtr, this, name);
-  }
-
   public boolean GenNonce(int numBytes) {
     return chilkatJNI.CkOAuth1_GenNonce(swigCPtr, this, numBytes);
   }
 
   public boolean GenTimestamp() {
     return chilkatJNI.CkOAuth1_GenTimestamp(swigCPtr, this);
+  }
+
+  public boolean Generate() {
+    return chilkatJNI.CkOAuth1_Generate(swigCPtr, this);
+  }
+
+  public boolean RemoveParam(String name) {
+    return chilkatJNI.CkOAuth1_RemoveParam(swigCPtr, this, name);
   }
 
 }

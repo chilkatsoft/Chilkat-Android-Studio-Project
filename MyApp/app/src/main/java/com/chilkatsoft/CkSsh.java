@@ -471,6 +471,14 @@ public class CkSsh {
     chilkatJNI.CkSsh_put_EnableCompression(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSsh_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSsh_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean AuthenticatePk(String username, CkSshKey privateKey) {
     return chilkatJNI.CkSsh_AuthenticatePk(swigCPtr, this, username, CkSshKey.getCPtr(privateKey), privateKey);
   }

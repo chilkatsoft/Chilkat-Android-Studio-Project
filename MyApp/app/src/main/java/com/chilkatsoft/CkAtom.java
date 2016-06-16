@@ -123,6 +123,10 @@ public class CkAtom {
     return chilkatJNI.CkAtom_get_NumEntries(swigCPtr, this);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkAtom_get_AbortCurrent(swigCPtr, this);
+  }
+
   public int AddElement(String tag, String value) {
     return chilkatJNI.CkAtom_AddElement(swigCPtr, this, tag, value);
   }

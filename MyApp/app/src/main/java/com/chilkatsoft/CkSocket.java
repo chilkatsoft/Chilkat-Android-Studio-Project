@@ -119,6 +119,14 @@ public class CkSocket {
     return chilkatJNI.CkSocket_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSocket_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSocket_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public int get_AcceptFailReason() {
     return chilkatJNI.CkSocket_get_AcceptFailReason(swigCPtr, this);
   }
@@ -824,6 +832,11 @@ public class CkSocket {
 
   public boolean BindAndListen(int port, int backlog) {
     return chilkatJNI.CkSocket_BindAndListen(swigCPtr, this, port, backlog);
+  }
+
+  public CkTask BindAndListenAsync(int port, int backlog) {
+    long cPtr = chilkatJNI.CkSocket_BindAndListenAsync(swigCPtr, this, port, backlog);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
   public boolean BuildHttpGetRequest(String url, CkString outStr) {

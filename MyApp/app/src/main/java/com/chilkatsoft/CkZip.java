@@ -119,6 +119,14 @@ public class CkZip {
     return chilkatJNI.CkZip_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkZip_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkZip_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void get_AppendFromDir(CkString str) {
     chilkatJNI.CkZip_get_AppendFromDir(swigCPtr, this, CkString.getCPtr(str), str);
   }

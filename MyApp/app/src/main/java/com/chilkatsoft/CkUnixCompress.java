@@ -127,6 +127,14 @@ public class CkUnixCompress {
     chilkatJNI.CkUnixCompress_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkUnixCompress_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkUnixCompress_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean CompressFile(String inFilename, String destPath) {
     return chilkatJNI.CkUnixCompress_CompressFile(swigCPtr, this, inFilename, destPath);
   }

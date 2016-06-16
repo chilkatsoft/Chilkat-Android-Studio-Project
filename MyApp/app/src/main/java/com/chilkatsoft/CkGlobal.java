@@ -179,12 +179,12 @@ public class CkGlobal {
     return chilkatJNI.CkGlobal_DnsClearCache(swigCPtr, this);
   }
 
-  public boolean UnlockBundle(String bundleUnlockCode) {
-    return chilkatJNI.CkGlobal_UnlockBundle(swigCPtr, this, bundleUnlockCode);
-  }
-
   public boolean FinalizeThreadPool() {
     return chilkatJNI.CkGlobal_FinalizeThreadPool(swigCPtr, this);
+  }
+
+  public boolean UnlockBundle(String bundleUnlockCode) {
+    return chilkatJNI.CkGlobal_UnlockBundle(swigCPtr, this, bundleUnlockCode);
   }
 
 }

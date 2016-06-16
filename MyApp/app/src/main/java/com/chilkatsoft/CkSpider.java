@@ -359,6 +359,14 @@ public class CkSpider {
     chilkatJNI.CkSpider_put_WindDownCount(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSpider_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSpider_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public void AddAvoidOutboundLinkPattern(String pattern) {
     chilkatJNI.CkSpider_AddAvoidOutboundLinkPattern(swigCPtr, this, pattern);
   }

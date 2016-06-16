@@ -571,6 +571,26 @@ public class CkSFtp {
     chilkatJNI.CkSFtp_put_UtcMode(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSFtp_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSFtp_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public void get_SyncDirectives(CkString str) {
+    chilkatJNI.CkSFtp_get_SyncDirectives(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncDirectives() {
+    return chilkatJNI.CkSFtp_syncDirectives(swigCPtr, this);
+  }
+
+  public void put_SyncDirectives(String newVal) {
+    chilkatJNI.CkSFtp_put_SyncDirectives(swigCPtr, this, newVal);
+  }
+
   public int AccumulateBytes(String handle, int maxBytes) {
     return chilkatJNI.CkSFtp_AccumulateBytes(swigCPtr, this, handle, maxBytes);
   }

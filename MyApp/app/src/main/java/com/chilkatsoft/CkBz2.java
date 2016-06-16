@@ -127,6 +127,14 @@ public class CkBz2 {
     chilkatJNI.CkBz2_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkBz2_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkBz2_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean CompressFile(String inFilename, String toPath) {
     return chilkatJNI.CkBz2_CompressFile(swigCPtr, this, inFilename, toPath);
   }

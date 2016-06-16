@@ -119,6 +119,14 @@ public class CkImap {
     return chilkatJNI.CkImap_SaveLastError(swigCPtr, this, path);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkImap_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkImap_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
   public boolean get_AppendSeen() {
     return chilkatJNI.CkImap_get_AppendSeen(swigCPtr, this);
   }
@@ -984,9 +992,47 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean GetQuota(String quotaRoot, CkString outStr) {
+    return chilkatJNI.CkImap_GetQuota(swigCPtr, this, quotaRoot, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getQuota(String quotaRoot) {
+    return chilkatJNI.CkImap_getQuota(swigCPtr, this, quotaRoot);
+  }
+
+  public String quota(String quotaRoot) {
+    return chilkatJNI.CkImap_quota(swigCPtr, this, quotaRoot);
+  }
+
+  public CkTask GetQuotaAsync(String quotaRoot) {
+    long cPtr = chilkatJNI.CkImap_GetQuotaAsync(swigCPtr, this, quotaRoot);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean GetQuotaRoot(String mailboxName, CkString outStr) {
+    return chilkatJNI.CkImap_GetQuotaRoot(swigCPtr, this, mailboxName, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getQuotaRoot(String mailboxName) {
+    return chilkatJNI.CkImap_getQuotaRoot(swigCPtr, this, mailboxName);
+  }
+
+  public String quotaRoot(String mailboxName) {
+    return chilkatJNI.CkImap_quotaRoot(swigCPtr, this, mailboxName);
+  }
+
+  public CkTask GetQuotaRootAsync(String mailboxName) {
+    long cPtr = chilkatJNI.CkImap_GetQuotaRootAsync(swigCPtr, this, mailboxName);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public CkCert GetSslServerCert() {
     long cPtr = chilkatJNI.CkImap_GetSslServerCert(swigCPtr, this);
     return (cPtr == 0) ? null : new CkCert(cPtr, true);
+  }
+
+  public boolean HasCapability(String name, String capabilityResponse) {
+    return chilkatJNI.CkImap_HasCapability(swigCPtr, this, name, capabilityResponse);
   }
 
   public boolean IdleCheck(int timeoutMs, CkString outStr) {
@@ -1179,6 +1225,15 @@ public class CkImap {
 
   public CkTask SetMailFlagAsync(CkEmail email, String flagName, int value) {
     long cPtr = chilkatJNI.CkImap_SetMailFlagAsync(swigCPtr, this, CkEmail.getCPtr(email), email, flagName, value);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SetQuota(String quotaRoot, String resource, int quota) {
+    return chilkatJNI.CkImap_SetQuota(swigCPtr, this, quotaRoot, resource, quota);
+  }
+
+  public CkTask SetQuotaAsync(String quotaRoot, String resource, int quota) {
+    long cPtr = chilkatJNI.CkImap_SetQuotaAsync(swigCPtr, this, quotaRoot, resource, quota);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
