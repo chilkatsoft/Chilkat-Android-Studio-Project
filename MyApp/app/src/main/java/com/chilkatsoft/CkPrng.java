@@ -51,6 +51,18 @@ public class CkPrng {
     chilkatJNI.CkPrng_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkPrng_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkPrng_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkPrng_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkPrng_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,44 +87,12 @@ public class CkPrng {
     return chilkatJNI.CkPrng_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkPrng_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkPrng_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkPrng_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkPrng_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkPrng_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkPrng_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkPrng_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkPrng_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkPrng_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkPrng_SaveLastError(swigCPtr, this, path);
   }
 
   public void get_PrngName(CkString str) {
@@ -125,6 +105,22 @@ public class CkPrng {
 
   public void put_PrngName(String newVal) {
     chilkatJNI.CkPrng_put_PrngName(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkPrng_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkPrng_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkPrng_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkPrng_version(swigCPtr, this);
   }
 
   public boolean AddEntropy(String entropy, String encoding) {
@@ -201,6 +197,10 @@ public class CkPrng {
 
   public String randomString(int length, boolean bDigits, boolean bLower, boolean bUpper) {
     return chilkatJNI.CkPrng_randomString(swigCPtr, this, length, bDigits, bLower, bUpper);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkPrng_SaveLastError(swigCPtr, this, path);
   }
 
 }

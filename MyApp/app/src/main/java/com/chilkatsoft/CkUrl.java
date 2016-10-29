@@ -87,6 +87,14 @@ public class CkUrl {
     return chilkatJNI.CkUrl_path(swigCPtr, this);
   }
 
+  public void get_PathWithQueryParams(CkString str) {
+    chilkatJNI.CkUrl_get_PathWithQueryParams(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String pathWithQueryParams() {
+    return chilkatJNI.CkUrl_pathWithQueryParams(swigCPtr, this);
+  }
+
   public int get_Port() {
     return chilkatJNI.CkUrl_get_Port(swigCPtr, this);
   }
@@ -101,14 +109,6 @@ public class CkUrl {
 
   public boolean get_Ssl() {
     return chilkatJNI.CkUrl_get_Ssl(swigCPtr, this);
-  }
-
-  public void get_PathWithQueryParams(CkString str) {
-    chilkatJNI.CkUrl_get_PathWithQueryParams(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String pathWithQueryParams() {
-    return chilkatJNI.CkUrl_pathWithQueryParams(swigCPtr, this);
   }
 
   public boolean ParseUrl(String url) {

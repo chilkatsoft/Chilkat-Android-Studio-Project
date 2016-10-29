@@ -55,6 +55,18 @@ public class CkTrustedRoots {
     chilkatJNI.CkTrustedRoots_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkTrustedRoots_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkTrustedRoots_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkTrustedRoots_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkTrustedRoots_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,44 +91,12 @@ public class CkTrustedRoots {
     return chilkatJNI.CkTrustedRoots_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkTrustedRoots_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkTrustedRoots_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkTrustedRoots_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkTrustedRoots_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkTrustedRoots_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkTrustedRoots_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkTrustedRoots_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkTrustedRoots_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkTrustedRoots_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkTrustedRoots_SaveLastError(swigCPtr, this, path);
   }
 
   public int get_NumCerts() {
@@ -129,6 +109,22 @@ public class CkTrustedRoots {
 
   public void put_TrustSystemCaRoots(boolean newVal) {
     chilkatJNI.CkTrustedRoots_put_TrustSystemCaRoots(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkTrustedRoots_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkTrustedRoots_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkTrustedRoots_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkTrustedRoots_version(swigCPtr, this);
   }
 
   public boolean Activate() {
@@ -164,6 +160,10 @@ public class CkTrustedRoots {
   public CkTask LoadCaCertsPemAsync(String path) {
     long cPtr = chilkatJNI.CkTrustedRoots_LoadCaCertsPemAsync(swigCPtr, this, path);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkTrustedRoots_SaveLastError(swigCPtr, this, path);
   }
 
 }

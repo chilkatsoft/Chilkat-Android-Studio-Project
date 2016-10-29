@@ -51,11 +51,6 @@ public class CkSFtpDir {
     return chilkatJNI.CkSFtpDir_originalPath(swigCPtr, this);
   }
 
-  public CkSFtpFile GetFileObject(int index) {
-    long cPtr = chilkatJNI.CkSFtpDir_GetFileObject(swigCPtr, this, index);
-    return (cPtr == 0) ? null : new CkSFtpFile(cPtr, true);
-  }
-
   public boolean GetFilename(int index, CkString outStr) {
     return chilkatJNI.CkSFtpDir_GetFilename(swigCPtr, this, index, CkString.getCPtr(outStr), outStr);
   }
@@ -66,6 +61,11 @@ public class CkSFtpDir {
 
   public String filename(int index) {
     return chilkatJNI.CkSFtpDir_filename(swigCPtr, this, index);
+  }
+
+  public CkSFtpFile GetFileObject(int index) {
+    long cPtr = chilkatJNI.CkSFtpDir_GetFileObject(swigCPtr, this, index);
+    return (cPtr == 0) ? null : new CkSFtpFile(cPtr, true);
   }
 
   public boolean LoadTaskResult(CkTask task) {

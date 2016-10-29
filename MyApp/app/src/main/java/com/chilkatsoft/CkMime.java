@@ -51,70 +51,6 @@ public class CkMime {
     chilkatJNI.CkMime_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkMime_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkMime_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkMime_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkMime_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkMime_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkMime_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkMime_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkMime_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkMime_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkMime_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkMime_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkMime_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkMime_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkMime_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkMime_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkMime_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_Boundary(CkString str) {
     chilkatJNI.CkMime_get_Boundary(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -159,6 +95,18 @@ public class CkMime {
     return chilkatJNI.CkMime_currentDateTime(swigCPtr, this);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkMime_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkMime_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkMime_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_Disposition(CkString str) {
     chilkatJNI.CkMime_get_Disposition(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -193,6 +141,38 @@ public class CkMime {
 
   public void put_Filename(String newVal) {
     chilkatJNI.CkMime_put_Filename(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkMime_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkMime_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkMime_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkMime_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkMime_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkMime_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkMime_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkMime_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_Micalg(CkString str) {
@@ -303,6 +283,22 @@ public class CkMime {
     chilkatJNI.CkMime_put_UseXPkcs7(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkMime_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkMime_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkMime_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkMime_version(swigCPtr, this);
+  }
+
   public void AddContentLength() {
     chilkatJNI.CkMime_AddContentLength(swigCPtr, this);
   }
@@ -335,8 +331,8 @@ public class CkMime {
     return chilkatJNI.CkMime_AddHeaderField(swigCPtr, this, name, value);
   }
 
-  public boolean AddPfxSourceData(CkByteData pfxData, String password) {
-    return chilkatJNI.CkMime_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxData), pfxData, password);
+  public boolean AddPfxSourceData(CkByteData pfxFileData, String pfxPassword) {
+    return chilkatJNI.CkMime_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxFileData), pfxFileData, pfxPassword);
   }
 
   public boolean AddPfxSourceFile(String pfxFilePath, String password) {
@@ -407,8 +403,8 @@ public class CkMime {
     return chilkatJNI.CkMime_DecryptUsingPfxData(swigCPtr, this, CkByteData.getCPtr(pfxData), pfxData, password);
   }
 
-  public boolean DecryptUsingPfxFile(String pfxFilePath, String password) {
-    return chilkatJNI.CkMime_DecryptUsingPfxFile(swigCPtr, this, pfxFilePath, password);
+  public boolean DecryptUsingPfxFile(String pfxFilePath, String pfxPassword) {
+    return chilkatJNI.CkMime_DecryptUsingPfxFile(swigCPtr, this, pfxFilePath, pfxPassword);
   }
 
   public boolean Encrypt(CkCert cert) {
@@ -486,16 +482,16 @@ public class CkMime {
     return chilkatJNI.CkMime_entireHead(swigCPtr, this);
   }
 
-  public boolean GetHeaderField(String name, CkString outStr) {
-    return chilkatJNI.CkMime_GetHeaderField(swigCPtr, this, name, CkString.getCPtr(outStr), outStr);
+  public boolean GetHeaderField(String fieldName, CkString outStr) {
+    return chilkatJNI.CkMime_GetHeaderField(swigCPtr, this, fieldName, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getHeaderField(String name) {
-    return chilkatJNI.CkMime_getHeaderField(swigCPtr, this, name);
+  public String getHeaderField(String fieldName) {
+    return chilkatJNI.CkMime_getHeaderField(swigCPtr, this, fieldName);
   }
 
-  public String headerField(String name) {
-    return chilkatJNI.CkMime_headerField(swigCPtr, this, name);
+  public String headerField(String fieldName) {
+    return chilkatJNI.CkMime_headerField(swigCPtr, this, fieldName);
   }
 
   public boolean GetHeaderFieldAttribute(String name, String attrName, CkString outStr) {
@@ -546,8 +542,16 @@ public class CkMime {
     return chilkatJNI.CkMime_mime(swigCPtr, this);
   }
 
+  public boolean GetMimeBd(SWIGTYPE_p_CkBinData bindat) {
+    return chilkatJNI.CkMime_GetMimeBd(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(bindat));
+  }
+
   public boolean GetMimeBytes(CkByteData outBytes) {
     return chilkatJNI.CkMime_GetMimeBytes(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public boolean GetMimeSb(CkStringBuilder sb) {
+    return chilkatJNI.CkMime_GetMimeSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb);
   }
 
   public CkMime GetPart(int index) {
@@ -579,6 +583,18 @@ public class CkMime {
   public CkCertChain GetSignerCertChain(int index) {
     long cPtr = chilkatJNI.CkMime_GetSignerCertChain(swigCPtr, this, index);
     return (cPtr == 0) ? null : new CkCertChain(cPtr, true);
+  }
+
+  public boolean GetStructure(String fmt, CkString outStr) {
+    return chilkatJNI.CkMime_GetStructure(swigCPtr, this, fmt, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getStructure(String fmt) {
+    return chilkatJNI.CkMime_getStructure(swigCPtr, this, fmt);
+  }
+
+  public String structure(String fmt) {
+    return chilkatJNI.CkMime_structure(swigCPtr, this, fmt);
   }
 
   public boolean GetXml(CkString outStr) {
@@ -665,12 +681,20 @@ public class CkMime {
     return chilkatJNI.CkMime_LoadMime(swigCPtr, this, mimeMsg);
   }
 
+  public boolean LoadMimeBd(SWIGTYPE_p_CkBinData bindat) {
+    return chilkatJNI.CkMime_LoadMimeBd(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(bindat));
+  }
+
   public boolean LoadMimeBytes(CkByteData binData) {
     return chilkatJNI.CkMime_LoadMimeBytes(swigCPtr, this, CkByteData.getCPtr(binData), binData);
   }
 
   public boolean LoadMimeFile(String fileName) {
     return chilkatJNI.CkMime_LoadMimeFile(swigCPtr, this, fileName);
+  }
+
+  public boolean LoadMimeSb(CkStringBuilder sb) {
+    return chilkatJNI.CkMime_LoadMimeSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb);
   }
 
   public boolean LoadXml(String xml) {
@@ -697,8 +721,8 @@ public class CkMime {
     return chilkatJNI.CkMime_NewMultipartRelated(swigCPtr, this);
   }
 
-  public void RemoveHeaderField(String name, boolean bAllOccurances) {
-    chilkatJNI.CkMime_RemoveHeaderField(swigCPtr, this, name, bAllOccurances);
+  public void RemoveHeaderField(String fieldName, boolean bAllOccurrences) {
+    chilkatJNI.CkMime_RemoveHeaderField(swigCPtr, this, fieldName, bAllOccurrences);
   }
 
   public boolean RemovePart(int index) {
@@ -707,6 +731,10 @@ public class CkMime {
 
   public boolean SaveBody(String filename) {
     return chilkatJNI.CkMime_SaveBody(swigCPtr, this, filename);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkMime_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveMime(String filename) {
@@ -771,18 +799,6 @@ public class CkMime {
 
   public boolean Verify() {
     return chilkatJNI.CkMime_Verify(swigCPtr, this);
-  }
-
-  public boolean GetStructure(String fmt, CkString outStr) {
-    return chilkatJNI.CkMime_GetStructure(swigCPtr, this, fmt, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String getStructure(String fmt) {
-    return chilkatJNI.CkMime_getStructure(swigCPtr, this, fmt);
-  }
-
-  public String structure(String fmt) {
-    return chilkatJNI.CkMime_structure(swigCPtr, this, fmt);
   }
 
 }

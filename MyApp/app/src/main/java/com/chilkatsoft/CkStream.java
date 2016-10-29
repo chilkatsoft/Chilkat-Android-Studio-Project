@@ -55,6 +55,54 @@ public class CkStream {
     chilkatJNI.CkStream_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkStream_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkStream_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public boolean get_CanRead() {
+    return chilkatJNI.CkStream_get_CanRead(swigCPtr, this);
+  }
+
+  public boolean get_CanWrite() {
+    return chilkatJNI.CkStream_get_CanWrite(swigCPtr, this);
+  }
+
+  public boolean get_DataAvailable() {
+    return chilkatJNI.CkStream_get_DataAvailable(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkStream_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkStream_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkStream_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_DefaultChunkSize() {
+    return chilkatJNI.CkStream_get_DefaultChunkSize(swigCPtr, this);
+  }
+
+  public void put_DefaultChunkSize(int newVal) {
+    chilkatJNI.CkStream_put_DefaultChunkSize(swigCPtr, this, newVal);
+  }
+
+  public boolean get_EndOfStream() {
+    return chilkatJNI.CkStream_get_EndOfStream(swigCPtr, this);
+  }
+
+  public boolean get_IsWriteClosed() {
+    return chilkatJNI.CkStream_get_IsWriteClosed(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkStream_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,80 +127,12 @@ public class CkStream {
     return chilkatJNI.CkStream_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkStream_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkStream_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkStream_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkStream_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkStream_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkStream_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkStream_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkStream_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkStream_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkStream_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkStream_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkStream_put_AbortCurrent(swigCPtr, this, newVal);
-  }
-
-  public boolean get_CanRead() {
-    return chilkatJNI.CkStream_get_CanRead(swigCPtr, this);
-  }
-
-  public boolean get_CanWrite() {
-    return chilkatJNI.CkStream_get_CanWrite(swigCPtr, this);
-  }
-
-  public boolean get_DataAvailable() {
-    return chilkatJNI.CkStream_get_DataAvailable(swigCPtr, this);
-  }
-
-  public int get_DefaultChunkSize() {
-    return chilkatJNI.CkStream_get_DefaultChunkSize(swigCPtr, this);
-  }
-
-  public void put_DefaultChunkSize(int newVal) {
-    chilkatJNI.CkStream_put_DefaultChunkSize(swigCPtr, this, newVal);
-  }
-
-  public boolean get_EndOfStream() {
-    return chilkatJNI.CkStream_get_EndOfStream(swigCPtr, this);
-  }
-
-  public boolean get_IsWriteClosed() {
-    return chilkatJNI.CkStream_get_IsWriteClosed(swigCPtr, this);
   }
 
   public int get_Length32() {
@@ -199,6 +179,22 @@ public class CkStream {
     chilkatJNI.CkStream_put_SourceFile(swigCPtr, this, newVal);
   }
 
+  public int get_SourceFilePart() {
+    return chilkatJNI.CkStream_get_SourceFilePart(swigCPtr, this);
+  }
+
+  public void put_SourceFilePart(int newVal) {
+    chilkatJNI.CkStream_put_SourceFilePart(swigCPtr, this, newVal);
+  }
+
+  public int get_SourceFilePartSize() {
+    return chilkatJNI.CkStream_get_SourceFilePartSize(swigCPtr, this);
+  }
+
+  public void put_SourceFilePartSize(int newVal) {
+    chilkatJNI.CkStream_put_SourceFilePartSize(swigCPtr, this, newVal);
+  }
+
   public boolean get_StringBom() {
     return chilkatJNI.CkStream_get_StringBom(swigCPtr, this);
   }
@@ -217,6 +213,22 @@ public class CkStream {
 
   public void put_StringCharset(String newVal) {
     chilkatJNI.CkStream_put_StringCharset(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkStream_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkStream_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkStream_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkStream_version(swigCPtr, this);
   }
 
   public int get_WriteFailReason() {
@@ -325,6 +337,10 @@ public class CkStream {
   public CkTask RunStreamAsync() {
     long cPtr = chilkatJNI.CkStream_RunStreamAsync(swigCPtr, this);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkStream_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetSinkStream(CkStream strm) {

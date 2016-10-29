@@ -55,70 +55,6 @@ public class CkImap {
     chilkatJNI.CkImap_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkImap_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkImap_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkImap_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkImap_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkImap_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkImap_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkImap_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkImap_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkImap_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkImap_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkImap_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkImap_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkImap_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkImap_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkImap_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkImap_SaveLastError(swigCPtr, this, path);
-  }
-
   public boolean get_AbortCurrent() {
     return chilkatJNI.CkImap_get_AbortCurrent(swigCPtr, this);
   }
@@ -191,6 +127,14 @@ public class CkImap {
     chilkatJNI.CkImap_put_ClientIpAddress(swigCPtr, this, newVal);
   }
 
+  public void get_ConnectedToHost(CkString str) {
+    chilkatJNI.CkImap_get_ConnectedToHost(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String connectedToHost() {
+    return chilkatJNI.CkImap_connectedToHost(swigCPtr, this);
+  }
+
   public int get_ConnectTimeout() {
     return chilkatJNI.CkImap_get_ConnectTimeout(swigCPtr, this);
   }
@@ -199,12 +143,16 @@ public class CkImap {
     chilkatJNI.CkImap_put_ConnectTimeout(swigCPtr, this, newVal);
   }
 
-  public void get_ConnectedToHost(CkString str) {
-    chilkatJNI.CkImap_get_ConnectedToHost(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkImap_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String connectedToHost() {
-    return chilkatJNI.CkImap_connectedToHost(swigCPtr, this);
+  public String debugLogFilePath() {
+    return chilkatJNI.CkImap_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkImap_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public void get_Domain(CkString str) {
@@ -319,12 +267,44 @@ public class CkImap {
     return chilkatJNI.CkImap_lastCommand(swigCPtr, this);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkImap_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkImap_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkImap_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkImap_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkImap_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkImap_lastErrorXml(swigCPtr, this);
+  }
+
   public void get_LastIntermediateResponse(CkString str) {
     chilkatJNI.CkImap_get_LastIntermediateResponse(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
   public String lastIntermediateResponse() {
     return chilkatJNI.CkImap_lastIntermediateResponse(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkImap_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkImap_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_LastResponse(CkString str) {
@@ -451,22 +431,6 @@ public class CkImap {
     return chilkatJNI.CkImap_sessionLog(swigCPtr, this);
   }
 
-  public int get_SoRcvBuf() {
-    return chilkatJNI.CkImap_get_SoRcvBuf(swigCPtr, this);
-  }
-
-  public void put_SoRcvBuf(int newVal) {
-    chilkatJNI.CkImap_put_SoRcvBuf(swigCPtr, this, newVal);
-  }
-
-  public int get_SoSndBuf() {
-    return chilkatJNI.CkImap_get_SoSndBuf(swigCPtr, this);
-  }
-
-  public void put_SoSndBuf(int newVal) {
-    chilkatJNI.CkImap_put_SoSndBuf(swigCPtr, this, newVal);
-  }
-
   public void get_SocksHostname(CkString str) {
     chilkatJNI.CkImap_get_SocksHostname(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -517,6 +481,22 @@ public class CkImap {
 
   public void put_SocksVersion(int newVal) {
     chilkatJNI.CkImap_put_SocksVersion(swigCPtr, this, newVal);
+  }
+
+  public int get_SoRcvBuf() {
+    return chilkatJNI.CkImap_get_SoRcvBuf(swigCPtr, this);
+  }
+
+  public void put_SoRcvBuf(int newVal) {
+    chilkatJNI.CkImap_put_SoRcvBuf(swigCPtr, this, newVal);
+  }
+
+  public int get_SoSndBuf() {
+    return chilkatJNI.CkImap_get_SoSndBuf(swigCPtr, this);
+  }
+
+  public void put_SoSndBuf(int newVal) {
+    chilkatJNI.CkImap_put_SoSndBuf(swigCPtr, this, newVal);
   }
 
   public boolean get_Ssl() {
@@ -599,12 +579,28 @@ public class CkImap {
     return chilkatJNI.CkImap_get_UidValidity(swigCPtr, this);
   }
 
-  public boolean AddPfxSourceData(CkByteData pfxData, String password) {
-    return chilkatJNI.CkImap_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxData), pfxData, password);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkImap_get_VerboseLogging(swigCPtr, this);
   }
 
-  public boolean AddPfxSourceFile(String pfxFilePath, String password) {
-    return chilkatJNI.CkImap_AddPfxSourceFile(swigCPtr, this, pfxFilePath, password);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkImap_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkImap_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkImap_version(swigCPtr, this);
+  }
+
+  public boolean AddPfxSourceData(CkByteData pfxBytes, String pfxPassword) {
+    return chilkatJNI.CkImap_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxBytes), pfxBytes, pfxPassword);
+  }
+
+  public boolean AddPfxSourceFile(String pfxFilePath, String pfxPassword) {
+    return chilkatJNI.CkImap_AddPfxSourceFile(swigCPtr, this, pfxFilePath, pfxPassword);
   }
 
   public boolean AppendMail(String mailbox, CkEmail email) {
@@ -644,6 +640,15 @@ public class CkImap {
 
   public CkTask AppendMimeWithFlagsAsync(String mailbox, String mimeText, boolean seen, boolean flagged, boolean answered, boolean draft) {
     long cPtr = chilkatJNI.CkImap_AppendMimeWithFlagsAsync(swigCPtr, this, mailbox, mimeText, seen, flagged, answered, draft);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean AppendMimeWithFlagsSb(String mailbox, CkStringBuilder sbMime, boolean seen, boolean flagged, boolean answered, boolean draft) {
+    return chilkatJNI.CkImap_AppendMimeWithFlagsSb(swigCPtr, this, mailbox, CkStringBuilder.getCPtr(sbMime), sbMime, seen, flagged, answered, draft);
+  }
+
+  public CkTask AppendMimeWithFlagsSbAsync(String mailbox, CkStringBuilder sbMime, boolean seen, boolean flagged, boolean answered, boolean draft) {
+    long cPtr = chilkatJNI.CkImap_AppendMimeWithFlagsSbAsync(swigCPtr, this, mailbox, CkStringBuilder.getCPtr(sbMime), sbMime, seen, flagged, answered, draft);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -687,12 +692,12 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean Connect(String hostname) {
-    return chilkatJNI.CkImap_Connect(swigCPtr, this, hostname);
+  public boolean Connect(String domainName) {
+    return chilkatJNI.CkImap_Connect(swigCPtr, this, domainName);
   }
 
-  public CkTask ConnectAsync(String hostname) {
-    long cPtr = chilkatJNI.CkImap_ConnectAsync(swigCPtr, this, hostname);
+  public CkTask ConnectAsync(String domainName) {
+    long cPtr = chilkatJNI.CkImap_ConnectAsync(swigCPtr, this, domainName);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -777,12 +782,21 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean FetchAttachment(CkEmail email, int attachIndex, String saveToPath) {
-    return chilkatJNI.CkImap_FetchAttachment(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex, saveToPath);
+  public boolean FetchAttachment(CkEmail emailObject, int attachmentIndex, String saveToPath) {
+    return chilkatJNI.CkImap_FetchAttachment(swigCPtr, this, CkEmail.getCPtr(emailObject), emailObject, attachmentIndex, saveToPath);
   }
 
-  public CkTask FetchAttachmentAsync(CkEmail email, int attachIndex, String saveToPath) {
-    long cPtr = chilkatJNI.CkImap_FetchAttachmentAsync(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex, saveToPath);
+  public CkTask FetchAttachmentAsync(CkEmail emailObject, int attachmentIndex, String saveToPath) {
+    long cPtr = chilkatJNI.CkImap_FetchAttachmentAsync(swigCPtr, this, CkEmail.getCPtr(emailObject), emailObject, attachmentIndex, saveToPath);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean FetchAttachmentBd(CkEmail email, int attachmentIndex, SWIGTYPE_p_CkBinData binData) {
+    return chilkatJNI.CkImap_FetchAttachmentBd(swigCPtr, this, CkEmail.getCPtr(email), email, attachmentIndex, SWIGTYPE_p_CkBinData.getCPtr(binData));
+  }
+
+  public CkTask FetchAttachmentBdAsync(CkEmail email, int attachmentIndex, SWIGTYPE_p_CkBinData binData) {
+    long cPtr = chilkatJNI.CkImap_FetchAttachmentBdAsync(swigCPtr, this, CkEmail.getCPtr(email), email, attachmentIndex, SWIGTYPE_p_CkBinData.getCPtr(binData));
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -795,16 +809,25 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean FetchAttachmentString(CkEmail email, int attachIndex, String charset, CkString outStr) {
-    return chilkatJNI.CkImap_FetchAttachmentString(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex, charset, CkString.getCPtr(outStr), outStr);
+  public boolean FetchAttachmentSb(CkEmail email, int attachmentIndex, String charset, CkStringBuilder sb) {
+    return chilkatJNI.CkImap_FetchAttachmentSb(swigCPtr, this, CkEmail.getCPtr(email), email, attachmentIndex, charset, CkStringBuilder.getCPtr(sb), sb);
   }
 
-  public String fetchAttachmentString(CkEmail email, int attachIndex, String charset) {
-    return chilkatJNI.CkImap_fetchAttachmentString(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex, charset);
+  public CkTask FetchAttachmentSbAsync(CkEmail email, int attachmentIndex, String charset, CkStringBuilder sb) {
+    long cPtr = chilkatJNI.CkImap_FetchAttachmentSbAsync(swigCPtr, this, CkEmail.getCPtr(email), email, attachmentIndex, charset, CkStringBuilder.getCPtr(sb), sb);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public CkTask FetchAttachmentStringAsync(CkEmail email, int attachIndex, String charset) {
-    long cPtr = chilkatJNI.CkImap_FetchAttachmentStringAsync(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex, charset);
+  public boolean FetchAttachmentString(CkEmail emailObject, int attachmentIndex, String charset, CkString outStr) {
+    return chilkatJNI.CkImap_FetchAttachmentString(swigCPtr, this, CkEmail.getCPtr(emailObject), emailObject, attachmentIndex, charset, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String fetchAttachmentString(CkEmail emailObject, int attachmentIndex, String charset) {
+    return chilkatJNI.CkImap_fetchAttachmentString(swigCPtr, this, CkEmail.getCPtr(emailObject), emailObject, attachmentIndex, charset);
+  }
+
+  public CkTask FetchAttachmentStringAsync(CkEmail emailObject, int attachmentIndex, String charset) {
+    long cPtr = chilkatJNI.CkImap_FetchAttachmentStringAsync(swigCPtr, this, CkEmail.getCPtr(emailObject), emailObject, attachmentIndex, charset);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -914,6 +937,15 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean FetchSingleAsMimeSb(int msgId, boolean bUid, CkStringBuilder sbMime) {
+    return chilkatJNI.CkImap_FetchSingleAsMimeSb(swigCPtr, this, msgId, bUid, CkStringBuilder.getCPtr(sbMime), sbMime);
+  }
+
+  public CkTask FetchSingleAsMimeSbAsync(int msgId, boolean bUid, CkStringBuilder sbMime) {
+    long cPtr = chilkatJNI.CkImap_FetchSingleAsMimeSbAsync(swigCPtr, this, msgId, bUid, CkStringBuilder.getCPtr(sbMime), sbMime);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public CkEmail FetchSingleHeader(int msgId, boolean bUid) {
     long cPtr = chilkatJNI.CkImap_FetchSingleHeader(swigCPtr, this, msgId, bUid);
     return (cPtr == 0) ? null : new CkEmail(cPtr, true);
@@ -963,18 +995,6 @@ public class CkImap {
     return chilkatJNI.CkImap_GetMailAttachSize(swigCPtr, this, CkEmail.getCPtr(email), email, attachIndex);
   }
 
-  public int GetMailFlag(CkEmail email, String flagName) {
-    return chilkatJNI.CkImap_GetMailFlag(swigCPtr, this, CkEmail.getCPtr(email), email, flagName);
-  }
-
-  public int GetMailNumAttach(CkEmail email) {
-    return chilkatJNI.CkImap_GetMailNumAttach(swigCPtr, this, CkEmail.getCPtr(email), email);
-  }
-
-  public int GetMailSize(CkEmail email) {
-    return chilkatJNI.CkImap_GetMailSize(swigCPtr, this, CkEmail.getCPtr(email), email);
-  }
-
   public boolean GetMailboxStatus(String mailbox, CkString outStr) {
     return chilkatJNI.CkImap_GetMailboxStatus(swigCPtr, this, mailbox, CkString.getCPtr(outStr), outStr);
   }
@@ -990,6 +1010,18 @@ public class CkImap {
   public CkTask GetMailboxStatusAsync(String mailbox) {
     long cPtr = chilkatJNI.CkImap_GetMailboxStatusAsync(swigCPtr, this, mailbox);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public int GetMailFlag(CkEmail email, String flagName) {
+    return chilkatJNI.CkImap_GetMailFlag(swigCPtr, this, CkEmail.getCPtr(email), email, flagName);
+  }
+
+  public int GetMailNumAttach(CkEmail email) {
+    return chilkatJNI.CkImap_GetMailNumAttach(swigCPtr, this, CkEmail.getCPtr(email), email);
+  }
+
+  public int GetMailSize(CkEmail email) {
+    return chilkatJNI.CkImap_GetMailSize(swigCPtr, this, CkEmail.getCPtr(email), email);
   }
 
   public boolean GetQuota(String quotaRoot, CkString outStr) {
@@ -1098,12 +1130,12 @@ public class CkImap {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean Login(String login, String password) {
-    return chilkatJNI.CkImap_Login(swigCPtr, this, login, password);
+  public boolean Login(String loginName, String password) {
+    return chilkatJNI.CkImap_Login(swigCPtr, this, loginName, password);
   }
 
-  public CkTask LoginAsync(String login, String password) {
-    long cPtr = chilkatJNI.CkImap_LoginAsync(swigCPtr, this, login, password);
+  public CkTask LoginAsync(String loginName, String password) {
+    long cPtr = chilkatJNI.CkImap_LoginAsync(swigCPtr, this, loginName, password);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -1141,6 +1173,10 @@ public class CkImap {
   public CkTask RenameMailboxAsync(String fromMailbox, String toMailbox) {
     long cPtr = chilkatJNI.CkImap_RenameMailboxAsync(swigCPtr, this, fromMailbox, toMailbox);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkImap_SaveLastError(swigCPtr, this, path);
   }
 
   public CkMessageSet Search(String criteria, boolean bUid) {

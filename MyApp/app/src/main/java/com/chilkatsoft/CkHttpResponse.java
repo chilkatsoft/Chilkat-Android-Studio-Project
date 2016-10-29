@@ -51,70 +51,6 @@ public class CkHttpResponse {
     chilkatJNI.CkHttpResponse_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkHttpResponse_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkHttpResponse_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkHttpResponse_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkHttpResponse_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkHttpResponse_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkHttpResponse_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkHttpResponse_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkHttpResponse_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkHttpResponse_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkHttpResponse_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkHttpResponse_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkHttpResponse_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkHttpResponse_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkHttpResponse_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkHttpResponse_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkHttpResponse_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_Body(CkByteData outBytes) {
     chilkatJNI.CkHttpResponse_get_Body(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
   }
@@ -159,6 +95,18 @@ public class CkHttpResponse {
     return chilkatJNI.CkHttpResponse_dateStr(swigCPtr, this);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkHttpResponse_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkHttpResponse_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkHttpResponse_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_Domain(CkString str) {
     chilkatJNI.CkHttpResponse_get_Domain(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -191,6 +139,38 @@ public class CkHttpResponse {
     return chilkatJNI.CkHttpResponse_header(swigCPtr, this);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkHttpResponse_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkHttpResponse_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkHttpResponse_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkHttpResponse_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkHttpResponse_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkHttpResponse_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkHttpResponse_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkHttpResponse_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_NumCookies() {
     return chilkatJNI.CkHttpResponse_get_NumCookies(swigCPtr, this);
   }
@@ -217,6 +197,22 @@ public class CkHttpResponse {
 
   public String statusText() {
     return chilkatJNI.CkHttpResponse_statusText(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkHttpResponse_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkHttpResponse_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkHttpResponse_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkHttpResponse_version(swigCPtr, this);
   }
 
   public boolean GetCookieDomain(int index, CkString outStr) {
@@ -343,12 +339,16 @@ public class CkHttpResponse {
     return chilkatJNI.CkHttpResponse_SaveBodyText(swigCPtr, this, bCrlf, path);
   }
 
-  public boolean UrlEncParamValue(String encodedParams, String paramName, CkString outStr) {
-    return chilkatJNI.CkHttpResponse_UrlEncParamValue(swigCPtr, this, encodedParams, paramName, CkString.getCPtr(outStr), outStr);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkHttpResponse_SaveLastError(swigCPtr, this, path);
   }
 
-  public String urlEncParamValue(String encodedParams, String paramName) {
-    return chilkatJNI.CkHttpResponse_urlEncParamValue(swigCPtr, this, encodedParams, paramName);
+  public boolean UrlEncParamValue(String encodedParamString, String paramName, CkString outStr) {
+    return chilkatJNI.CkHttpResponse_UrlEncParamValue(swigCPtr, this, encodedParamString, paramName, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String urlEncParamValue(String encodedParamString, String paramName) {
+    return chilkatJNI.CkHttpResponse_urlEncParamValue(swigCPtr, this, encodedParamString, paramName);
   }
 
 }

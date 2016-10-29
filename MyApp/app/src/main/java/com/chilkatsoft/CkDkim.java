@@ -55,36 +55,12 @@ public class CkDkim {
     chilkatJNI.CkDkim_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkDkim_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkDkim_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkDkim_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkDkim_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkDkim_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkDkim_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkDkim_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkDkim_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkDkim_version(swigCPtr, this);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkDkim_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public void get_DebugLogFilePath(CkString str) {
@@ -97,26 +73,6 @@ public class CkDkim {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkDkim_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkDkim_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkDkim_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkDkim_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkDkim_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkDkim_SaveLastError(swigCPtr, this, path);
   }
 
   public void get_DkimAlg(CkString str) {
@@ -255,12 +211,52 @@ public class CkDkim {
     chilkatJNI.CkDkim_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkDkim_get_AbortCurrent(swigCPtr, this);
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkDkim_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkDkim_put_AbortCurrent(swigCPtr, this, newVal);
+  public String lastErrorHtml() {
+    return chilkatJNI.CkDkim_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkDkim_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkDkim_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkDkim_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkDkim_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkDkim_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkDkim_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkDkim_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkDkim_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkDkim_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkDkim_version(swigCPtr, this);
   }
 
   public boolean AddDkimSignature(CkByteData mimeIn, CkByteData outBytes) {
@@ -279,8 +275,8 @@ public class CkDkim {
     return chilkatJNI.CkDkim_LoadDkimPkBytes(swigCPtr, this, CkByteData.getCPtr(privateKeyDer), privateKeyDer, optionalPassword);
   }
 
-  public boolean LoadDkimPkFile(String privateKeyFilepath, String optionalPassword) {
-    return chilkatJNI.CkDkim_LoadDkimPkFile(swigCPtr, this, privateKeyFilepath, optionalPassword);
+  public boolean LoadDkimPkFile(String privateKeyFilePath, String optionalPassword) {
+    return chilkatJNI.CkDkim_LoadDkimPkFile(swigCPtr, this, privateKeyFilePath, optionalPassword);
   }
 
   public boolean LoadDomainKeyPk(String privateKey, String optionalPassword) {
@@ -291,8 +287,8 @@ public class CkDkim {
     return chilkatJNI.CkDkim_LoadDomainKeyPkBytes(swigCPtr, this, CkByteData.getCPtr(privateKeyDer), privateKeyDer, optionalPassword);
   }
 
-  public boolean LoadDomainKeyPkFile(String privateKeyFilepath, String optionalPassword) {
-    return chilkatJNI.CkDkim_LoadDomainKeyPkFile(swigCPtr, this, privateKeyFilepath, optionalPassword);
+  public boolean LoadDomainKeyPkFile(String privateKeyFilePath, String optionalPassword) {
+    return chilkatJNI.CkDkim_LoadDomainKeyPkFile(swigCPtr, this, privateKeyFilePath, optionalPassword);
   }
 
   public boolean LoadPublicKey(String selector, String domain, String publicKey) {
@@ -320,25 +316,29 @@ public class CkDkim {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkDkim_SaveLastError(swigCPtr, this, path);
+  }
+
   public boolean UnlockComponent(String unlockCode) {
     return chilkatJNI.CkDkim_UnlockComponent(swigCPtr, this, unlockCode);
   }
 
-  public boolean VerifyDkimSignature(int sigIdx, CkByteData mimeData) {
-    return chilkatJNI.CkDkim_VerifyDkimSignature(swigCPtr, this, sigIdx, CkByteData.getCPtr(mimeData), mimeData);
+  public boolean VerifyDkimSignature(int sigIndex, CkByteData mimeData) {
+    return chilkatJNI.CkDkim_VerifyDkimSignature(swigCPtr, this, sigIndex, CkByteData.getCPtr(mimeData), mimeData);
   }
 
-  public CkTask VerifyDkimSignatureAsync(int sigIdx, CkByteData mimeData) {
-    long cPtr = chilkatJNI.CkDkim_VerifyDkimSignatureAsync(swigCPtr, this, sigIdx, CkByteData.getCPtr(mimeData), mimeData);
+  public CkTask VerifyDkimSignatureAsync(int sigIndex, CkByteData mimeData) {
+    long cPtr = chilkatJNI.CkDkim_VerifyDkimSignatureAsync(swigCPtr, this, sigIndex, CkByteData.getCPtr(mimeData), mimeData);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean VerifyDomainKeySignature(int sigIdx, CkByteData mimeData) {
-    return chilkatJNI.CkDkim_VerifyDomainKeySignature(swigCPtr, this, sigIdx, CkByteData.getCPtr(mimeData), mimeData);
+  public boolean VerifyDomainKeySignature(int sigIndex, CkByteData mimeData) {
+    return chilkatJNI.CkDkim_VerifyDomainKeySignature(swigCPtr, this, sigIndex, CkByteData.getCPtr(mimeData), mimeData);
   }
 
-  public CkTask VerifyDomainKeySignatureAsync(int sigIdx, CkByteData mimeData) {
-    long cPtr = chilkatJNI.CkDkim_VerifyDomainKeySignatureAsync(swigCPtr, this, sigIdx, CkByteData.getCPtr(mimeData), mimeData);
+  public CkTask VerifyDomainKeySignatureAsync(int sigIndex, CkByteData mimeData) {
+    long cPtr = chilkatJNI.CkDkim_VerifyDomainKeySignatureAsync(swigCPtr, this, sigIndex, CkByteData.getCPtr(mimeData), mimeData);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 

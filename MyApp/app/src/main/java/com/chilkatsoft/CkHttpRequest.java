@@ -51,70 +51,6 @@ public class CkHttpRequest {
     chilkatJNI.CkHttpRequest_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkHttpRequest_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkHttpRequest_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkHttpRequest_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkHttpRequest_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkHttpRequest_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkHttpRequest_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkHttpRequest_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkHttpRequest_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkHttpRequest_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkHttpRequest_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkHttpRequest_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkHttpRequest_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkHttpRequest_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkHttpRequest_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkHttpRequest_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkHttpRequest_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_Boundary(CkString str) {
     chilkatJNI.CkHttpRequest_get_Boundary(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -149,6 +85,18 @@ public class CkHttpRequest {
 
   public void put_ContentType(String newVal) {
     chilkatJNI.CkHttpRequest_put_ContentType(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkHttpRequest_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkHttpRequest_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkHttpRequest_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public void get_EntireHeader(CkString str) {
@@ -187,6 +135,38 @@ public class CkHttpRequest {
     chilkatJNI.CkHttpRequest_put_HttpVersion(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkHttpRequest_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkHttpRequest_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkHttpRequest_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkHttpRequest_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkHttpRequest_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkHttpRequest_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkHttpRequest_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkHttpRequest_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_NumHeaderFields() {
     return chilkatJNI.CkHttpRequest_get_NumHeaderFields(swigCPtr, this);
   }
@@ -215,20 +195,36 @@ public class CkHttpRequest {
     chilkatJNI.CkHttpRequest_put_SendCharset(swigCPtr, this, newVal);
   }
 
-  public boolean AddBytesForUpload(String name, String filename, CkByteData byteData) {
-    return chilkatJNI.CkHttpRequest_AddBytesForUpload(swigCPtr, this, name, filename, CkByteData.getCPtr(byteData), byteData);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkHttpRequest_get_VerboseLogging(swigCPtr, this);
   }
 
-  public boolean AddBytesForUpload2(String name, String filename, CkByteData byteData, String contentType) {
-    return chilkatJNI.CkHttpRequest_AddBytesForUpload2(swigCPtr, this, name, filename, CkByteData.getCPtr(byteData), byteData, contentType);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkHttpRequest_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean AddFileForUpload(String name, String filename) {
-    return chilkatJNI.CkHttpRequest_AddFileForUpload(swigCPtr, this, name, filename);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkHttpRequest_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public boolean AddFileForUpload2(String name, String filename, String contentType) {
-    return chilkatJNI.CkHttpRequest_AddFileForUpload2(swigCPtr, this, name, filename, contentType);
+  public String version() {
+    return chilkatJNI.CkHttpRequest_version(swigCPtr, this);
+  }
+
+  public boolean AddBytesForUpload(String name, String remoteFileName, CkByteData byteData) {
+    return chilkatJNI.CkHttpRequest_AddBytesForUpload(swigCPtr, this, name, remoteFileName, CkByteData.getCPtr(byteData), byteData);
+  }
+
+  public boolean AddBytesForUpload2(String name, String remoteFileName, CkByteData byteData, String contentType) {
+    return chilkatJNI.CkHttpRequest_AddBytesForUpload2(swigCPtr, this, name, remoteFileName, CkByteData.getCPtr(byteData), byteData, contentType);
+  }
+
+  public boolean AddFileForUpload(String name, String filePath) {
+    return chilkatJNI.CkHttpRequest_AddFileForUpload(swigCPtr, this, name, filePath);
+  }
+
+  public boolean AddFileForUpload2(String name, String filePath, String contentType) {
+    return chilkatJNI.CkHttpRequest_AddFileForUpload2(swigCPtr, this, name, filePath, contentType);
   }
 
   public void AddHeader(String name, String value) {
@@ -343,12 +339,12 @@ public class CkHttpRequest {
     return chilkatJNI.CkHttpRequest_urlEncodedParams(swigCPtr, this);
   }
 
-  public boolean LoadBodyFromBytes(CkByteData binaryData) {
-    return chilkatJNI.CkHttpRequest_LoadBodyFromBytes(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData);
+  public boolean LoadBodyFromBytes(CkByteData byteData) {
+    return chilkatJNI.CkHttpRequest_LoadBodyFromBytes(swigCPtr, this, CkByteData.getCPtr(byteData), byteData);
   }
 
-  public boolean LoadBodyFromFile(String filename) {
-    return chilkatJNI.CkHttpRequest_LoadBodyFromFile(swigCPtr, this, filename);
+  public boolean LoadBodyFromFile(String filePath) {
+    return chilkatJNI.CkHttpRequest_LoadBodyFromFile(swigCPtr, this, filePath);
   }
 
   public boolean LoadBodyFromString(String bodyStr, String charset) {
@@ -367,12 +363,16 @@ public class CkHttpRequest {
     chilkatJNI.CkHttpRequest_RemoveParam(swigCPtr, this, name);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkHttpRequest_SaveLastError(swigCPtr, this, path);
+  }
+
   public void SetFromUrl(String url) {
     chilkatJNI.CkHttpRequest_SetFromUrl(swigCPtr, this, url);
   }
 
-  public boolean StreamBodyFromFile(String filename) {
-    return chilkatJNI.CkHttpRequest_StreamBodyFromFile(swigCPtr, this, filename);
+  public boolean StreamBodyFromFile(String filePath) {
+    return chilkatJNI.CkHttpRequest_StreamBodyFromFile(swigCPtr, this, filePath);
   }
 
   public boolean StreamChunkFromFile(String path, String offset, String numBytes) {

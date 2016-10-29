@@ -51,6 +51,22 @@ public class CkDh {
     chilkatJNI.CkDh_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkDh_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkDh_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkDh_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_G() {
+    return chilkatJNI.CkDh_get_G(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkDh_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,48 +91,12 @@ public class CkDh {
     return chilkatJNI.CkDh_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkDh_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkDh_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkDh_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkDh_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkDh_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkDh_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkDh_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkDh_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkDh_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkDh_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_G() {
-    return chilkatJNI.CkDh_get_G(swigCPtr, this);
   }
 
   public void get_P(CkString str) {
@@ -127,6 +107,22 @@ public class CkDh {
     return chilkatJNI.CkDh_p(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkDh_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkDh_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkDh_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkDh_version(swigCPtr, this);
+  }
+
   public boolean CreateE(int numBits, CkString outStr) {
     return chilkatJNI.CkDh_CreateE(swigCPtr, this, numBits, CkString.getCPtr(outStr), outStr);
   }
@@ -135,16 +131,20 @@ public class CkDh {
     return chilkatJNI.CkDh_createE(swigCPtr, this, numBits);
   }
 
-  public boolean FindK(String e, CkString outStr) {
-    return chilkatJNI.CkDh_FindK(swigCPtr, this, e, CkString.getCPtr(outStr), outStr);
+  public boolean FindK(String E, CkString outStr) {
+    return chilkatJNI.CkDh_FindK(swigCPtr, this, E, CkString.getCPtr(outStr), outStr);
   }
 
-  public String findK(String e) {
-    return chilkatJNI.CkDh_findK(swigCPtr, this, e);
+  public String findK(String E) {
+    return chilkatJNI.CkDh_findK(swigCPtr, this, E);
   }
 
-  public boolean GenPG(int numBits, int g) {
-    return chilkatJNI.CkDh_GenPG(swigCPtr, this, numBits, g);
+  public boolean GenPG(int numBits, int G) {
+    return chilkatJNI.CkDh_GenPG(swigCPtr, this, numBits, G);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkDh_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetPG(String p, int g) {

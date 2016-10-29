@@ -55,36 +55,16 @@ public class CkAuthGoogle {
     chilkatJNI.CkAuthGoogle_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkAuthGoogle_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_AccessToken(CkString str) {
+    chilkatJNI.CkAuthGoogle_get_AccessToken(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkAuthGoogle_lastErrorHtml(swigCPtr, this);
+  public String accessToken() {
+    return chilkatJNI.CkAuthGoogle_accessToken(swigCPtr, this);
   }
 
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkAuthGoogle_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkAuthGoogle_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkAuthGoogle_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkAuthGoogle_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkAuthGoogle_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkAuthGoogle_version(swigCPtr, this);
+  public void put_AccessToken(String newVal) {
+    chilkatJNI.CkAuthGoogle_put_AccessToken(swigCPtr, this, newVal);
   }
 
   public void get_DebugLogFilePath(CkString str) {
@@ -97,38 +77,6 @@ public class CkAuthGoogle {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkAuthGoogle_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkAuthGoogle_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkAuthGoogle_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkAuthGoogle_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkAuthGoogle_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkAuthGoogle_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_AccessToken(CkString str) {
-    chilkatJNI.CkAuthGoogle_get_AccessToken(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String accessToken() {
-    return chilkatJNI.CkAuthGoogle_accessToken(swigCPtr, this);
-  }
-
-  public void put_AccessToken(String newVal) {
-    chilkatJNI.CkAuthGoogle_put_AccessToken(swigCPtr, this, newVal);
   }
 
   public void get_EmailAddress(CkString str) {
@@ -163,6 +111,38 @@ public class CkAuthGoogle {
     chilkatJNI.CkAuthGoogle_put_JsonKey(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkAuthGoogle_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkAuthGoogle_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkAuthGoogle_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkAuthGoogle_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkAuthGoogle_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkAuthGoogle_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkAuthGoogle_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkAuthGoogle_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_NumSecondsRemaining() {
     return chilkatJNI.CkAuthGoogle_get_NumSecondsRemaining(swigCPtr, this);
   }
@@ -195,6 +175,22 @@ public class CkAuthGoogle {
     return chilkatJNI.CkAuthGoogle_get_Valid(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkAuthGoogle_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkAuthGoogle_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkAuthGoogle_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkAuthGoogle_version(swigCPtr, this);
+  }
+
   public CkPfx GetP12() {
     long cPtr = chilkatJNI.CkAuthGoogle_GetP12(swigCPtr, this);
     return (cPtr == 0) ? null : new CkPfx(cPtr, true);
@@ -207,6 +203,10 @@ public class CkAuthGoogle {
   public CkTask ObtainAccessTokenAsync(CkSocket connection) {
     long cPtr = chilkatJNI.CkAuthGoogle_ObtainAccessTokenAsync(swigCPtr, this, CkSocket.getCPtr(connection), connection);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkAuthGoogle_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetP12(CkPfx key) {

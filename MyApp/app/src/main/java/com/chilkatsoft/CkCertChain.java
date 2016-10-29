@@ -51,6 +51,18 @@ public class CkCertChain {
     chilkatJNI.CkCertChain_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCertChain_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCertChain_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCertChain_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkCertChain_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,44 +87,12 @@ public class CkCertChain {
     return chilkatJNI.CkCertChain_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCertChain_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCertChain_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCertChain_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCertChain_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCertChain_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCertChain_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCertChain_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkCertChain_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkCertChain_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCertChain_SaveLastError(swigCPtr, this, path);
   }
 
   public int get_NumCerts() {
@@ -127,6 +107,22 @@ public class CkCertChain {
     return chilkatJNI.CkCertChain_get_ReachesRoot(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCertChain_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCertChain_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCertChain_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCertChain_version(swigCPtr, this);
+  }
+
   public CkCert GetCert(int index) {
     long cPtr = chilkatJNI.CkCertChain_GetCert(swigCPtr, this, index);
     return (cPtr == 0) ? null : new CkCert(cPtr, true);
@@ -134,6 +130,10 @@ public class CkCertChain {
 
   public boolean IsRootTrusted(CkTrustedRoots trustedRoots) {
     return chilkatJNI.CkCertChain_IsRootTrusted(swigCPtr, this, CkTrustedRoots.getCPtr(trustedRoots), trustedRoots);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCertChain_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean VerifyCertSignatures() {

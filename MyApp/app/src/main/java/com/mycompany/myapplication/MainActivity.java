@@ -1,24 +1,29 @@
-package com.mycompany.myapp;
+package com.mycompany.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+
 import android.view.Menu;
 import android.view.View;
 import android.widget.*;
 import android.view.MenuItem;
 import com.chilkatsoft.*;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_main);
 
         CkCrypt2 crypt = new CkCrypt2();
 
         TextView txView = new TextView(this);
         txView.setText("Chilkat Version: " + crypt.version());
         setContentView(txView);
+
     }
 
     @Override

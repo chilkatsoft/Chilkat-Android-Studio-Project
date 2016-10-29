@@ -51,6 +51,42 @@ public class CkAuthAws {
     chilkatJNI.CkAuthAws_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_AccessKey(CkString str) {
+    chilkatJNI.CkAuthAws_get_AccessKey(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String accessKey() {
+    return chilkatJNI.CkAuthAws_accessKey(swigCPtr, this);
+  }
+
+  public void put_AccessKey(String newVal) {
+    chilkatJNI.CkAuthAws_put_AccessKey(swigCPtr, this, newVal);
+  }
+
+  public void get_CanonicalizedResourceV2(CkString str) {
+    chilkatJNI.CkAuthAws_get_CanonicalizedResourceV2(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String canonicalizedResourceV2() {
+    return chilkatJNI.CkAuthAws_canonicalizedResourceV2(swigCPtr, this);
+  }
+
+  public void put_CanonicalizedResourceV2(String newVal) {
+    chilkatJNI.CkAuthAws_put_CanonicalizedResourceV2(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkAuthAws_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkAuthAws_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkAuthAws_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkAuthAws_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,68 +111,12 @@ public class CkAuthAws {
     return chilkatJNI.CkAuthAws_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkAuthAws_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkAuthAws_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkAuthAws_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkAuthAws_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkAuthAws_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkAuthAws_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkAuthAws_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkAuthAws_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkAuthAws_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkAuthAws_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_AccessKey(CkString str) {
-    chilkatJNI.CkAuthAws_get_AccessKey(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String accessKey() {
-    return chilkatJNI.CkAuthAws_accessKey(swigCPtr, this);
-  }
-
-  public void put_AccessKey(String newVal) {
-    chilkatJNI.CkAuthAws_put_AccessKey(swigCPtr, this, newVal);
-  }
-
-  public void get_CanonicalizedResourceV2(CkString str) {
-    chilkatJNI.CkAuthAws_get_CanonicalizedResourceV2(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String canonicalizedResourceV2() {
-    return chilkatJNI.CkAuthAws_canonicalizedResourceV2(swigCPtr, this);
-  }
-
-  public void put_CanonicalizedResourceV2(String newVal) {
-    chilkatJNI.CkAuthAws_put_CanonicalizedResourceV2(swigCPtr, this, newVal);
   }
 
   public void get_PrecomputedMd5(CkString str) {
@@ -205,6 +185,26 @@ public class CkAuthAws {
 
   public void put_SignatureVersion(int newVal) {
     chilkatJNI.CkAuthAws_put_SignatureVersion(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkAuthAws_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkAuthAws_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkAuthAws_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkAuthAws_version(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkAuthAws_SaveLastError(swigCPtr, this, path);
   }
 
 }

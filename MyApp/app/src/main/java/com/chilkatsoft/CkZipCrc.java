@@ -47,15 +47,15 @@ public class CkZipCrc {
     chilkatJNI.CkZipCrc_BeginStream(swigCPtr, this);
   }
 
-  public int CalculateCrc(CkByteData data) {
+  public long CalculateCrc(CkByteData data) {
     return chilkatJNI.CkZipCrc_CalculateCrc(swigCPtr, this, CkByteData.getCPtr(data), data);
   }
 
-  public int EndStream() {
+  public long EndStream() {
     return chilkatJNI.CkZipCrc_EndStream(swigCPtr, this);
   }
 
-  public int FileCrc(String path) {
+  public long FileCrc(String path) {
     return chilkatJNI.CkZipCrc_FileCrc(swigCPtr, this, path);
   }
 

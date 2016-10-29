@@ -51,6 +51,50 @@ public class CkCharset {
     chilkatJNI.CkCharset_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_AltToCharset(CkString str) {
+    chilkatJNI.CkCharset_get_AltToCharset(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String altToCharset() {
+    return chilkatJNI.CkCharset_altToCharset(swigCPtr, this);
+  }
+
+  public void put_AltToCharset(String newVal) {
+    chilkatJNI.CkCharset_put_AltToCharset(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCharset_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCharset_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCharset_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_ErrorAction() {
+    return chilkatJNI.CkCharset_get_ErrorAction(swigCPtr, this);
+  }
+
+  public void put_ErrorAction(int newVal) {
+    chilkatJNI.CkCharset_put_ErrorAction(swigCPtr, this, newVal);
+  }
+
+  public void get_FromCharset(CkString str) {
+    chilkatJNI.CkCharset_get_FromCharset(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String fromCharset() {
+    return chilkatJNI.CkCharset_fromCharset(swigCPtr, this);
+  }
+
+  public void put_FromCharset(String newVal) {
+    chilkatJNI.CkCharset_put_FromCharset(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkCharset_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,78 +119,6 @@ public class CkCharset {
     return chilkatJNI.CkCharset_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCharset_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCharset_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCharset_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCharset_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCharset_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCharset_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCharset_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCharset_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCharset_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCharset_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_AltToCharset(CkString str) {
-    chilkatJNI.CkCharset_get_AltToCharset(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String altToCharset() {
-    return chilkatJNI.CkCharset_altToCharset(swigCPtr, this);
-  }
-
-  public void put_AltToCharset(String newVal) {
-    chilkatJNI.CkCharset_put_AltToCharset(swigCPtr, this, newVal);
-  }
-
-  public int get_ErrorAction() {
-    return chilkatJNI.CkCharset_get_ErrorAction(swigCPtr, this);
-  }
-
-  public void put_ErrorAction(int newVal) {
-    chilkatJNI.CkCharset_put_ErrorAction(swigCPtr, this, newVal);
-  }
-
-  public void get_FromCharset(CkString str) {
-    chilkatJNI.CkCharset_get_FromCharset(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String fromCharset() {
-    return chilkatJNI.CkCharset_fromCharset(swigCPtr, this);
-  }
-
-  public void put_FromCharset(String newVal) {
-    chilkatJNI.CkCharset_put_FromCharset(swigCPtr, this, newVal);
-  }
-
   public void get_LastInputAsHex(CkString str) {
     chilkatJNI.CkCharset_get_LastInputAsHex(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -161,6 +133,14 @@ public class CkCharset {
 
   public String lastInputAsQP() {
     return chilkatJNI.CkCharset_lastInputAsQP(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCharset_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCharset_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_LastOutputAsHex(CkString str) {
@@ -199,6 +179,22 @@ public class CkCharset {
     chilkatJNI.CkCharset_put_ToCharset(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCharset_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCharset_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCharset_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCharset_version(swigCPtr, this);
+  }
+
   public int CharsetToCodePage(String charsetName) {
     return chilkatJNI.CkCharset_CharsetToCodePage(swigCPtr, this, charsetName);
   }
@@ -215,12 +211,12 @@ public class CkCharset {
     return chilkatJNI.CkCharset_ConvertData(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean ConvertFile(String srcPath, String destPath) {
-    return chilkatJNI.CkCharset_ConvertFile(swigCPtr, this, srcPath, destPath);
+  public boolean ConvertFile(String inPath, String destPath) {
+    return chilkatJNI.CkCharset_ConvertFile(swigCPtr, this, inPath, destPath);
   }
 
-  public boolean ConvertFileNoPreamble(String srcPath, String destPath) {
-    return chilkatJNI.CkCharset_ConvertFileNoPreamble(swigCPtr, this, srcPath, destPath);
+  public boolean ConvertFileNoPreamble(String inPath, String destPath) {
+    return chilkatJNI.CkCharset_ConvertFileNoPreamble(swigCPtr, this, inPath, destPath);
   }
 
   public boolean ConvertFromUnicode(String inData, CkByteData outBytes) {
@@ -235,8 +231,8 @@ public class CkCharset {
     return chilkatJNI.CkCharset_ConvertHtml(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outHtml), outHtml);
   }
 
-  public boolean ConvertHtmlFile(String srcPath, String destPath) {
-    return chilkatJNI.CkCharset_ConvertHtmlFile(swigCPtr, this, srcPath, destPath);
+  public boolean ConvertHtmlFile(String inPath, String destPath) {
+    return chilkatJNI.CkCharset_ConvertHtmlFile(swigCPtr, this, inPath, destPath);
   }
 
   public boolean ConvertToUnicode(CkByteData inData, CkString outStr) {
@@ -279,16 +275,16 @@ public class CkCharset {
     return chilkatJNI.CkCharset_htmlCharset(swigCPtr, this, CkByteData.getCPtr(inData), inData);
   }
 
-  public boolean GetHtmlFileCharset(String htmlFilename, CkString outCharset) {
-    return chilkatJNI.CkCharset_GetHtmlFileCharset(swigCPtr, this, htmlFilename, CkString.getCPtr(outCharset), outCharset);
+  public boolean GetHtmlFileCharset(String htmlFilePath, CkString outCharset) {
+    return chilkatJNI.CkCharset_GetHtmlFileCharset(swigCPtr, this, htmlFilePath, CkString.getCPtr(outCharset), outCharset);
   }
 
-  public String getHtmlFileCharset(String htmlFilename) {
-    return chilkatJNI.CkCharset_getHtmlFileCharset(swigCPtr, this, htmlFilename);
+  public String getHtmlFileCharset(String htmlFilePath) {
+    return chilkatJNI.CkCharset_getHtmlFileCharset(swigCPtr, this, htmlFilePath);
   }
 
-  public String htmlFileCharset(String htmlFilename) {
-    return chilkatJNI.CkCharset_htmlFileCharset(swigCPtr, this, htmlFilename);
+  public String htmlFileCharset(String htmlFilePath) {
+    return chilkatJNI.CkCharset_htmlFileCharset(swigCPtr, this, htmlFilePath);
   }
 
   public boolean HtmlDecodeToStr(String inStr, CkString outStr) {
@@ -303,8 +299,8 @@ public class CkCharset {
     return chilkatJNI.CkCharset_HtmlEntityDecode(swigCPtr, this, CkByteData.getCPtr(inHtml), inHtml, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean HtmlEntityDecodeFile(String inFilename, String destPath) {
-    return chilkatJNI.CkCharset_HtmlEntityDecodeFile(swigCPtr, this, inFilename, destPath);
+  public boolean HtmlEntityDecodeFile(String inPath, String destPath) {
+    return chilkatJNI.CkCharset_HtmlEntityDecodeFile(swigCPtr, this, inPath, destPath);
   }
 
   public boolean IsUnlocked() {
@@ -319,16 +315,20 @@ public class CkCharset {
     return chilkatJNI.CkCharset_lowerCase(swigCPtr, this, inStr);
   }
 
-  public boolean ReadFile(String filename, CkByteData outData) {
-    return chilkatJNI.CkCharset_ReadFile(swigCPtr, this, filename, CkByteData.getCPtr(outData), outData);
+  public boolean ReadFile(String path, CkByteData outData) {
+    return chilkatJNI.CkCharset_ReadFile(swigCPtr, this, path, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean ReadFileToString(String filename, String srcCharset, CkString outStr) {
-    return chilkatJNI.CkCharset_ReadFileToString(swigCPtr, this, filename, srcCharset, CkString.getCPtr(outStr), outStr);
+  public boolean ReadFileToString(String path, String charset, CkString outStr) {
+    return chilkatJNI.CkCharset_ReadFileToString(swigCPtr, this, path, charset, CkString.getCPtr(outStr), outStr);
   }
 
-  public String readFileToString(String filename, String srcCharset) {
-    return chilkatJNI.CkCharset_readFileToString(swigCPtr, this, filename, srcCharset);
+  public String readFileToString(String path, String charset) {
+    return chilkatJNI.CkCharset_readFileToString(swigCPtr, this, path, charset);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCharset_SaveLastError(swigCPtr, this, path);
   }
 
   public void SetErrorBytes(CkByteData data) {
@@ -363,16 +363,16 @@ public class CkCharset {
     return chilkatJNI.CkCharset_VerifyData(swigCPtr, this, charset, CkByteData.getCPtr(inData), inData);
   }
 
-  public boolean VerifyFile(String charset, String filename) {
-    return chilkatJNI.CkCharset_VerifyFile(swigCPtr, this, charset, filename);
+  public boolean VerifyFile(String charset, String path) {
+    return chilkatJNI.CkCharset_VerifyFile(swigCPtr, this, charset, path);
   }
 
-  public boolean WriteFile(String filename, CkByteData fileData) {
-    return chilkatJNI.CkCharset_WriteFile(swigCPtr, this, filename, CkByteData.getCPtr(fileData), fileData);
+  public boolean WriteFile(String path, CkByteData byteData) {
+    return chilkatJNI.CkCharset_WriteFile(swigCPtr, this, path, CkByteData.getCPtr(byteData), byteData);
   }
 
-  public boolean WriteStringToFile(String str, String filename, String charset) {
-    return chilkatJNI.CkCharset_WriteStringToFile(swigCPtr, this, str, filename, charset);
+  public boolean WriteStringToFile(String textData, String path, String charset) {
+    return chilkatJNI.CkCharset_WriteStringToFile(swigCPtr, this, textData, path, charset);
   }
 
 }

@@ -55,70 +55,6 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkCrypt2_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkCrypt2_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkCrypt2_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkCrypt2_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkCrypt2_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkCrypt2_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCrypt2_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCrypt2_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCrypt2_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCrypt2_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCrypt2_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCrypt2_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCrypt2_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCrypt2_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCrypt2_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCrypt2_SaveLastError(swigCPtr, this, path);
-  }
-
   public boolean get_AbortCurrent() {
     return chilkatJNI.CkCrypt2_get_AbortCurrent(swigCPtr, this);
   }
@@ -223,6 +159,18 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_put_CryptAlgorithm(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCrypt2_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCrypt2_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCrypt2_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_EncodingMode(CkString str) {
     chilkatJNI.CkCrypt2_get_EncodingMode(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -271,14 +219,6 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
-  public void get_IV(CkByteData outBytes) {
-    chilkatJNI.CkCrypt2_get_IV(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
-  }
-
-  public void put_IV(CkByteData inBytes) {
-    chilkatJNI.CkCrypt2_put_IV(swigCPtr, this, CkByteData.getCPtr(inBytes), inBytes);
-  }
-
   public boolean get_IncludeCertChain() {
     return chilkatJNI.CkCrypt2_get_IncludeCertChain(swigCPtr, this);
   }
@@ -303,6 +243,14 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_put_IterationCount(swigCPtr, this, newVal);
   }
 
+  public void get_IV(CkByteData outBytes) {
+    chilkatJNI.CkCrypt2_get_IV(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public void put_IV(CkByteData inBytes) {
+    chilkatJNI.CkCrypt2_put_IV(swigCPtr, this, CkByteData.getCPtr(inBytes), inBytes);
+  }
+
   public int get_KeyLength() {
     return chilkatJNI.CkCrypt2_get_KeyLength(swigCPtr, this);
   }
@@ -317,6 +265,38 @@ public class CkCrypt2 {
 
   public void put_LastChunk(boolean newVal) {
     chilkatJNI.CkCrypt2_put_LastChunk(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkCrypt2_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkCrypt2_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkCrypt2_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkCrypt2_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkCrypt2_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkCrypt2_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCrypt2_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCrypt2_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_MacAlgorithm(CkString str) {
@@ -427,20 +407,32 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_put_UuMode(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCrypt2_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCrypt2_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCrypt2_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCrypt2_version(swigCPtr, this);
+  }
+
   public void AddEncryptCert(CkCert cert) {
     chilkatJNI.CkCrypt2_AddEncryptCert(swigCPtr, this, CkCert.getCPtr(cert), cert);
   }
 
-  public boolean AddPfxSourceData(CkByteData pfxData, String password) {
-    return chilkatJNI.CkCrypt2_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxData), pfxData, password);
+  public boolean AddPfxSourceData(CkByteData pfxBytes, String pfxPassword) {
+    return chilkatJNI.CkCrypt2_AddPfxSourceData(swigCPtr, this, CkByteData.getCPtr(pfxBytes), pfxBytes, pfxPassword);
   }
 
-  public boolean AddPfxSourceFile(String pfxFilePath, String password) {
-    return chilkatJNI.CkCrypt2_AddPfxSourceFile(swigCPtr, this, pfxFilePath, password);
-  }
-
-  public boolean ByteSwap4321(CkByteData data, CkByteData outBytes) {
-    return chilkatJNI.CkCrypt2_ByteSwap4321(swigCPtr, this, CkByteData.getCPtr(data), data, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean AddPfxSourceFile(String pfxFilePath, String pfxPassword) {
+    return chilkatJNI.CkCrypt2_AddPfxSourceFile(swigCPtr, this, pfxFilePath, pfxPassword);
   }
 
   public boolean BytesToString(CkByteData inData, String charset, CkString outStr) {
@@ -449,6 +441,10 @@ public class CkCrypt2 {
 
   public String bytesToString(CkByteData inData, String charset) {
     return chilkatJNI.CkCrypt2_bytesToString(swigCPtr, this, CkByteData.getCPtr(inData), inData, charset);
+  }
+
+  public boolean ByteSwap4321(CkByteData data, CkByteData outBytes) {
+    return chilkatJNI.CkCrypt2_ByteSwap4321(swigCPtr, this, CkByteData.getCPtr(data), data, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public boolean CkDecryptFile(String srcFile, String destFile) {
@@ -510,16 +506,16 @@ public class CkCrypt2 {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean CreateDetachedSignature(String filename, String sigFile) {
-    return chilkatJNI.CkCrypt2_CreateDetachedSignature(swigCPtr, this, filename, sigFile);
+  public boolean CreateDetachedSignature(String inFilePath, String sigFilePath) {
+    return chilkatJNI.CkCrypt2_CreateDetachedSignature(swigCPtr, this, inFilePath, sigFilePath);
   }
 
   public boolean CreateP7M(String inFilename, String p7mPath) {
     return chilkatJNI.CkCrypt2_CreateP7M(swigCPtr, this, inFilename, p7mPath);
   }
 
-  public boolean CreateP7S(String inFilename, String p7sFilename) {
-    return chilkatJNI.CkCrypt2_CreateP7S(swigCPtr, this, inFilename, p7sFilename);
+  public boolean CreateP7S(String inFilename, String p7sPath) {
+    return chilkatJNI.CkCrypt2_CreateP7S(swigCPtr, this, inFilename, p7sPath);
   }
 
   public boolean Decode(String str, String encoding, CkByteData outData) {
@@ -542,12 +538,12 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_DecryptBytesENC(swigCPtr, this, str, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean DecryptEncoded(String str, CkString outStr) {
-    return chilkatJNI.CkCrypt2_DecryptEncoded(swigCPtr, this, str, CkString.getCPtr(outStr), outStr);
+  public boolean DecryptEncoded(String encodedEncryptedData, CkString outStr) {
+    return chilkatJNI.CkCrypt2_DecryptEncoded(swigCPtr, this, encodedEncryptedData, CkString.getCPtr(outStr), outStr);
   }
 
-  public String decryptEncoded(String str) {
-    return chilkatJNI.CkCrypt2_decryptEncoded(swigCPtr, this, str);
+  public String decryptEncoded(String encodedEncryptedData) {
+    return chilkatJNI.CkCrypt2_decryptEncoded(swigCPtr, this, encodedEncryptedData);
   }
 
   public boolean DecryptStream(CkStream strm) {
@@ -575,20 +571,20 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_decryptStringENC(swigCPtr, this, str);
   }
 
-  public boolean Encode(CkByteData data, String encoding, CkString outStr) {
-    return chilkatJNI.CkCrypt2_Encode(swigCPtr, this, CkByteData.getCPtr(data), data, encoding, CkString.getCPtr(outStr), outStr);
+  public boolean Encode(CkByteData byteData, String encoding, CkString outStr) {
+    return chilkatJNI.CkCrypt2_Encode(swigCPtr, this, CkByteData.getCPtr(byteData), byteData, encoding, CkString.getCPtr(outStr), outStr);
   }
 
-  public String encode(CkByteData data, String encoding) {
-    return chilkatJNI.CkCrypt2_encode(swigCPtr, this, CkByteData.getCPtr(data), data, encoding);
+  public String encode(CkByteData byteData, String encoding) {
+    return chilkatJNI.CkCrypt2_encode(swigCPtr, this, CkByteData.getCPtr(byteData), byteData, encoding);
   }
 
-  public boolean EncodeString(String inStr, String charset, String encoding, CkString outStr) {
-    return chilkatJNI.CkCrypt2_EncodeString(swigCPtr, this, inStr, charset, encoding, CkString.getCPtr(outStr), outStr);
+  public boolean EncodeString(String strToEncode, String charsetName, String toEncodingName, CkString outStr) {
+    return chilkatJNI.CkCrypt2_EncodeString(swigCPtr, this, strToEncode, charsetName, toEncodingName, CkString.getCPtr(outStr), outStr);
   }
 
-  public String encodeString(String inStr, String charset, String encoding) {
-    return chilkatJNI.CkCrypt2_encodeString(swigCPtr, this, inStr, charset, encoding);
+  public String encodeString(String strToEncode, String charsetName, String toEncodingName) {
+    return chilkatJNI.CkCrypt2_encodeString(swigCPtr, this, strToEncode, charsetName, toEncodingName);
   }
 
   public boolean EncryptBytes(CkByteData data, CkByteData outData) {
@@ -640,14 +636,6 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_genEncodedSecretKey(swigCPtr, this, password, encoding);
   }
 
-  public boolean GenRandomBytesENC(int numBytes, CkString outStr) {
-    return chilkatJNI.CkCrypt2_GenRandomBytesENC(swigCPtr, this, numBytes, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String genRandomBytesENC(int numBytes) {
-    return chilkatJNI.CkCrypt2_genRandomBytesENC(swigCPtr, this, numBytes);
-  }
-
   public boolean GenerateSecretKey(String password, CkByteData outData) {
     return chilkatJNI.CkCrypt2_GenerateSecretKey(swigCPtr, this, password, CkByteData.getCPtr(outData), outData);
   }
@@ -658,6 +646,14 @@ public class CkCrypt2 {
 
   public String generateUuid() {
     return chilkatJNI.CkCrypt2_generateUuid(swigCPtr, this);
+  }
+
+  public boolean GenRandomBytesENC(int numBytes, CkString outStr) {
+    return chilkatJNI.CkCrypt2_GenRandomBytesENC(swigCPtr, this, numBytes, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String genRandomBytesENC(int numBytes) {
+    return chilkatJNI.CkCrypt2_genRandomBytesENC(swigCPtr, this, numBytes);
   }
 
   public CkCert GetDecryptCert() {
@@ -756,10 +752,6 @@ public class CkCrypt2 {
     return (cPtr == 0) ? null : new CkCertChain(cPtr, true);
   }
 
-  public boolean HasSignatureSigningTime(int index) {
-    return chilkatJNI.CkCrypt2_HasSignatureSigningTime(swigCPtr, this, index);
-  }
-
   public boolean HashBeginBytes(CkByteData data) {
     return chilkatJNI.CkCrypt2_HashBeginBytes(swigCPtr, this, CkByteData.getCPtr(data), data);
   }
@@ -832,6 +824,10 @@ public class CkCrypt2 {
 
   public String hashStringENC(String str) {
     return chilkatJNI.CkCrypt2_hashStringENC(swigCPtr, this, str);
+  }
+
+  public boolean HasSignatureSigningTime(int index) {
+    return chilkatJNI.CkCrypt2_HasSignatureSigningTime(swigCPtr, this, index);
   }
 
   public boolean HmacBytes(CkByteData inBytes, CkByteData outHmac) {
@@ -910,20 +906,20 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_macStringENC(swigCPtr, this, inText);
   }
 
-  public boolean MySqlAesDecrypt(String strEncrypted, String strKey, CkString outStr) {
-    return chilkatJNI.CkCrypt2_MySqlAesDecrypt(swigCPtr, this, strEncrypted, strKey, CkString.getCPtr(outStr), outStr);
+  public boolean MySqlAesDecrypt(String strEncryptedHex, String strPassword, CkString outStr) {
+    return chilkatJNI.CkCrypt2_MySqlAesDecrypt(swigCPtr, this, strEncryptedHex, strPassword, CkString.getCPtr(outStr), outStr);
   }
 
-  public String mySqlAesDecrypt(String strEncrypted, String strKey) {
-    return chilkatJNI.CkCrypt2_mySqlAesDecrypt(swigCPtr, this, strEncrypted, strKey);
+  public String mySqlAesDecrypt(String strEncryptedHex, String strPassword) {
+    return chilkatJNI.CkCrypt2_mySqlAesDecrypt(swigCPtr, this, strEncryptedHex, strPassword);
   }
 
-  public boolean MySqlAesEncrypt(String strData, String strKey, CkString outStr) {
-    return chilkatJNI.CkCrypt2_MySqlAesEncrypt(swigCPtr, this, strData, strKey, CkString.getCPtr(outStr), outStr);
+  public boolean MySqlAesEncrypt(String strData, String strPassword, CkString outStr) {
+    return chilkatJNI.CkCrypt2_MySqlAesEncrypt(swigCPtr, this, strData, strPassword, CkString.getCPtr(outStr), outStr);
   }
 
-  public String mySqlAesEncrypt(String strData, String strKey) {
-    return chilkatJNI.CkCrypt2_mySqlAesEncrypt(swigCPtr, this, strData, strKey);
+  public String mySqlAesEncrypt(String strData, String strPassword) {
+    return chilkatJNI.CkCrypt2_mySqlAesEncrypt(swigCPtr, this, strData, strPassword);
   }
 
   public boolean OpaqueSignBytes(CkByteData data, CkByteData outData) {
@@ -1006,16 +1002,20 @@ public class CkCrypt2 {
     chilkatJNI.CkCrypt2_RandomizeKey(swigCPtr, this);
   }
 
-  public boolean ReEncode(String data, String fromEncoding, String toEncoding, CkString outStr) {
-    return chilkatJNI.CkCrypt2_ReEncode(swigCPtr, this, data, fromEncoding, toEncoding, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String reEncode(String data, String fromEncoding, String toEncoding) {
-    return chilkatJNI.CkCrypt2_reEncode(swigCPtr, this, data, fromEncoding, toEncoding);
-  }
-
   public boolean ReadFile(String filename, CkByteData outBytes) {
     return chilkatJNI.CkCrypt2_ReadFile(swigCPtr, this, filename, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public boolean ReEncode(String encodedData, String fromEncoding, String toEncoding, CkString outStr) {
+    return chilkatJNI.CkCrypt2_ReEncode(swigCPtr, this, encodedData, fromEncoding, toEncoding, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String reEncode(String encodedData, String fromEncoding, String toEncoding) {
+    return chilkatJNI.CkCrypt2_reEncode(swigCPtr, this, encodedData, fromEncoding, toEncoding);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCrypt2_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetDecryptCert(CkCert cert) {
@@ -1082,8 +1082,8 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_SetSigningCert(swigCPtr, this, CkCert.getCPtr(cert), cert);
   }
 
-  public boolean SetSigningCert2(CkCert cert, CkPrivateKey key) {
-    return chilkatJNI.CkCrypt2_SetSigningCert2(swigCPtr, this, CkCert.getCPtr(cert), cert, CkPrivateKey.getCPtr(key), key);
+  public boolean SetSigningCert2(CkCert cert, CkPrivateKey privateKey) {
+    return chilkatJNI.CkCrypt2_SetSigningCert2(swigCPtr, this, CkCert.getCPtr(cert), cert, CkPrivateKey.getCPtr(privateKey), privateKey);
   }
 
   public boolean SetVerifyCert(CkCert cert) {
@@ -1142,8 +1142,8 @@ public class CkCrypt2 {
     return chilkatJNI.CkCrypt2_VerifyBytesENC(swigCPtr, this, CkByteData.getCPtr(data), data, encodedSig);
   }
 
-  public boolean VerifyDetachedSignature(String filename, String sigFile) {
-    return chilkatJNI.CkCrypt2_VerifyDetachedSignature(swigCPtr, this, filename, sigFile);
+  public boolean VerifyDetachedSignature(String inFilename, String p7sFilename) {
+    return chilkatJNI.CkCrypt2_VerifyDetachedSignature(swigCPtr, this, inFilename, p7sFilename);
   }
 
   public boolean VerifyP7M(String p7mPath, String destPath) {

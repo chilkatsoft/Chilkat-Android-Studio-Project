@@ -51,6 +51,30 @@ public class CkPrivateKey {
     chilkatJNI.CkPrivateKey_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public int get_BitLength() {
+    return chilkatJNI.CkPrivateKey_get_BitLength(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkPrivateKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkPrivateKey_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkPrivateKey_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public void get_KeyType(CkString str) {
+    chilkatJNI.CkPrivateKey_get_KeyType(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String keyType() {
+    return chilkatJNI.CkPrivateKey_keyType(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkPrivateKey_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,56 +99,12 @@ public class CkPrivateKey {
     return chilkatJNI.CkPrivateKey_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkPrivateKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkPrivateKey_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkPrivateKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkPrivateKey_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkPrivateKey_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkPrivateKey_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkPrivateKey_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkPrivateKey_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkPrivateKey_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkPrivateKey_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_BitLength() {
-    return chilkatJNI.CkPrivateKey_get_BitLength(swigCPtr, this);
-  }
-
-  public void get_KeyType(CkString str) {
-    chilkatJNI.CkPrivateKey_get_KeyType(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String keyType() {
-    return chilkatJNI.CkPrivateKey_keyType(swigCPtr, this);
   }
 
   public void get_Pkcs8EncryptAlg(CkString str) {
@@ -139,6 +119,26 @@ public class CkPrivateKey {
     chilkatJNI.CkPrivateKey_put_Pkcs8EncryptAlg(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkPrivateKey_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkPrivateKey_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkPrivateKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkPrivateKey_version(swigCPtr, this);
+  }
+
+  public boolean GetPkcs1(CkByteData outBytes) {
+    return chilkatJNI.CkPrivateKey_GetPkcs1(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
   public boolean GetPkcs1ENC(String encoding, CkString outStr) {
     return chilkatJNI.CkPrivateKey_GetPkcs1ENC(swigCPtr, this, encoding, CkString.getCPtr(outStr), outStr);
   }
@@ -149,6 +149,18 @@ public class CkPrivateKey {
 
   public String pkcs1ENC(String encoding) {
     return chilkatJNI.CkPrivateKey_pkcs1ENC(swigCPtr, this, encoding);
+  }
+
+  public boolean GetPkcs1Pem(CkString outStr) {
+    return chilkatJNI.CkPrivateKey_GetPkcs1Pem(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getPkcs1Pem() {
+    return chilkatJNI.CkPrivateKey_getPkcs1Pem(swigCPtr, this);
+  }
+
+  public String pkcs1Pem() {
+    return chilkatJNI.CkPrivateKey_pkcs1Pem(swigCPtr, this);
   }
 
   public boolean GetPkcs8(CkByteData outData) {
@@ -256,6 +268,14 @@ public class CkPrivateKey {
     return chilkatJNI.CkPrivateKey_LoadPemFile(swigCPtr, this, path);
   }
 
+  public boolean LoadPkcs1(CkByteData data) {
+    return chilkatJNI.CkPrivateKey_LoadPkcs1(swigCPtr, this, CkByteData.getCPtr(data), data);
+  }
+
+  public boolean LoadPkcs1File(String path) {
+    return chilkatJNI.CkPrivateKey_LoadPkcs1File(swigCPtr, this, path);
+  }
+
   public boolean LoadPkcs8(CkByteData data) {
     return chilkatJNI.CkPrivateKey_LoadPkcs8(swigCPtr, this, CkByteData.getCPtr(data), data);
   }
@@ -288,6 +308,18 @@ public class CkPrivateKey {
     return chilkatJNI.CkPrivateKey_LoadXmlFile(swigCPtr, this, path);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkPrivateKey_SaveLastError(swigCPtr, this, path);
+  }
+
+  public boolean SavePemFile(String path) {
+    return chilkatJNI.CkPrivateKey_SavePemFile(swigCPtr, this, path);
+  }
+
+  public boolean SavePkcs1File(String path) {
+    return chilkatJNI.CkPrivateKey_SavePkcs1File(swigCPtr, this, path);
+  }
+
   public boolean SavePkcs8EncryptedFile(String password, String path) {
     return chilkatJNI.CkPrivateKey_SavePkcs8EncryptedFile(swigCPtr, this, password, path);
   }
@@ -314,38 +346,6 @@ public class CkPrivateKey {
 
   public boolean SaveXmlFile(String path) {
     return chilkatJNI.CkPrivateKey_SaveXmlFile(swigCPtr, this, path);
-  }
-
-  public boolean GetPkcs1(CkByteData outBytes) {
-    return chilkatJNI.CkPrivateKey_GetPkcs1(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
-  }
-
-  public boolean GetPkcs1Pem(CkString outStr) {
-    return chilkatJNI.CkPrivateKey_GetPkcs1Pem(swigCPtr, this, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String getPkcs1Pem() {
-    return chilkatJNI.CkPrivateKey_getPkcs1Pem(swigCPtr, this);
-  }
-
-  public String pkcs1Pem() {
-    return chilkatJNI.CkPrivateKey_pkcs1Pem(swigCPtr, this);
-  }
-
-  public boolean LoadPkcs1(CkByteData data) {
-    return chilkatJNI.CkPrivateKey_LoadPkcs1(swigCPtr, this, CkByteData.getCPtr(data), data);
-  }
-
-  public boolean LoadPkcs1File(String path) {
-    return chilkatJNI.CkPrivateKey_LoadPkcs1File(swigCPtr, this, path);
-  }
-
-  public boolean SavePkcs1File(String path) {
-    return chilkatJNI.CkPrivateKey_SavePkcs1File(swigCPtr, this, path);
-  }
-
-  public boolean SavePemFile(String path) {
-    return chilkatJNI.CkPrivateKey_SavePemFile(swigCPtr, this, path);
   }
 
 }

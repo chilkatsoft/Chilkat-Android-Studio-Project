@@ -51,6 +51,42 @@ public class CkFileAccess {
     chilkatJNI.CkFileAccess_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_CurrentDir(CkString str) {
+    chilkatJNI.CkFileAccess_get_CurrentDir(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String currentDir() {
+    return chilkatJNI.CkFileAccess_currentDir(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkFileAccess_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkFileAccess_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkFileAccess_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public boolean get_EndOfFile() {
+    return chilkatJNI.CkFileAccess_get_EndOfFile(swigCPtr, this);
+  }
+
+  public int get_FileOpenError() {
+    return chilkatJNI.CkFileAccess_get_FileOpenError(swigCPtr, this);
+  }
+
+  public void get_FileOpenErrorMsg(CkString str) {
+    chilkatJNI.CkFileAccess_get_FileOpenErrorMsg(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String fileOpenErrorMsg() {
+    return chilkatJNI.CkFileAccess_fileOpenErrorMsg(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkFileAccess_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +111,12 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkFileAccess_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkFileAccess_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkFileAccess_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkFileAccess_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkFileAccess_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkFileAccess_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkFileAccess_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,48 +127,20 @@ public class CkFileAccess {
     chilkatJNI.CkFileAccess_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkFileAccess_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkFileAccess_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkFileAccess_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkFileAccess_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_CurrentDir(CkString str) {
-    chilkatJNI.CkFileAccess_get_CurrentDir(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String currentDir() {
-    return chilkatJNI.CkFileAccess_currentDir(swigCPtr, this);
-  }
-
-  public boolean get_EndOfFile() {
-    return chilkatJNI.CkFileAccess_get_EndOfFile(swigCPtr, this);
-  }
-
-  public int get_FileOpenError() {
-    return chilkatJNI.CkFileAccess_get_FileOpenError(swigCPtr, this);
-  }
-
-  public void get_FileOpenErrorMsg(CkString str) {
-    chilkatJNI.CkFileAccess_get_FileOpenErrorMsg(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String fileOpenErrorMsg() {
-    return chilkatJNI.CkFileAccess_fileOpenErrorMsg(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkFileAccess_version(swigCPtr, this);
   }
 
   public boolean AppendAnsi(String text) {
     return chilkatJNI.CkFileAccess_AppendAnsi(swigCPtr, this, text);
   }
 
-  public boolean AppendText(String text, String charset) {
-    return chilkatJNI.CkFileAccess_AppendText(swigCPtr, this, text, charset);
+  public boolean AppendText(String str, String charset) {
+    return chilkatJNI.CkFileAccess_AppendText(swigCPtr, this, str, charset);
   }
 
   public boolean AppendUnicodeBOM() {
@@ -155,16 +151,16 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_AppendUtf8BOM(swigCPtr, this);
   }
 
-  public boolean DirAutoCreate(String path) {
-    return chilkatJNI.CkFileAccess_DirAutoCreate(swigCPtr, this, path);
+  public boolean DirAutoCreate(String dirPath) {
+    return chilkatJNI.CkFileAccess_DirAutoCreate(swigCPtr, this, dirPath);
   }
 
-  public boolean DirCreate(String path) {
-    return chilkatJNI.CkFileAccess_DirCreate(swigCPtr, this, path);
+  public boolean DirCreate(String dirPath) {
+    return chilkatJNI.CkFileAccess_DirCreate(swigCPtr, this, dirPath);
   }
 
-  public boolean DirDelete(String path) {
-    return chilkatJNI.CkFileAccess_DirDelete(swigCPtr, this, path);
+  public boolean DirDelete(String dirPath) {
+    return chilkatJNI.CkFileAccess_DirDelete(swigCPtr, this, dirPath);
   }
 
   public boolean DirEnsureExists(String filePath) {
@@ -175,44 +171,44 @@ public class CkFileAccess {
     chilkatJNI.CkFileAccess_FileClose(swigCPtr, this);
   }
 
-  public boolean FileContentsEqual(String path1, String path2) {
-    return chilkatJNI.CkFileAccess_FileContentsEqual(swigCPtr, this, path1, path2);
+  public boolean FileContentsEqual(String filePath1, String filePath2) {
+    return chilkatJNI.CkFileAccess_FileContentsEqual(swigCPtr, this, filePath1, filePath2);
   }
 
-  public boolean FileCopy(String existing, String newFilename, boolean failIfExists) {
-    return chilkatJNI.CkFileAccess_FileCopy(swigCPtr, this, existing, newFilename, failIfExists);
+  public boolean FileCopy(String existingFilepath, String newFilepath, boolean failIfExists) {
+    return chilkatJNI.CkFileAccess_FileCopy(swigCPtr, this, existingFilepath, newFilepath, failIfExists);
   }
 
-  public boolean FileDelete(String filename) {
-    return chilkatJNI.CkFileAccess_FileDelete(swigCPtr, this, filename);
+  public boolean FileDelete(String filePath) {
+    return chilkatJNI.CkFileAccess_FileDelete(swigCPtr, this, filePath);
   }
 
-  public boolean FileExists(String path) {
-    return chilkatJNI.CkFileAccess_FileExists(swigCPtr, this, path);
+  public boolean FileExists(String filePath) {
+    return chilkatJNI.CkFileAccess_FileExists(swigCPtr, this, filePath);
   }
 
   public int FileExists3(String path) {
     return chilkatJNI.CkFileAccess_FileExists3(swigCPtr, this, path);
   }
 
-  public boolean FileOpen(String filename, long accessMode, long shareMode, long createDisp, long attr) {
-    return chilkatJNI.CkFileAccess_FileOpen(swigCPtr, this, filename, accessMode, shareMode, createDisp, attr);
+  public boolean FileOpen(String filePath, long accessMode, long shareMode, long createDisposition, long attributes) {
+    return chilkatJNI.CkFileAccess_FileOpen(swigCPtr, this, filePath, accessMode, shareMode, createDisposition, attributes);
   }
 
-  public boolean FileRead(int numBytes, CkByteData outBytes) {
-    return chilkatJNI.CkFileAccess_FileRead(swigCPtr, this, numBytes, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean FileRead(int maxNumBytes, CkByteData outBytes) {
+    return chilkatJNI.CkFileAccess_FileRead(swigCPtr, this, maxNumBytes, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean FileRename(String existing, String newFilename) {
-    return chilkatJNI.CkFileAccess_FileRename(swigCPtr, this, existing, newFilename);
+  public boolean FileRename(String existingFilepath, String newFilepath) {
+    return chilkatJNI.CkFileAccess_FileRename(swigCPtr, this, existingFilepath, newFilepath);
   }
 
   public boolean FileSeek(int offset, int origin) {
     return chilkatJNI.CkFileAccess_FileSeek(swigCPtr, this, offset, origin);
   }
 
-  public int FileSize(String filename) {
-    return chilkatJNI.CkFileAccess_FileSize(swigCPtr, this, filename);
+  public int FileSize(String filePath) {
+    return chilkatJNI.CkFileAccess_FileSize(swigCPtr, this, filePath);
   }
 
   public boolean FileWrite(CkByteData data) {
@@ -231,16 +227,16 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_GetNumBlocks(swigCPtr, this, blockSize);
   }
 
-  public boolean GetTempFilename(String dirName, String prefix, CkString outStr) {
-    return chilkatJNI.CkFileAccess_GetTempFilename(swigCPtr, this, dirName, prefix, CkString.getCPtr(outStr), outStr);
+  public boolean GetTempFilename(String dirPath, String prefix, CkString outStr) {
+    return chilkatJNI.CkFileAccess_GetTempFilename(swigCPtr, this, dirPath, prefix, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getTempFilename(String dirName, String prefix) {
-    return chilkatJNI.CkFileAccess_getTempFilename(swigCPtr, this, dirName, prefix);
+  public String getTempFilename(String dirPath, String prefix) {
+    return chilkatJNI.CkFileAccess_getTempFilename(swigCPtr, this, dirPath, prefix);
   }
 
-  public String tempFilename(String dirName, String prefix) {
-    return chilkatJNI.CkFileAccess_tempFilename(swigCPtr, this, dirName, prefix);
+  public String tempFilename(String dirPath, String prefix) {
+    return chilkatJNI.CkFileAccess_tempFilename(swigCPtr, this, dirPath, prefix);
   }
 
   public boolean OpenForAppend(String filePath) {
@@ -259,48 +255,52 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_OpenForWrite(swigCPtr, this, filePath);
   }
 
-  public boolean ReadBinaryToEncoded(String filename, String encoding, CkString outStr) {
-    return chilkatJNI.CkFileAccess_ReadBinaryToEncoded(swigCPtr, this, filename, encoding, CkString.getCPtr(outStr), outStr);
+  public boolean ReadBinaryToEncoded(String filePath, String encoding, CkString outStr) {
+    return chilkatJNI.CkFileAccess_ReadBinaryToEncoded(swigCPtr, this, filePath, encoding, CkString.getCPtr(outStr), outStr);
   }
 
-  public String readBinaryToEncoded(String filename, String encoding) {
-    return chilkatJNI.CkFileAccess_readBinaryToEncoded(swigCPtr, this, filename, encoding);
+  public String readBinaryToEncoded(String filePath, String encoding) {
+    return chilkatJNI.CkFileAccess_readBinaryToEncoded(swigCPtr, this, filePath, encoding);
   }
 
   public boolean ReadBlock(int blockIndex, int blockSize, CkByteData outBytes) {
     return chilkatJNI.CkFileAccess_ReadBlock(swigCPtr, this, blockIndex, blockSize, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean ReadEntireFile(String filename, CkByteData outBytes) {
-    return chilkatJNI.CkFileAccess_ReadEntireFile(swigCPtr, this, filename, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean ReadEntireFile(String filePath, CkByteData outBytes) {
+    return chilkatJNI.CkFileAccess_ReadEntireFile(swigCPtr, this, filePath, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean ReadEntireTextFile(String filename, String charset, CkString outStrFileContents) {
-    return chilkatJNI.CkFileAccess_ReadEntireTextFile(swigCPtr, this, filename, charset, CkString.getCPtr(outStrFileContents), outStrFileContents);
+  public boolean ReadEntireTextFile(String filePath, String charset, CkString outStrFileContents) {
+    return chilkatJNI.CkFileAccess_ReadEntireTextFile(swigCPtr, this, filePath, charset, CkString.getCPtr(outStrFileContents), outStrFileContents);
   }
 
-  public String readEntireTextFile(String filename, String charset) {
-    return chilkatJNI.CkFileAccess_readEntireTextFile(swigCPtr, this, filename, charset);
+  public String readEntireTextFile(String filePath, String charset) {
+    return chilkatJNI.CkFileAccess_readEntireTextFile(swigCPtr, this, filePath, charset);
   }
 
   public boolean ReassembleFile(String partsDirPath, String partPrefix, String partExtension, String reassembledFilename) {
     return chilkatJNI.CkFileAccess_ReassembleFile(swigCPtr, this, partsDirPath, partPrefix, partExtension, reassembledFilename);
   }
 
-  public int ReplaceStrings(String path, String charset, String existingString, String replacementString) {
-    return chilkatJNI.CkFileAccess_ReplaceStrings(swigCPtr, this, path, charset, existingString, replacementString);
+  public int ReplaceStrings(String filePath, String charset, String existingString, String replacementString) {
+    return chilkatJNI.CkFileAccess_ReplaceStrings(swigCPtr, this, filePath, charset, existingString, replacementString);
   }
 
-  public boolean SetCurrentDir(String path) {
-    return chilkatJNI.CkFileAccess_SetCurrentDir(swigCPtr, this, path);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkFileAccess_SaveLastError(swigCPtr, this, path);
   }
 
-  public boolean SetFileTimes(String path, CkDateTime create, CkDateTime lastAccess, CkDateTime lastModified) {
-    return chilkatJNI.CkFileAccess_SetFileTimes(swigCPtr, this, path, CkDateTime.getCPtr(create), create, CkDateTime.getCPtr(lastAccess), lastAccess, CkDateTime.getCPtr(lastModified), lastModified);
+  public boolean SetCurrentDir(String dirPath) {
+    return chilkatJNI.CkFileAccess_SetCurrentDir(swigCPtr, this, dirPath);
   }
 
-  public boolean SetLastModified(String path, CkDateTime lastModified) {
-    return chilkatJNI.CkFileAccess_SetLastModified(swigCPtr, this, path, CkDateTime.getCPtr(lastModified), lastModified);
+  public boolean SetFileTimes(String filePath, CkDateTime createTime, CkDateTime lastAccessTime, CkDateTime lastModTime) {
+    return chilkatJNI.CkFileAccess_SetFileTimes(swigCPtr, this, filePath, CkDateTime.getCPtr(createTime), createTime, CkDateTime.getCPtr(lastAccessTime), lastAccessTime, CkDateTime.getCPtr(lastModTime), lastModTime);
+  }
+
+  public boolean SetLastModified(String filePath, CkDateTime lastModified) {
+    return chilkatJNI.CkFileAccess_SetLastModified(swigCPtr, this, filePath, CkDateTime.getCPtr(lastModified), lastModified);
   }
 
   public boolean SplitFile(String fileToSplit, String partPrefix, String partExtension, int partSize, String destDir) {
@@ -311,12 +311,12 @@ public class CkFileAccess {
     return chilkatJNI.CkFileAccess_TreeDelete(swigCPtr, this, path);
   }
 
-  public boolean WriteEntireFile(String filename, CkByteData fileData) {
-    return chilkatJNI.CkFileAccess_WriteEntireFile(swigCPtr, this, filename, CkByteData.getCPtr(fileData), fileData);
+  public boolean WriteEntireFile(String filePath, CkByteData fileData) {
+    return chilkatJNI.CkFileAccess_WriteEntireFile(swigCPtr, this, filePath, CkByteData.getCPtr(fileData), fileData);
   }
 
-  public boolean WriteEntireTextFile(String filename, String fileData, String charset, boolean includePreamble) {
-    return chilkatJNI.CkFileAccess_WriteEntireTextFile(swigCPtr, this, filename, fileData, charset, includePreamble);
+  public boolean WriteEntireTextFile(String filePath, String textData, String charset, boolean includedPreamble) {
+    return chilkatJNI.CkFileAccess_WriteEntireTextFile(swigCPtr, this, filePath, textData, charset, includedPreamble);
   }
 
 }

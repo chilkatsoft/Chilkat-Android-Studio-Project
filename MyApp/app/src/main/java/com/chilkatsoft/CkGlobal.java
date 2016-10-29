@@ -51,36 +51,12 @@ public class CkGlobal {
     chilkatJNI.CkGlobal_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkGlobal_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public int get_AnsiCodePage() {
+    return chilkatJNI.CkGlobal_get_AnsiCodePage(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkGlobal_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkGlobal_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkGlobal_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkGlobal_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkGlobal_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkGlobal_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkGlobal_version(swigCPtr, this);
+  public void put_AnsiCodePage(int newVal) {
+    chilkatJNI.CkGlobal_put_AnsiCodePage(swigCPtr, this, newVal);
   }
 
   public void get_DebugLogFilePath(CkString str) {
@@ -93,34 +69,6 @@ public class CkGlobal {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkGlobal_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkGlobal_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkGlobal_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkGlobal_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkGlobal_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkGlobal_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_AnsiCodePage() {
-    return chilkatJNI.CkGlobal_get_AnsiCodePage(swigCPtr, this);
-  }
-
-  public void put_AnsiCodePage(int newVal) {
-    chilkatJNI.CkGlobal_put_AnsiCodePage(swigCPtr, this, newVal);
   }
 
   public int get_DefaultNtlmVersion() {
@@ -155,6 +103,38 @@ public class CkGlobal {
     chilkatJNI.CkGlobal_put_EnableDnsCaching(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkGlobal_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkGlobal_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkGlobal_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkGlobal_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkGlobal_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkGlobal_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkGlobal_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkGlobal_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_MaxThreads() {
     return chilkatJNI.CkGlobal_get_MaxThreads(swigCPtr, this);
   }
@@ -175,12 +155,36 @@ public class CkGlobal {
     chilkatJNI.CkGlobal_put_ThreadPoolLogPath(swigCPtr, this, newVal);
   }
 
+  public int get_UnlockStatus() {
+    return chilkatJNI.CkGlobal_get_UnlockStatus(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkGlobal_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkGlobal_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkGlobal_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkGlobal_version(swigCPtr, this);
+  }
+
   public boolean DnsClearCache() {
     return chilkatJNI.CkGlobal_DnsClearCache(swigCPtr, this);
   }
 
   public boolean FinalizeThreadPool() {
     return chilkatJNI.CkGlobal_FinalizeThreadPool(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkGlobal_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UnlockBundle(String bundleUnlockCode) {

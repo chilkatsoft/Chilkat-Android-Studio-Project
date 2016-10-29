@@ -55,6 +55,22 @@ public class CkAtom {
     chilkatJNI.CkAtom_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkAtom_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkAtom_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkAtom_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkAtom_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkAtom_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,24 +95,16 @@ public class CkAtom {
     return chilkatJNI.CkAtom_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkAtom_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkAtom_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkAtom_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkAtom_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkAtom_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkAtom_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkAtom_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_NumEntries() {
+    return chilkatJNI.CkAtom_get_NumEntries(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -107,24 +115,12 @@ public class CkAtom {
     chilkatJNI.CkAtom_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkAtom_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkAtom_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkAtom_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkAtom_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_NumEntries() {
-    return chilkatJNI.CkAtom_get_NumEntries(swigCPtr, this);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkAtom_get_AbortCurrent(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkAtom_version(swigCPtr, this);
   }
 
   public int AddElement(String tag, String value) {
@@ -292,6 +288,10 @@ public class CkAtom {
 
   public void NewFeed() {
     chilkatJNI.CkAtom_NewFeed(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkAtom_SaveLastError(swigCPtr, this, path);
   }
 
   public void SetElementAttr(String tag, int index, String attrName, String attrValue) {

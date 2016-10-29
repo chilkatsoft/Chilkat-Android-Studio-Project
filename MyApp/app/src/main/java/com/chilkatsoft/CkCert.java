@@ -51,70 +51,6 @@ public class CkCert {
     chilkatJNI.CkCert_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkCert_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkCert_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkCert_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkCert_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkCert_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkCert_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCert_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCert_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCert_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCert_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCert_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCert_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCert_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCert_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCert_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCert_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_AuthorityKeyId(CkString str) {
     chilkatJNI.CkCert_get_AuthorityKeyId(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -141,6 +77,18 @@ public class CkCert {
 
   public String cspName() {
     return chilkatJNI.CkCert_cspName(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCert_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCert_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCert_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public boolean get_Expired() {
@@ -249,6 +197,38 @@ public class CkCert {
 
   public String keyContainerName() {
     return chilkatJNI.CkCert_keyContainerName(swigCPtr, this);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkCert_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkCert_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkCert_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkCert_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkCert_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkCert_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCert_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCert_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_MachineKeyset() {
@@ -407,6 +387,22 @@ public class CkCert {
     return chilkatJNI.CkCert_validToStr(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCert_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCert_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCert_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCert_version(swigCPtr, this);
+  }
+
   public int CheckRevoked() {
     return chilkatJNI.CkCert_CheckRevoked(swigCPtr, this);
   }
@@ -453,8 +449,8 @@ public class CkCert {
     return chilkatJNI.CkCert_ExportToPfxData(swigCPtr, this, password, includeCertChain, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean ExportToPfxFile(String pfxFilename, String password, boolean bIncludeChain) {
-    return chilkatJNI.CkCert_ExportToPfxFile(swigCPtr, this, pfxFilename, password, bIncludeChain);
+  public boolean ExportToPfxFile(String pfxFilename, String pfxPassword, boolean bIncludeCertChain) {
+    return chilkatJNI.CkCert_ExportToPfxFile(swigCPtr, this, pfxFilename, pfxPassword, bIncludeCertChain);
   }
 
   public CkCert FindIssuer() {
@@ -537,8 +533,8 @@ public class CkCert {
     return chilkatJNI.CkCert_LoadByEmailAddress(swigCPtr, this, emailAddress);
   }
 
-  public boolean LoadByIssuerAndSerialNumber(String issuerCN, String serialNum) {
-    return chilkatJNI.CkCert_LoadByIssuerAndSerialNumber(swigCPtr, this, issuerCN, serialNum);
+  public boolean LoadByIssuerAndSerialNumber(String issuerCN, String serialNumber) {
+    return chilkatJNI.CkCert_LoadByIssuerAndSerialNumber(swigCPtr, this, issuerCN, serialNumber);
   }
 
   public boolean LoadFromBase64(String encodedCert) {
@@ -571,6 +567,10 @@ public class CkCert {
 
   public boolean PemFileToDerFile(String fromPath, String toPath) {
     return chilkatJNI.CkCert_PemFileToDerFile(swigCPtr, this, fromPath, toPath);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCert_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveToFile(String path) {

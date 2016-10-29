@@ -51,6 +51,18 @@ public class CkJavaKeyStore {
     chilkatJNI.CkJavaKeyStore_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkJavaKeyStore_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkJavaKeyStore_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkJavaKeyStore_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkJavaKeyStore_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,44 +87,12 @@ public class CkJavaKeyStore {
     return chilkatJNI.CkJavaKeyStore_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkJavaKeyStore_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkJavaKeyStore_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkJavaKeyStore_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkJavaKeyStore_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkJavaKeyStore_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkJavaKeyStore_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkJavaKeyStore_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkJavaKeyStore_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkJavaKeyStore_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkJavaKeyStore_SaveLastError(swigCPtr, this, path);
   }
 
   public int get_NumPrivateKeys() {
@@ -131,12 +111,28 @@ public class CkJavaKeyStore {
     chilkatJNI.CkJavaKeyStore_put_RequireCompleteChain(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkJavaKeyStore_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkJavaKeyStore_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
   public boolean get_VerifyKeyedDigest() {
     return chilkatJNI.CkJavaKeyStore_get_VerifyKeyedDigest(swigCPtr, this);
   }
 
   public void put_VerifyKeyedDigest(boolean newVal) {
     chilkatJNI.CkJavaKeyStore_put_VerifyKeyedDigest(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkJavaKeyStore_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkJavaKeyStore_version(swigCPtr, this);
   }
 
   public boolean AddPfx(CkPfx pfx, String alias, String password) {
@@ -223,6 +219,10 @@ public class CkJavaKeyStore {
 
   public boolean RemoveEntry(int entryType, int index) {
     return chilkatJNI.CkJavaKeyStore_RemoveEntry(swigCPtr, this, entryType, index);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkJavaKeyStore_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetAlias(int entryType, int index, String alias) {

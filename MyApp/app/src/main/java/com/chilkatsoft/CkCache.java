@@ -51,6 +51,18 @@ public class CkCache {
     chilkatJNI.CkCache_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCache_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCache_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCache_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkCache_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -73,46 +85,6 @@ public class CkCache {
 
   public String lastErrorXml() {
     return chilkatJNI.CkCache_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCache_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCache_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCache_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCache_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCache_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCache_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCache_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCache_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCache_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCache_SaveLastError(swigCPtr, this, path);
   }
 
   public void get_LastEtagFetched(CkString str) {
@@ -147,6 +119,14 @@ public class CkCache {
     return chilkatJNI.CkCache_lastKeyFetched(swigCPtr, this);
   }
 
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCache_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCache_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_Level() {
     return chilkatJNI.CkCache_get_Level(swigCPtr, this);
   }
@@ -157,6 +137,22 @@ public class CkCache {
 
   public int get_NumRoots() {
     return chilkatJNI.CkCache_get_NumRoots(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCache_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCache_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCache_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCache_version(swigCPtr, this);
   }
 
   public void AddRoot(String path) {
@@ -171,24 +167,24 @@ public class CkCache {
     return chilkatJNI.CkCache_DeleteAllExpired(swigCPtr, this);
   }
 
-  public boolean DeleteFromCache(String url) {
-    return chilkatJNI.CkCache_DeleteFromCache(swigCPtr, this, url);
+  public boolean DeleteFromCache(String key) {
+    return chilkatJNI.CkCache_DeleteFromCache(swigCPtr, this, key);
   }
 
-  public int DeleteOlder(SYSTEMTIME dt) {
-    return chilkatJNI.CkCache_DeleteOlder(swigCPtr, this, SYSTEMTIME.getCPtr(dt), dt);
+  public int DeleteOlder(SYSTEMTIME dateTime) {
+    return chilkatJNI.CkCache_DeleteOlder(swigCPtr, this, SYSTEMTIME.getCPtr(dateTime), dateTime);
   }
 
-  public int DeleteOlderDt(CkDateTime dt) {
-    return chilkatJNI.CkCache_DeleteOlderDt(swigCPtr, this, CkDateTime.getCPtr(dt), dt);
+  public int DeleteOlderDt(CkDateTime dateTime) {
+    return chilkatJNI.CkCache_DeleteOlderDt(swigCPtr, this, CkDateTime.getCPtr(dateTime), dateTime);
   }
 
   public int DeleteOlderStr(String dateTimeStr) {
     return chilkatJNI.CkCache_DeleteOlderStr(swigCPtr, this, dateTimeStr);
   }
 
-  public boolean FetchFromCache(String url, CkByteData outBytes) {
-    return chilkatJNI.CkCache_FetchFromCache(swigCPtr, this, url, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean FetchFromCache(String key, CkByteData outBytes) {
+    return chilkatJNI.CkCache_FetchFromCache(swigCPtr, this, key, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public boolean FetchText(String key, CkString outStr) {
@@ -199,20 +195,20 @@ public class CkCache {
     return chilkatJNI.CkCache_fetchText(swigCPtr, this, key);
   }
 
-  public boolean GetEtag(String url, CkString outStr) {
-    return chilkatJNI.CkCache_GetEtag(swigCPtr, this, url, CkString.getCPtr(outStr), outStr);
+  public boolean GetEtag(String key, CkString outStr) {
+    return chilkatJNI.CkCache_GetEtag(swigCPtr, this, key, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getEtag(String url) {
-    return chilkatJNI.CkCache_getEtag(swigCPtr, this, url);
+  public String getEtag(String key) {
+    return chilkatJNI.CkCache_getEtag(swigCPtr, this, key);
   }
 
-  public String etag(String url) {
-    return chilkatJNI.CkCache_etag(swigCPtr, this, url);
+  public String etag(String key) {
+    return chilkatJNI.CkCache_etag(swigCPtr, this, key);
   }
 
-  public boolean GetExpiration(String url, SYSTEMTIME outSysTime) {
-    return chilkatJNI.CkCache_GetExpiration(swigCPtr, this, url, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
+  public boolean GetExpiration(String key, SYSTEMTIME outSysTime) {
+    return chilkatJNI.CkCache_GetExpiration(swigCPtr, this, key, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
   }
 
   public CkDateTime GetExpirationDt(String key) {
@@ -232,16 +228,16 @@ public class CkCache {
     return chilkatJNI.CkCache_expirationStr(swigCPtr, this, url);
   }
 
-  public boolean GetFilename(String url, CkString outStr) {
-    return chilkatJNI.CkCache_GetFilename(swigCPtr, this, url, CkString.getCPtr(outStr), outStr);
+  public boolean GetFilename(String key, CkString outStr) {
+    return chilkatJNI.CkCache_GetFilename(swigCPtr, this, key, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFilename(String url) {
-    return chilkatJNI.CkCache_getFilename(swigCPtr, this, url);
+  public String getFilename(String key) {
+    return chilkatJNI.CkCache_getFilename(swigCPtr, this, key);
   }
 
-  public String filename(String url) {
-    return chilkatJNI.CkCache_filename(swigCPtr, this, url);
+  public String filename(String key) {
+    return chilkatJNI.CkCache_filename(swigCPtr, this, key);
   }
 
   public boolean GetRoot(int index, CkString outStr) {
@@ -256,52 +252,56 @@ public class CkCache {
     return chilkatJNI.CkCache_root(swigCPtr, this, index);
   }
 
-  public boolean IsCached(String url) {
-    return chilkatJNI.CkCache_IsCached(swigCPtr, this, url);
+  public boolean IsCached(String key) {
+    return chilkatJNI.CkCache_IsCached(swigCPtr, this, key);
   }
 
-  public boolean SaveText(String key, SYSTEMTIME expire, String eTag, String strData) {
-    return chilkatJNI.CkCache_SaveText(swigCPtr, this, key, SYSTEMTIME.getCPtr(expire), expire, eTag, strData);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCache_SaveLastError(swigCPtr, this, path);
   }
 
-  public boolean SaveTextDt(String key, CkDateTime expire, String eTag, String strData) {
-    return chilkatJNI.CkCache_SaveTextDt(swigCPtr, this, key, CkDateTime.getCPtr(expire), expire, eTag, strData);
+  public boolean SaveText(String key, SYSTEMTIME expireDateTime, String eTag, String itemTextData) {
+    return chilkatJNI.CkCache_SaveText(swigCPtr, this, key, SYSTEMTIME.getCPtr(expireDateTime), expireDateTime, eTag, itemTextData);
   }
 
-  public boolean SaveTextNoExpire(String key, String eTag, String strData) {
-    return chilkatJNI.CkCache_SaveTextNoExpire(swigCPtr, this, key, eTag, strData);
+  public boolean SaveTextDt(String key, CkDateTime expireDateTime, String eTag, String itemTextData) {
+    return chilkatJNI.CkCache_SaveTextDt(swigCPtr, this, key, CkDateTime.getCPtr(expireDateTime), expireDateTime, eTag, itemTextData);
   }
 
-  public boolean SaveTextStr(String key, String expireDateTimeStr, String eTag, String strData) {
-    return chilkatJNI.CkCache_SaveTextStr(swigCPtr, this, key, expireDateTimeStr, eTag, strData);
+  public boolean SaveTextNoExpire(String key, String eTag, String itemTextData) {
+    return chilkatJNI.CkCache_SaveTextNoExpire(swigCPtr, this, key, eTag, itemTextData);
   }
 
-  public boolean SaveToCache(String url, SYSTEMTIME expire, String eTag, CkByteData data) {
-    return chilkatJNI.CkCache_SaveToCache(swigCPtr, this, url, SYSTEMTIME.getCPtr(expire), expire, eTag, CkByteData.getCPtr(data), data);
+  public boolean SaveTextStr(String key, String expireDateTime, String eTag, String itemTextData) {
+    return chilkatJNI.CkCache_SaveTextStr(swigCPtr, this, key, expireDateTime, eTag, itemTextData);
   }
 
-  public boolean SaveToCacheDt(String url, CkDateTime expire, String eTag, CkByteData data) {
-    return chilkatJNI.CkCache_SaveToCacheDt(swigCPtr, this, url, CkDateTime.getCPtr(expire), expire, eTag, CkByteData.getCPtr(data), data);
+  public boolean SaveToCache(String key, SYSTEMTIME expireDateTime, String eTag, CkByteData itemData) {
+    return chilkatJNI.CkCache_SaveToCache(swigCPtr, this, key, SYSTEMTIME.getCPtr(expireDateTime), expireDateTime, eTag, CkByteData.getCPtr(itemData), itemData);
   }
 
-  public boolean SaveToCacheNoExpire(String url, String eTag, CkByteData data) {
-    return chilkatJNI.CkCache_SaveToCacheNoExpire(swigCPtr, this, url, eTag, CkByteData.getCPtr(data), data);
+  public boolean SaveToCacheDt(String key, CkDateTime expireDateTime, String eTag, CkByteData itemData) {
+    return chilkatJNI.CkCache_SaveToCacheDt(swigCPtr, this, key, CkDateTime.getCPtr(expireDateTime), expireDateTime, eTag, CkByteData.getCPtr(itemData), itemData);
   }
 
-  public boolean SaveToCacheStr(String url, String expireDateTimeStr, String eTag, CkByteData data) {
-    return chilkatJNI.CkCache_SaveToCacheStr(swigCPtr, this, url, expireDateTimeStr, eTag, CkByteData.getCPtr(data), data);
+  public boolean SaveToCacheNoExpire(String key, String eTag, CkByteData itemData) {
+    return chilkatJNI.CkCache_SaveToCacheNoExpire(swigCPtr, this, key, eTag, CkByteData.getCPtr(itemData), itemData);
   }
 
-  public boolean UpdateExpiration(String url, SYSTEMTIME dt) {
-    return chilkatJNI.CkCache_UpdateExpiration(swigCPtr, this, url, SYSTEMTIME.getCPtr(dt), dt);
+  public boolean SaveToCacheStr(String key, String expireDateTime, String eTag, CkByteData itemData) {
+    return chilkatJNI.CkCache_SaveToCacheStr(swigCPtr, this, key, expireDateTime, eTag, CkByteData.getCPtr(itemData), itemData);
   }
 
-  public boolean UpdateExpirationDt(String url, CkDateTime dt) {
-    return chilkatJNI.CkCache_UpdateExpirationDt(swigCPtr, this, url, CkDateTime.getCPtr(dt), dt);
+  public boolean UpdateExpiration(String key, SYSTEMTIME expireDateTime) {
+    return chilkatJNI.CkCache_UpdateExpiration(swigCPtr, this, key, SYSTEMTIME.getCPtr(expireDateTime), expireDateTime);
   }
 
-  public boolean UpdateExpirationStr(String url, String dateTimeStr) {
-    return chilkatJNI.CkCache_UpdateExpirationStr(swigCPtr, this, url, dateTimeStr);
+  public boolean UpdateExpirationDt(String key, CkDateTime expireDateTime) {
+    return chilkatJNI.CkCache_UpdateExpirationDt(swigCPtr, this, key, CkDateTime.getCPtr(expireDateTime), expireDateTime);
+  }
+
+  public boolean UpdateExpirationStr(String key, String expireDateTime) {
+    return chilkatJNI.CkCache_UpdateExpirationStr(swigCPtr, this, key, expireDateTime);
   }
 
 }

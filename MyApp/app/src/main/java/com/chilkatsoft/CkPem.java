@@ -55,6 +55,34 @@ public class CkPem {
     chilkatJNI.CkPem_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AppendMode() {
+    return chilkatJNI.CkPem_get_AppendMode(swigCPtr, this);
+  }
+
+  public void put_AppendMode(boolean newVal) {
+    chilkatJNI.CkPem_put_AppendMode(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkPem_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkPem_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkPem_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_HeartbeatMs() {
+    return chilkatJNI.CkPem_get_HeartbeatMs(swigCPtr, this);
+  }
+
+  public void put_HeartbeatMs(int newVal) {
+    chilkatJNI.CkPem_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkPem_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,60 +107,12 @@ public class CkPem {
     return chilkatJNI.CkPem_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkPem_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkPem_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkPem_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkPem_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkPem_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkPem_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkPem_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkPem_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkPem_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkPem_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_AppendMode() {
-    return chilkatJNI.CkPem_get_AppendMode(swigCPtr, this);
-  }
-
-  public void put_AppendMode(boolean newVal) {
-    chilkatJNI.CkPem_put_AppendMode(swigCPtr, this, newVal);
-  }
-
-  public int get_HeartbeatMs() {
-    return chilkatJNI.CkPem_get_HeartbeatMs(swigCPtr, this);
-  }
-
-  public void put_HeartbeatMs(int newVal) {
-    chilkatJNI.CkPem_put_HeartbeatMs(swigCPtr, this, newVal);
   }
 
   public int get_NumCerts() {
@@ -175,8 +155,28 @@ public class CkPem {
     chilkatJNI.CkPem_put_PublicKeyFormat(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkPem_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkPem_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkPem_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkPem_version(swigCPtr, this);
+  }
+
   public boolean AddCert(CkCert cert, boolean includeChain) {
     return chilkatJNI.CkPem_AddCert(swigCPtr, this, CkCert.getCPtr(cert), cert, includeChain);
+  }
+
+  public boolean AddItem(String itemType, String encoding, String itemData) {
+    return chilkatJNI.CkPem_AddItem(swigCPtr, this, itemType, encoding, itemData);
   }
 
   public boolean AddPrivateKey(CkPrivateKey privateKey) {
@@ -264,6 +264,10 @@ public class CkPem {
 
   public boolean RemovePrivateKey(int index) {
     return chilkatJNI.CkPem_RemovePrivateKey(swigCPtr, this, index);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkPem_SaveLastError(swigCPtr, this, path);
   }
 
   public CkJavaKeyStore ToJks(String alias, String password) {

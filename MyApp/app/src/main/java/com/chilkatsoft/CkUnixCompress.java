@@ -55,6 +55,34 @@ public class CkUnixCompress {
     chilkatJNI.CkUnixCompress_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkUnixCompress_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkUnixCompress_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkUnixCompress_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkUnixCompress_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkUnixCompress_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_HeartbeatMs() {
+    return chilkatJNI.CkUnixCompress_get_HeartbeatMs(swigCPtr, this);
+  }
+
+  public void put_HeartbeatMs(int newVal) {
+    chilkatJNI.CkUnixCompress_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkUnixCompress_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,24 +107,12 @@ public class CkUnixCompress {
     return chilkatJNI.CkUnixCompress_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkUnixCompress_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkUnixCompress_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkUnixCompress_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkUnixCompress_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkUnixCompress_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkUnixCompress_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkUnixCompress_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -107,32 +123,12 @@ public class CkUnixCompress {
     chilkatJNI.CkUnixCompress_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkUnixCompress_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkUnixCompress_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkUnixCompress_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkUnixCompress_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_HeartbeatMs() {
-    return chilkatJNI.CkUnixCompress_get_HeartbeatMs(swigCPtr, this);
-  }
-
-  public void put_HeartbeatMs(int newVal) {
-    chilkatJNI.CkUnixCompress_put_HeartbeatMs(swigCPtr, this, newVal);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkUnixCompress_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkUnixCompress_put_AbortCurrent(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkUnixCompress_version(swigCPtr, this);
   }
 
   public boolean CompressFile(String inFilename, String destPath) {
@@ -153,12 +149,12 @@ public class CkUnixCompress {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean CompressMemToFile(CkByteData inData, String destPath) {
-    return chilkatJNI.CkUnixCompress_CompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, destPath);
-  }
-
   public boolean CompressMemory(CkByteData inData, CkByteData outData) {
     return chilkatJNI.CkUnixCompress_CompressMemory(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outData), outData);
+  }
+
+  public boolean CompressMemToFile(CkByteData inData, String destPath) {
+    return chilkatJNI.CkUnixCompress_CompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, destPath);
   }
 
   public boolean CompressString(String inStr, String charset, CkByteData outBytes) {
@@ -173,13 +169,8 @@ public class CkUnixCompress {
     return chilkatJNI.CkUnixCompress_IsUnlocked(swigCPtr, this);
   }
 
-  public boolean UnTarZ(String zFilename, String destDir, boolean bNoAbsolute) {
-    return chilkatJNI.CkUnixCompress_UnTarZ(swigCPtr, this, zFilename, destDir, bNoAbsolute);
-  }
-
-  public CkTask UnTarZAsync(String zFilename, String destDir, boolean bNoAbsolute) {
-    long cPtr = chilkatJNI.CkUnixCompress_UnTarZAsync(swigCPtr, this, zFilename, destDir, bNoAbsolute);
-    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkUnixCompress_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UncompressFile(String inFilename, String destPath) {
@@ -200,37 +191,46 @@ public class CkUnixCompress {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean UncompressFileToString(String inFilename, String inCharset, CkString outStr) {
-    return chilkatJNI.CkUnixCompress_UncompressFileToString(swigCPtr, this, inFilename, inCharset, CkString.getCPtr(outStr), outStr);
+  public boolean UncompressFileToString(String zFilename, String charset, CkString outStr) {
+    return chilkatJNI.CkUnixCompress_UncompressFileToString(swigCPtr, this, zFilename, charset, CkString.getCPtr(outStr), outStr);
   }
 
-  public String uncompressFileToString(String inFilename, String inCharset) {
-    return chilkatJNI.CkUnixCompress_uncompressFileToString(swigCPtr, this, inFilename, inCharset);
+  public String uncompressFileToString(String zFilename, String charset) {
+    return chilkatJNI.CkUnixCompress_uncompressFileToString(swigCPtr, this, zFilename, charset);
   }
 
-  public CkTask UncompressFileToStringAsync(String inFilename, String inCharset) {
-    long cPtr = chilkatJNI.CkUnixCompress_UncompressFileToStringAsync(swigCPtr, this, inFilename, inCharset);
+  public CkTask UncompressFileToStringAsync(String zFilename, String charset) {
+    long cPtr = chilkatJNI.CkUnixCompress_UncompressFileToStringAsync(swigCPtr, this, zFilename, charset);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
-  }
-
-  public boolean UncompressMemToFile(CkByteData inData, String destPath) {
-    return chilkatJNI.CkUnixCompress_UncompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, destPath);
   }
 
   public boolean UncompressMemory(CkByteData inData, CkByteData outData) {
     return chilkatJNI.CkUnixCompress_UncompressMemory(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean UncompressString(CkByteData inData, String inCharset, CkString outStr) {
-    return chilkatJNI.CkUnixCompress_UncompressString(swigCPtr, this, CkByteData.getCPtr(inData), inData, inCharset, CkString.getCPtr(outStr), outStr);
+  public boolean UncompressMemToFile(CkByteData inData, String destPath) {
+    return chilkatJNI.CkUnixCompress_UncompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, destPath);
   }
 
-  public String uncompressString(CkByteData inData, String inCharset) {
-    return chilkatJNI.CkUnixCompress_uncompressString(swigCPtr, this, CkByteData.getCPtr(inData), inData, inCharset);
+  public boolean UncompressString(CkByteData inCompressedData, String charset, CkString outStr) {
+    return chilkatJNI.CkUnixCompress_UncompressString(swigCPtr, this, CkByteData.getCPtr(inCompressedData), inCompressedData, charset, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String uncompressString(CkByteData inCompressedData, String charset) {
+    return chilkatJNI.CkUnixCompress_uncompressString(swigCPtr, this, CkByteData.getCPtr(inCompressedData), inCompressedData, charset);
   }
 
   public boolean UnlockComponent(String unlockCode) {
     return chilkatJNI.CkUnixCompress_UnlockComponent(swigCPtr, this, unlockCode);
+  }
+
+  public boolean UnTarZ(String zFilename, String destDir, boolean bNoAbsolute) {
+    return chilkatJNI.CkUnixCompress_UnTarZ(swigCPtr, this, zFilename, destDir, bNoAbsolute);
+  }
+
+  public CkTask UnTarZAsync(String zFilename, String destDir, boolean bNoAbsolute) {
+    long cPtr = chilkatJNI.CkUnixCompress_UnTarZAsync(swigCPtr, this, zFilename, destDir, bNoAbsolute);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
 }

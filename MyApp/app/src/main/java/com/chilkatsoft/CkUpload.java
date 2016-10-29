@@ -55,68 +55,12 @@ public class CkUpload {
     chilkatJNI.CkUpload_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkUpload_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkUpload_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkUpload_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkUpload_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkUpload_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkUpload_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkUpload_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkUpload_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkUpload_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkUpload_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkUpload_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkUpload_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkUpload_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkUpload_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkUpload_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkUpload_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkUpload_SaveLastError(swigCPtr, this, path);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkUpload_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public int get_BandwidthThrottleUp() {
@@ -145,6 +89,18 @@ public class CkUpload {
 
   public void put_ClientIpAddress(String newVal) {
     chilkatJNI.CkUpload_put_ClientIpAddress(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkUpload_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkUpload_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkUpload_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public boolean get_Expect100Continue() {
@@ -181,6 +137,38 @@ public class CkUpload {
 
   public void put_IdleTimeoutMs(int newVal) {
     chilkatJNI.CkUpload_put_IdleTimeoutMs(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkUpload_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkUpload_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkUpload_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkUpload_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkUpload_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkUpload_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkUpload_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkUpload_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_Login(CkString str) {
@@ -319,30 +307,6 @@ public class CkUpload {
     chilkatJNI.CkUpload_put_Ssl(swigCPtr, this, newVal);
   }
 
-  public long get_TotalUploadSize() {
-    return chilkatJNI.CkUpload_get_TotalUploadSize(swigCPtr, this);
-  }
-
-  public boolean get_UploadInProgress() {
-    return chilkatJNI.CkUpload_get_UploadInProgress(swigCPtr, this);
-  }
-
-  public boolean get_UploadSuccess() {
-    return chilkatJNI.CkUpload_get_UploadSuccess(swigCPtr, this);
-  }
-
-  public void get_TlsPinSet(CkString str) {
-    chilkatJNI.CkUpload_get_TlsPinSet(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String tlsPinSet() {
-    return chilkatJNI.CkUpload_tlsPinSet(swigCPtr, this);
-  }
-
-  public void put_TlsPinSet(String newVal) {
-    chilkatJNI.CkUpload_put_TlsPinSet(swigCPtr, this, newVal);
-  }
-
   public void get_SslAllowedCiphers(CkString str) {
     chilkatJNI.CkUpload_get_SslAllowedCiphers(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -367,12 +331,44 @@ public class CkUpload {
     chilkatJNI.CkUpload_put_SslProtocol(swigCPtr, this, newVal);
   }
 
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkUpload_get_AbortCurrent(swigCPtr, this);
+  public void get_TlsPinSet(CkString str) {
+    chilkatJNI.CkUpload_get_TlsPinSet(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkUpload_put_AbortCurrent(swigCPtr, this, newVal);
+  public String tlsPinSet() {
+    return chilkatJNI.CkUpload_tlsPinSet(swigCPtr, this);
+  }
+
+  public void put_TlsPinSet(String newVal) {
+    chilkatJNI.CkUpload_put_TlsPinSet(swigCPtr, this, newVal);
+  }
+
+  public long get_TotalUploadSize() {
+    return chilkatJNI.CkUpload_get_TotalUploadSize(swigCPtr, this);
+  }
+
+  public boolean get_UploadInProgress() {
+    return chilkatJNI.CkUpload_get_UploadInProgress(swigCPtr, this);
+  }
+
+  public boolean get_UploadSuccess() {
+    return chilkatJNI.CkUpload_get_UploadSuccess(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkUpload_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkUpload_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkUpload_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkUpload_version(swigCPtr, this);
   }
 
   public void AbortUpload() {
@@ -410,6 +406,10 @@ public class CkUpload {
 
   public void ClearParams() {
     chilkatJNI.CkUpload_ClearParams(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkUpload_SaveLastError(swigCPtr, this, path);
   }
 
   public void SleepMs(int millisec) {

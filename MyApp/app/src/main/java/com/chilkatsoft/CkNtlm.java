@@ -51,36 +51,16 @@ public class CkNtlm {
     chilkatJNI.CkNtlm_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkNtlm_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_ClientChallenge(CkString str) {
+    chilkatJNI.CkNtlm_get_ClientChallenge(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkNtlm_lastErrorHtml(swigCPtr, this);
+  public String clientChallenge() {
+    return chilkatJNI.CkNtlm_clientChallenge(swigCPtr, this);
   }
 
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkNtlm_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkNtlm_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkNtlm_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkNtlm_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkNtlm_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkNtlm_version(swigCPtr, this);
+  public void put_ClientChallenge(String newVal) {
+    chilkatJNI.CkNtlm_put_ClientChallenge(swigCPtr, this, newVal);
   }
 
   public void get_DebugLogFilePath(CkString str) {
@@ -93,38 +73,6 @@ public class CkNtlm {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkNtlm_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkNtlm_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkNtlm_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkNtlm_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkNtlm_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkNtlm_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_ClientChallenge(CkString str) {
-    chilkatJNI.CkNtlm_get_ClientChallenge(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String clientChallenge() {
-    return chilkatJNI.CkNtlm_clientChallenge(swigCPtr, this);
-  }
-
-  public void put_ClientChallenge(String newVal) {
-    chilkatJNI.CkNtlm_put_ClientChallenge(swigCPtr, this, newVal);
   }
 
   public void get_DnsComputerName(CkString str) {
@@ -185,6 +133,38 @@ public class CkNtlm {
 
   public void put_Flags(String newVal) {
     chilkatJNI.CkNtlm_put_Flags(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkNtlm_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkNtlm_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkNtlm_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkNtlm_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkNtlm_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkNtlm_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkNtlm_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkNtlm_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_NetBiosComputerName(CkString str) {
@@ -275,6 +255,22 @@ public class CkNtlm {
     chilkatJNI.CkNtlm_put_UserName(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkNtlm_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkNtlm_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkNtlm_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkNtlm_version(swigCPtr, this);
+  }
+
   public void get_Workstation(CkString str) {
     chilkatJNI.CkNtlm_get_Workstation(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -341,6 +337,10 @@ public class CkNtlm {
 
   public String parseType3(String type3Msg) {
     return chilkatJNI.CkNtlm_parseType3(swigCPtr, this, type3Msg);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkNtlm_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetFlag(String flagLetter, boolean onOrOff) {

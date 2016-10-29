@@ -55,68 +55,12 @@ public class CkSpider {
     chilkatJNI.CkSpider_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkSpider_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSpider_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkSpider_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkSpider_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkSpider_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkSpider_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkSpider_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkSpider_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkSpider_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkSpider_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkSpider_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkSpider_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkSpider_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkSpider_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkSpider_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkSpider_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkSpider_SaveLastError(swigCPtr, this, path);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSpider_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public boolean get_AvoidHttps() {
@@ -155,6 +99,18 @@ public class CkSpider {
     chilkatJNI.CkSpider_put_ConnectTimeout(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkSpider_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkSpider_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkSpider_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_Domain(CkString str) {
     chilkatJNI.CkSpider_get_Domain(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -177,6 +133,30 @@ public class CkSpider {
 
   public void put_HeartbeatMs(int newVal) {
     chilkatJNI.CkSpider_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkSpider_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkSpider_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkSpider_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkSpider_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkSpider_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkSpider_lastErrorXml(swigCPtr, this);
   }
 
   public boolean get_LastFromCache() {
@@ -213,6 +193,14 @@ public class CkSpider {
 
   public String lastHtmlTitle() {
     return chilkatJNI.CkSpider_lastHtmlTitle(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkSpider_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkSpider_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_LastModDate(SYSTEMTIME outSysTime) {
@@ -351,20 +339,28 @@ public class CkSpider {
     chilkatJNI.CkSpider_put_UserAgent(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkSpider_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkSpider_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkSpider_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkSpider_version(swigCPtr, this);
+  }
+
   public int get_WindDownCount() {
     return chilkatJNI.CkSpider_get_WindDownCount(swigCPtr, this);
   }
 
   public void put_WindDownCount(int newVal) {
     chilkatJNI.CkSpider_put_WindDownCount(swigCPtr, this, newVal);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkSpider_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkSpider_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public void AddAvoidOutboundLinkPattern(String pattern) {
@@ -522,12 +518,16 @@ public class CkSpider {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkSpider_SaveLastError(swigCPtr, this, path);
+  }
+
   public void SkipUnspidered(int index) {
     chilkatJNI.CkSpider_SkipUnspidered(swigCPtr, this, index);
   }
 
-  public void SleepMs(int millisec) {
-    chilkatJNI.CkSpider_SleepMs(swigCPtr, this, millisec);
+  public void SleepMs(int numMilliseconds) {
+    chilkatJNI.CkSpider_SleepMs(swigCPtr, this, numMilliseconds);
   }
 
 }

@@ -51,6 +51,18 @@ public class CkEmailBundle {
     chilkatJNI.CkEmailBundle_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkEmailBundle_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkEmailBundle_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkEmailBundle_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkEmailBundle_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +87,16 @@ public class CkEmailBundle {
     return chilkatJNI.CkEmailBundle_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkEmailBundle_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkEmailBundle_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkEmailBundle_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkEmailBundle_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkEmailBundle_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkEmailBundle_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkEmailBundle_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_MessageCount() {
+    return chilkatJNI.CkEmailBundle_get_MessageCount(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,28 +107,20 @@ public class CkEmailBundle {
     chilkatJNI.CkEmailBundle_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkEmailBundle_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkEmailBundle_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkEmailBundle_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkEmailBundle_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_MessageCount() {
-    return chilkatJNI.CkEmailBundle_get_MessageCount(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkEmailBundle_version(swigCPtr, this);
   }
 
   public boolean AddEmail(CkEmail email) {
     return chilkatJNI.CkEmailBundle_AddEmail(swigCPtr, this, CkEmail.getCPtr(email), email);
   }
 
-  public CkEmail FindByHeader(String name, String value) {
-    long cPtr = chilkatJNI.CkEmailBundle_FindByHeader(swigCPtr, this, name, value);
+  public CkEmail FindByHeader(String headerFieldName, String headerFieldValue) {
+    long cPtr = chilkatJNI.CkEmailBundle_FindByHeader(swigCPtr, this, headerFieldName, headerFieldValue);
     return (cPtr == 0) ? null : new CkEmail(cPtr, true);
   }
 
@@ -168,6 +164,10 @@ public class CkEmailBundle {
 
   public boolean RemoveEmailByIndex(int index) {
     return chilkatJNI.CkEmailBundle_RemoveEmailByIndex(swigCPtr, this, index);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkEmailBundle_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveXml(String filename) {

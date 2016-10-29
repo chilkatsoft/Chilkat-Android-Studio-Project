@@ -51,6 +51,42 @@ public class CkSshKey {
     chilkatJNI.CkSshKey_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_Comment(CkString str) {
+    chilkatJNI.CkSshKey_get_Comment(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String comment() {
+    return chilkatJNI.CkSshKey_comment(swigCPtr, this);
+  }
+
+  public void put_Comment(String newVal) {
+    chilkatJNI.CkSshKey_put_Comment(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkSshKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkSshKey_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkSshKey_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public boolean get_IsDsaKey() {
+    return chilkatJNI.CkSshKey_get_IsDsaKey(swigCPtr, this);
+  }
+
+  public boolean get_IsPrivateKey() {
+    return chilkatJNI.CkSshKey_get_IsPrivateKey(swigCPtr, this);
+  }
+
+  public boolean get_IsRsaKey() {
+    return chilkatJNI.CkSshKey_get_IsRsaKey(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkSshKey_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,68 +111,12 @@ public class CkSshKey {
     return chilkatJNI.CkSshKey_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkSshKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkSshKey_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkSshKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkSshKey_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkSshKey_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkSshKey_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkSshKey_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkSshKey_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkSshKey_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkSshKey_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_Comment(CkString str) {
-    chilkatJNI.CkSshKey_get_Comment(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String comment() {
-    return chilkatJNI.CkSshKey_comment(swigCPtr, this);
-  }
-
-  public void put_Comment(String newVal) {
-    chilkatJNI.CkSshKey_put_Comment(swigCPtr, this, newVal);
-  }
-
-  public boolean get_IsDsaKey() {
-    return chilkatJNI.CkSshKey_get_IsDsaKey(swigCPtr, this);
-  }
-
-  public boolean get_IsPrivateKey() {
-    return chilkatJNI.CkSshKey_get_IsPrivateKey(swigCPtr, this);
-  }
-
-  public boolean get_IsRsaKey() {
-    return chilkatJNI.CkSshKey_get_IsRsaKey(swigCPtr, this);
   }
 
   public void get_Password(CkString str) {
@@ -149,6 +129,22 @@ public class CkSshKey {
 
   public void put_Password(String newVal) {
     chilkatJNI.CkSshKey_put_Password(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkSshKey_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkSshKey_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkSshKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkSshKey_version(swigCPtr, this);
   }
 
   public boolean FromOpenSshPrivateKey(String keyStr) {
@@ -171,14 +167,6 @@ public class CkSshKey {
     return chilkatJNI.CkSshKey_FromXml(swigCPtr, this, xmlKey);
   }
 
-  public boolean GenFingerprint(CkString outStr) {
-    return chilkatJNI.CkSshKey_GenFingerprint(swigCPtr, this, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String genFingerprint() {
-    return chilkatJNI.CkSshKey_genFingerprint(swigCPtr, this);
-  }
-
   public boolean GenerateDsaKey(int numBits) {
     return chilkatJNI.CkSshKey_GenerateDsaKey(swigCPtr, this, numBits);
   }
@@ -187,12 +175,24 @@ public class CkSshKey {
     return chilkatJNI.CkSshKey_GenerateRsaKey(swigCPtr, this, numBits, exponent);
   }
 
+  public boolean GenFingerprint(CkString outStr) {
+    return chilkatJNI.CkSshKey_GenFingerprint(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String genFingerprint() {
+    return chilkatJNI.CkSshKey_genFingerprint(swigCPtr, this);
+  }
+
   public boolean LoadText(String filename, CkString outStr) {
     return chilkatJNI.CkSshKey_LoadText(swigCPtr, this, filename, CkString.getCPtr(outStr), outStr);
   }
 
   public String loadText(String filename) {
     return chilkatJNI.CkSshKey_loadText(swigCPtr, this, filename);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkSshKey_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveText(String strToSave, String filename) {

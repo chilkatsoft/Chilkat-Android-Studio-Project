@@ -51,36 +51,16 @@ public class CkDirTree {
     chilkatJNI.CkDirTree_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkDirTree_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_BaseDir(CkString str) {
+    chilkatJNI.CkDirTree_get_BaseDir(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkDirTree_lastErrorHtml(swigCPtr, this);
+  public String baseDir() {
+    return chilkatJNI.CkDirTree_baseDir(swigCPtr, this);
   }
 
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkDirTree_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkDirTree_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkDirTree_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkDirTree_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkDirTree_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkDirTree_version(swigCPtr, this);
+  public void put_BaseDir(String newVal) {
+    chilkatJNI.CkDirTree_put_BaseDir(swigCPtr, this, newVal);
   }
 
   public void get_DebugLogFilePath(CkString str) {
@@ -93,38 +73,6 @@ public class CkDirTree {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkDirTree_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkDirTree_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkDirTree_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkDirTree_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkDirTree_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkDirTree_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_BaseDir(CkString str) {
-    chilkatJNI.CkDirTree_get_BaseDir(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String baseDir() {
-    return chilkatJNI.CkDirTree_baseDir(swigCPtr, this);
-  }
-
-  public void put_BaseDir(String newVal) {
-    chilkatJNI.CkDirTree_put_BaseDir(swigCPtr, this, newVal);
   }
 
   public boolean get_DoneIterating() {
@@ -155,6 +103,38 @@ public class CkDirTree {
     return chilkatJNI.CkDirTree_get_IsDirectory(swigCPtr, this);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkDirTree_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkDirTree_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkDirTree_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkDirTree_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkDirTree_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkDirTree_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkDirTree_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkDirTree_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public boolean get_Recurse() {
     return chilkatJNI.CkDirTree_get_Recurse(swigCPtr, this);
   }
@@ -171,12 +151,32 @@ public class CkDirTree {
     return chilkatJNI.CkDirTree_relativePath(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkDirTree_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkDirTree_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkDirTree_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkDirTree_version(swigCPtr, this);
+  }
+
   public boolean AdvancePosition() {
     return chilkatJNI.CkDirTree_AdvancePosition(swigCPtr, this);
   }
 
   public boolean BeginIterate() {
     return chilkatJNI.CkDirTree_BeginIterate(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkDirTree_SaveLastError(swigCPtr, this, path);
   }
 
 }

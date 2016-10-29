@@ -51,38 +51,6 @@ public class CkJsonObject {
     chilkatJNI.CkJsonObject_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkJsonObject_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkJsonObject_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkJsonObject_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkJsonObject_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkJsonObject_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkJsonObject_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkJsonObject_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkJsonObject_version(swigCPtr, this);
-  }
-
   public void get_DebugLogFilePath(CkString str) {
     chilkatJNI.CkJsonObject_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -93,26 +61,6 @@ public class CkJsonObject {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkJsonObject_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkJsonObject_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkJsonObject_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkJsonObject_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkJsonObject_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkJsonObject_SaveLastError(swigCPtr, this, path);
   }
 
   public void get_DelimiterChar(CkString str) {
@@ -167,8 +115,56 @@ public class CkJsonObject {
     chilkatJNI.CkJsonObject_put_K(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkJsonObject_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkJsonObject_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkJsonObject_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkJsonObject_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkJsonObject_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkJsonObject_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkJsonObject_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkJsonObject_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_Size() {
     return chilkatJNI.CkJsonObject_get_Size(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkJsonObject_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkJsonObject_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkJsonObject_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkJsonObject_version(swigCPtr, this);
   }
 
   public boolean AddArrayAt(int index, String name) {
@@ -255,6 +251,23 @@ public class CkJsonObject {
     return chilkatJNI.CkJsonObject_emit(swigCPtr, this);
   }
 
+  public boolean EmitSb(CkStringBuilder sb) {
+    return chilkatJNI.CkJsonObject_EmitSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb);
+  }
+
+  public CkJsonObject FindRecord(String arrayPath, String relPath, String value, boolean caseSensitive) {
+    long cPtr = chilkatJNI.CkJsonObject_FindRecord(swigCPtr, this, arrayPath, relPath, value, caseSensitive);
+    return (cPtr == 0) ? null : new CkJsonObject(cPtr, true);
+  }
+
+  public boolean FindRecordString(String arrayPath, String relPath, String value, boolean caseSensitive, String retRelPath, CkString outStr) {
+    return chilkatJNI.CkJsonObject_FindRecordString(swigCPtr, this, arrayPath, relPath, value, caseSensitive, retRelPath, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String findRecordString(String arrayPath, String relPath, String value, boolean caseSensitive, String retRelPath) {
+    return chilkatJNI.CkJsonObject_findRecordString(swigCPtr, this, arrayPath, relPath, value, caseSensitive, retRelPath);
+  }
+
   public boolean FirebaseApplyEvent(String name, String data) {
     return chilkatJNI.CkJsonObject_FirebaseApplyEvent(swigCPtr, this, name, data);
   }
@@ -304,6 +317,10 @@ public class CkJsonObject {
     return chilkatJNI.CkJsonObject_LoadFile(swigCPtr, this, path);
   }
 
+  public boolean LoadSb(CkStringBuilder sb) {
+    return chilkatJNI.CkJsonObject_LoadSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb);
+  }
+
   public boolean NameAt(int index, CkString outStr) {
     return chilkatJNI.CkJsonObject_NameAt(swigCPtr, this, index, CkString.getCPtr(outStr), outStr);
   }
@@ -328,6 +345,10 @@ public class CkJsonObject {
 
   public boolean RenameAt(int index, String name) {
     return chilkatJNI.CkJsonObject_RenameAt(swigCPtr, this, index, name);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkJsonObject_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetBoolAt(int index, boolean value) {
@@ -392,6 +413,18 @@ public class CkJsonObject {
 
   public int TypeAt(int index) {
     return chilkatJNI.CkJsonObject_TypeAt(swigCPtr, this, index);
+  }
+
+  public boolean UpdateBool(String jsonPath, boolean value) {
+    return chilkatJNI.CkJsonObject_UpdateBool(swigCPtr, this, jsonPath, value);
+  }
+
+  public boolean UpdateInt(String jsonPath, int value) {
+    return chilkatJNI.CkJsonObject_UpdateInt(swigCPtr, this, jsonPath, value);
+  }
+
+  public boolean UpdateString(String jsonPath, String value) {
+    return chilkatJNI.CkJsonObject_UpdateString(swigCPtr, this, jsonPath, value);
   }
 
 }

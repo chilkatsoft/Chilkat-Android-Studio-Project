@@ -51,6 +51,38 @@ public class CkHtmlToXml {
     chilkatJNI.CkHtmlToXml_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkHtmlToXml_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkHtmlToXml_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkHtmlToXml_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public boolean get_DropCustomTags() {
+    return chilkatJNI.CkHtmlToXml_get_DropCustomTags(swigCPtr, this);
+  }
+
+  public void put_DropCustomTags(boolean newVal) {
+    chilkatJNI.CkHtmlToXml_put_DropCustomTags(swigCPtr, this, newVal);
+  }
+
+  public void get_Html(CkString str) {
+    chilkatJNI.CkHtmlToXml_get_Html(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String html() {
+    return chilkatJNI.CkHtmlToXml_html(swigCPtr, this);
+  }
+
+  public void put_Html(String newVal) {
+    chilkatJNI.CkHtmlToXml_put_Html(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkHtmlToXml_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +107,20 @@ public class CkHtmlToXml {
     return chilkatJNI.CkHtmlToXml_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkHtmlToXml_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkHtmlToXml_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkHtmlToXml_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkHtmlToXml_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkHtmlToXml_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  public int get_Nbsp() {
+    return chilkatJNI.CkHtmlToXml_get_Nbsp(swigCPtr, this);
   }
 
-  public String debugLogFilePath() {
-    return chilkatJNI.CkHtmlToXml_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkHtmlToXml_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_Nbsp(int newVal) {
+    chilkatJNI.CkHtmlToXml_put_Nbsp(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,44 +131,12 @@ public class CkHtmlToXml {
     chilkatJNI.CkHtmlToXml_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkHtmlToXml_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkHtmlToXml_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkHtmlToXml_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkHtmlToXml_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_DropCustomTags() {
-    return chilkatJNI.CkHtmlToXml_get_DropCustomTags(swigCPtr, this);
-  }
-
-  public void put_DropCustomTags(boolean newVal) {
-    chilkatJNI.CkHtmlToXml_put_DropCustomTags(swigCPtr, this, newVal);
-  }
-
-  public void get_Html(CkString str) {
-    chilkatJNI.CkHtmlToXml_get_Html(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String html() {
-    return chilkatJNI.CkHtmlToXml_html(swigCPtr, this);
-  }
-
-  public void put_Html(String newVal) {
-    chilkatJNI.CkHtmlToXml_put_Html(swigCPtr, this, newVal);
-  }
-
-  public int get_Nbsp() {
-    return chilkatJNI.CkHtmlToXml_get_Nbsp(swigCPtr, this);
-  }
-
-  public void put_Nbsp(int newVal) {
-    chilkatJNI.CkHtmlToXml_put_Nbsp(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkHtmlToXml_version(swigCPtr, this);
   }
 
   public void get_XmlCharset(CkString str) {
@@ -183,6 +179,10 @@ public class CkHtmlToXml {
     return chilkatJNI.CkHtmlToXml_readFileToString(swigCPtr, this, filename, srcCharset);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkHtmlToXml_SaveLastError(swigCPtr, this, path);
+  }
+
   public void SetHtmlBytes(CkByteData inData) {
     chilkatJNI.CkHtmlToXml_SetHtmlBytes(swigCPtr, this, CkByteData.getCPtr(inData), inData);
   }
@@ -215,8 +215,8 @@ public class CkHtmlToXml {
     return chilkatJNI.CkHtmlToXml_WriteFile(swigCPtr, this, path, CkByteData.getCPtr(fileData), fileData);
   }
 
-  public boolean WriteStringToFile(String str, String filename, String charset) {
-    return chilkatJNI.CkHtmlToXml_WriteStringToFile(swigCPtr, this, str, filename, charset);
+  public boolean WriteStringToFile(String stringToWrite, String filename, String charset) {
+    return chilkatJNI.CkHtmlToXml_WriteStringToFile(swigCPtr, this, stringToWrite, filename, charset);
   }
 
   public boolean Xml(CkString outStr) {

@@ -51,6 +51,38 @@ public class CkBounce {
     chilkatJNI.CkBounce_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_BounceAddress(CkString str) {
+    chilkatJNI.CkBounce_get_BounceAddress(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String bounceAddress() {
+    return chilkatJNI.CkBounce_bounceAddress(swigCPtr, this);
+  }
+
+  public void get_BounceData(CkString str) {
+    chilkatJNI.CkBounce_get_BounceData(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String bounceData() {
+    return chilkatJNI.CkBounce_bounceData(swigCPtr, this);
+  }
+
+  public int get_BounceType() {
+    return chilkatJNI.CkBounce_get_BounceType(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkBounce_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkBounce_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkBounce_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkBounce_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +107,12 @@ public class CkBounce {
     return chilkatJNI.CkBounce_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkBounce_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkBounce_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkBounce_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkBounce_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkBounce_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkBounce_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkBounce_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,36 +123,12 @@ public class CkBounce {
     chilkatJNI.CkBounce_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkBounce_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkBounce_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkBounce_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkBounce_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_BounceAddress(CkString str) {
-    chilkatJNI.CkBounce_get_BounceAddress(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String bounceAddress() {
-    return chilkatJNI.CkBounce_bounceAddress(swigCPtr, this);
-  }
-
-  public void get_BounceData(CkString str) {
-    chilkatJNI.CkBounce_get_BounceData(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String bounceData() {
-    return chilkatJNI.CkBounce_bounceData(swigCPtr, this);
-  }
-
-  public int get_BounceType() {
-    return chilkatJNI.CkBounce_get_BounceType(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkBounce_version(swigCPtr, this);
   }
 
   public boolean ExamineEmail(CkEmail email) {
@@ -145,6 +141,10 @@ public class CkBounce {
 
   public boolean ExamineMime(String mimeText) {
     return chilkatJNI.CkBounce_ExamineMime(swigCPtr, this, mimeText);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkBounce_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UnlockComponent(String unlockCode) {

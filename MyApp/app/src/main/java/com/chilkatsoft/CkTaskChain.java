@@ -55,6 +55,34 @@ public class CkTaskChain {
     chilkatJNI.CkTaskChain_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkTaskChain_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkTaskChain_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkTaskChain_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public boolean get_Finished() {
+    return chilkatJNI.CkTaskChain_get_Finished(swigCPtr, this);
+  }
+
+  public int get_HeartbeatMs() {
+    return chilkatJNI.CkTaskChain_get_HeartbeatMs(swigCPtr, this);
+  }
+
+  public void put_HeartbeatMs(int newVal) {
+    chilkatJNI.CkTaskChain_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
+  public boolean get_Inert() {
+    return chilkatJNI.CkTaskChain_get_Inert(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkTaskChain_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,60 +107,12 @@ public class CkTaskChain {
     return chilkatJNI.CkTaskChain_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkTaskChain_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkTaskChain_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkTaskChain_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkTaskChain_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkTaskChain_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkTaskChain_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkTaskChain_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkTaskChain_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkTaskChain_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkTaskChain_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_Finished() {
-    return chilkatJNI.CkTaskChain_get_Finished(swigCPtr, this);
-  }
-
-  public int get_HeartbeatMs() {
-    return chilkatJNI.CkTaskChain_get_HeartbeatMs(swigCPtr, this);
-  }
-
-  public void put_HeartbeatMs(int newVal) {
-    chilkatJNI.CkTaskChain_put_HeartbeatMs(swigCPtr, this, newVal);
-  }
-
-  public boolean get_Inert() {
-    return chilkatJNI.CkTaskChain_get_Inert(swigCPtr, this);
   }
 
   public boolean get_Live() {
@@ -163,6 +143,22 @@ public class CkTaskChain {
     chilkatJNI.CkTaskChain_put_StopOnFailedTask(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkTaskChain_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkTaskChain_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkTaskChain_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkTaskChain_version(swigCPtr, this);
+  }
+
   public boolean Append(CkTask task) {
     return chilkatJNI.CkTaskChain_Append(swigCPtr, this, CkTask.getCPtr(task), task);
   }
@@ -182,6 +178,10 @@ public class CkTaskChain {
 
   public boolean RunSynchronously() {
     return chilkatJNI.CkTaskChain_RunSynchronously(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkTaskChain_SaveLastError(swigCPtr, this, path);
   }
 
   public void SleepMs(int numMs) {

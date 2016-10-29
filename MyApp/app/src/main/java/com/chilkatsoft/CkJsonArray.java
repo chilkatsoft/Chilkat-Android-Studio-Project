@@ -51,6 +51,18 @@ public class CkJsonArray {
     chilkatJNI.CkJsonArray_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkJsonArray_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkJsonArray_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkJsonArray_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkJsonArray_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +87,16 @@ public class CkJsonArray {
     return chilkatJNI.CkJsonArray_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkJsonArray_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkJsonArray_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkJsonArray_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkJsonArray_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkJsonArray_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkJsonArray_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkJsonArray_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_Size() {
+    return chilkatJNI.CkJsonArray_get_Size(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,20 +107,12 @@ public class CkJsonArray {
     chilkatJNI.CkJsonArray_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkJsonArray_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkJsonArray_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkJsonArray_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkJsonArray_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_Size() {
-    return chilkatJNI.CkJsonArray_get_Size(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkJsonArray_version(swigCPtr, this);
   }
 
   public boolean AddArrayAt(int index) {
@@ -160,6 +156,14 @@ public class CkJsonArray {
     return chilkatJNI.CkJsonArray_DeleteAt(swigCPtr, this, index);
   }
 
+  public boolean Emit(CkString outStr) {
+    return chilkatJNI.CkJsonArray_Emit(swigCPtr, this, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String emit() {
+    return chilkatJNI.CkJsonArray_emit(swigCPtr, this);
+  }
+
   public int IntAt(int index) {
     return chilkatJNI.CkJsonArray_IntAt(swigCPtr, this, index);
   }
@@ -171,6 +175,10 @@ public class CkJsonArray {
   public CkJsonObject ObjectAt(int index) {
     long cPtr = chilkatJNI.CkJsonArray_ObjectAt(swigCPtr, this, index);
     return (cPtr == 0) ? null : new CkJsonObject(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkJsonArray_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SetBoolAt(int index, boolean value) {
@@ -199,14 +207,6 @@ public class CkJsonArray {
 
   public String stringAt(int index) {
     return chilkatJNI.CkJsonArray_stringAt(swigCPtr, this, index);
-  }
-
-  public boolean Emit(CkString outStr) {
-    return chilkatJNI.CkJsonArray_Emit(swigCPtr, this, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String emit() {
-    return chilkatJNI.CkJsonArray_emit(swigCPtr, this);
   }
 
   public int TypeAt(int index) {

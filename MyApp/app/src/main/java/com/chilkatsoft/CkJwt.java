@@ -51,6 +51,26 @@ public class CkJwt {
     chilkatJNI.CkJwt_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public boolean get_AutoCompact() {
+    return chilkatJNI.CkJwt_get_AutoCompact(swigCPtr, this);
+  }
+
+  public void put_AutoCompact(boolean newVal) {
+    chilkatJNI.CkJwt_put_AutoCompact(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkJwt_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkJwt_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkJwt_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkJwt_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +95,12 @@ public class CkJwt {
     return chilkatJNI.CkJwt_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkJwt_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkJwt_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkJwt_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkJwt_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkJwt_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkJwt_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkJwt_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,24 +111,12 @@ public class CkJwt {
     chilkatJNI.CkJwt_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkJwt_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkJwt_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkJwt_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkJwt_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_AutoCompact() {
-    return chilkatJNI.CkJwt_get_AutoCompact(swigCPtr, this);
-  }
-
-  public void put_AutoCompact(boolean newVal) {
-    chilkatJNI.CkJwt_put_AutoCompact(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkJwt_version(swigCPtr, this);
   }
 
   public boolean CreateJwt(String header, String payload, String password, CkString outStr) {
@@ -169,6 +165,10 @@ public class CkJwt {
 
   public boolean IsTimeValid(String jwt, int leeway) {
     return chilkatJNI.CkJwt_IsTimeValid(swigCPtr, this, jwt, leeway);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkJwt_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean VerifyJwt(String token, String password) {

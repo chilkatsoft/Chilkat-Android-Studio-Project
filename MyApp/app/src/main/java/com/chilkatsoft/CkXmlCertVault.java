@@ -51,6 +51,18 @@ public class CkXmlCertVault {
     chilkatJNI.CkXmlCertVault_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkXmlCertVault_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkXmlCertVault_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkXmlCertVault_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkXmlCertVault_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,44 +87,12 @@ public class CkXmlCertVault {
     return chilkatJNI.CkXmlCertVault_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkXmlCertVault_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkXmlCertVault_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkXmlCertVault_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkXmlCertVault_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkXmlCertVault_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkXmlCertVault_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkXmlCertVault_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkXmlCertVault_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkXmlCertVault_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkXmlCertVault_SaveLastError(swigCPtr, this, path);
   }
 
   public void get_MasterPassword(CkString str) {
@@ -125,6 +105,22 @@ public class CkXmlCertVault {
 
   public void put_MasterPassword(String newVal) {
     chilkatJNI.CkXmlCertVault_put_MasterPassword(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkXmlCertVault_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkXmlCertVault_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkXmlCertVault_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkXmlCertVault_version(swigCPtr, this);
   }
 
   public boolean AddCert(CkCert cert) {
@@ -189,6 +185,10 @@ public class CkXmlCertVault {
 
   public boolean LoadXmlFile(String path) {
     return chilkatJNI.CkXmlCertVault_LoadXmlFile(swigCPtr, this, path);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkXmlCertVault_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveXml(String path) {

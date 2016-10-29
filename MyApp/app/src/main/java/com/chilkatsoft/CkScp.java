@@ -55,6 +55,34 @@ public class CkScp {
     chilkatJNI.CkScp_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkScp_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkScp_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkScp_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkScp_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkScp_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_HeartbeatMs() {
+    return chilkatJNI.CkScp_get_HeartbeatMs(swigCPtr, this);
+  }
+
+  public void put_HeartbeatMs(int newVal) {
+    chilkatJNI.CkScp_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkScp_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,34 +107,6 @@ public class CkScp {
     return chilkatJNI.CkScp_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkScp_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkScp_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkScp_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkScp_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkScp_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkScp_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkScp_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkScp_get_LastMethodSuccess(swigCPtr, this);
   }
@@ -115,32 +115,24 @@ public class CkScp {
     chilkatJNI.CkScp_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkScp_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkScp_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkScp_put_AbortCurrent(swigCPtr, this, newVal);
-  }
-
-  public int get_HeartbeatMs() {
-    return chilkatJNI.CkScp_get_HeartbeatMs(swigCPtr, this);
-  }
-
-  public void put_HeartbeatMs(int newVal) {
-    chilkatJNI.CkScp_put_HeartbeatMs(swigCPtr, this, newVal);
-  }
-
   public int get_PercentDoneScale() {
     return chilkatJNI.CkScp_get_PercentDoneScale(swigCPtr, this);
   }
 
   public void put_PercentDoneScale(int newVal) {
     chilkatJNI.CkScp_put_PercentDoneScale(swigCPtr, this, newVal);
+  }
+
+  public void get_SyncedFiles(CkString str) {
+    chilkatJNI.CkScp_get_SyncedFiles(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncedFiles() {
+    return chilkatJNI.CkScp_syncedFiles(swigCPtr, this);
+  }
+
+  public void put_SyncedFiles(String newVal) {
+    chilkatJNI.CkScp_put_SyncedFiles(swigCPtr, this, newVal);
   }
 
   public void get_SyncMustMatch(CkString str) {
@@ -191,16 +183,20 @@ public class CkScp {
     chilkatJNI.CkScp_put_SyncMustNotMatchDir(swigCPtr, this, newVal);
   }
 
-  public void get_SyncedFiles(CkString str) {
-    chilkatJNI.CkScp_get_SyncedFiles(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkScp_get_VerboseLogging(swigCPtr, this);
   }
 
-  public String syncedFiles() {
-    return chilkatJNI.CkScp_syncedFiles(swigCPtr, this);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkScp_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public void put_SyncedFiles(String newVal) {
-    chilkatJNI.CkScp_put_SyncedFiles(swigCPtr, this, newVal);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkScp_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkScp_version(swigCPtr, this);
   }
 
   public boolean DownloadBinary(String remotePath, CkByteData outBytes) {
@@ -245,6 +241,10 @@ public class CkScp {
   public CkTask DownloadStringAsync(String remotePath, String charset) {
     long cPtr = chilkatJNI.CkScp_DownloadStringAsync(swigCPtr, this, remotePath, charset);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkScp_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SyncTreeDownload(String remoteRoot, String localRoot, int mode, boolean bRecurse) {

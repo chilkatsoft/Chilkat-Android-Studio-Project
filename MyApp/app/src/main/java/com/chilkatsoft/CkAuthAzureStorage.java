@@ -51,6 +51,42 @@ public class CkAuthAzureStorage {
     chilkatJNI.CkAuthAzureStorage_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_AccessKey(CkString str) {
+    chilkatJNI.CkAuthAzureStorage_get_AccessKey(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String accessKey() {
+    return chilkatJNI.CkAuthAzureStorage_accessKey(swigCPtr, this);
+  }
+
+  public void put_AccessKey(String newVal) {
+    chilkatJNI.CkAuthAzureStorage_put_AccessKey(swigCPtr, this, newVal);
+  }
+
+  public void get_Account(CkString str) {
+    chilkatJNI.CkAuthAzureStorage_get_Account(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String account() {
+    return chilkatJNI.CkAuthAzureStorage_account(swigCPtr, this);
+  }
+
+  public void put_Account(String newVal) {
+    chilkatJNI.CkAuthAzureStorage_put_Account(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkAuthAzureStorage_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkAuthAzureStorage_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkAuthAzureStorage_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkAuthAzureStorage_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,68 +111,12 @@ public class CkAuthAzureStorage {
     return chilkatJNI.CkAuthAzureStorage_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkAuthAzureStorage_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkAuthAzureStorage_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkAuthAzureStorage_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkAuthAzureStorage_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkAuthAzureStorage_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkAuthAzureStorage_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkAuthAzureStorage_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkAuthAzureStorage_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkAuthAzureStorage_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkAuthAzureStorage_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_AccessKey(CkString str) {
-    chilkatJNI.CkAuthAzureStorage_get_AccessKey(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String accessKey() {
-    return chilkatJNI.CkAuthAzureStorage_accessKey(swigCPtr, this);
-  }
-
-  public void put_AccessKey(String newVal) {
-    chilkatJNI.CkAuthAzureStorage_put_AccessKey(swigCPtr, this, newVal);
-  }
-
-  public void get_Account(CkString str) {
-    chilkatJNI.CkAuthAzureStorage_get_Account(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String account() {
-    return chilkatJNI.CkAuthAzureStorage_account(swigCPtr, this);
-  }
-
-  public void put_Account(String newVal) {
-    chilkatJNI.CkAuthAzureStorage_put_Account(swigCPtr, this, newVal);
   }
 
   public void get_Scheme(CkString str) {
@@ -163,6 +143,22 @@ public class CkAuthAzureStorage {
     chilkatJNI.CkAuthAzureStorage_put_Service(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkAuthAzureStorage_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkAuthAzureStorage_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkAuthAzureStorage_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkAuthAzureStorage_version(swigCPtr, this);
+  }
+
   public void get_XMsVersion(CkString str) {
     chilkatJNI.CkAuthAzureStorage_get_XMsVersion(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -173,6 +169,10 @@ public class CkAuthAzureStorage {
 
   public void put_XMsVersion(String newVal) {
     chilkatJNI.CkAuthAzureStorage_put_XMsVersion(swigCPtr, this, newVal);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkAuthAzureStorage_SaveLastError(swigCPtr, this, path);
   }
 
 }

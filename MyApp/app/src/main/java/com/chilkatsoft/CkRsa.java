@@ -51,6 +51,42 @@ public class CkRsa {
     chilkatJNI.CkRsa_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_Charset(CkString str) {
+    chilkatJNI.CkRsa_get_Charset(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String charset() {
+    return chilkatJNI.CkRsa_charset(swigCPtr, this);
+  }
+
+  public void put_Charset(String newVal) {
+    chilkatJNI.CkRsa_put_Charset(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkRsa_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkRsa_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkRsa_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public void get_EncodingMode(CkString str) {
+    chilkatJNI.CkRsa_get_EncodingMode(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String encodingMode() {
+    return chilkatJNI.CkRsa_encodingMode(swigCPtr, this);
+  }
+
+  public void put_EncodingMode(String newVal) {
+    chilkatJNI.CkRsa_put_EncodingMode(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkRsa_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,68 +111,12 @@ public class CkRsa {
     return chilkatJNI.CkRsa_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkRsa_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkRsa_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkRsa_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkRsa_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkRsa_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkRsa_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkRsa_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkRsa_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkRsa_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkRsa_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_Charset(CkString str) {
-    chilkatJNI.CkRsa_get_Charset(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String charset() {
-    return chilkatJNI.CkRsa_charset(swigCPtr, this);
-  }
-
-  public void put_Charset(String newVal) {
-    chilkatJNI.CkRsa_put_Charset(swigCPtr, this, newVal);
-  }
-
-  public void get_EncodingMode(CkString str) {
-    chilkatJNI.CkRsa_get_EncodingMode(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String encodingMode() {
-    return chilkatJNI.CkRsa_encodingMode(swigCPtr, this);
-  }
-
-  public void put_EncodingMode(String newVal) {
-    chilkatJNI.CkRsa_put_EncodingMode(swigCPtr, this, newVal);
   }
 
   public boolean get_LittleEndian() {
@@ -179,32 +159,48 @@ public class CkRsa {
     chilkatJNI.CkRsa_put_OaepPadding(swigCPtr, this, newVal);
   }
 
-  public boolean DecryptBytes(CkByteData data, boolean bUsePrivateKey, CkByteData outData) {
-    return chilkatJNI.CkRsa_DecryptBytes(swigCPtr, this, CkByteData.getCPtr(data), data, bUsePrivateKey, CkByteData.getCPtr(outData), outData);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkRsa_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkRsa_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkRsa_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkRsa_version(swigCPtr, this);
+  }
+
+  public boolean DecryptBytes(CkByteData inData, boolean usePrivateKey, CkByteData outData) {
+    return chilkatJNI.CkRsa_DecryptBytes(swigCPtr, this, CkByteData.getCPtr(inData), inData, usePrivateKey, CkByteData.getCPtr(outData), outData);
   }
 
   public boolean DecryptBytesENC(String str, boolean bUsePrivateKey, CkByteData outData) {
     return chilkatJNI.CkRsa_DecryptBytesENC(swigCPtr, this, str, bUsePrivateKey, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean DecryptString(CkByteData data, boolean bUsePrivateKey, CkString outStr) {
-    return chilkatJNI.CkRsa_DecryptString(swigCPtr, this, CkByteData.getCPtr(data), data, bUsePrivateKey, CkString.getCPtr(outStr), outStr);
+  public boolean DecryptString(CkByteData binarySig, boolean usePrivateKey, CkString outStr) {
+    return chilkatJNI.CkRsa_DecryptString(swigCPtr, this, CkByteData.getCPtr(binarySig), binarySig, usePrivateKey, CkString.getCPtr(outStr), outStr);
   }
 
-  public String decryptString(CkByteData data, boolean bUsePrivateKey) {
-    return chilkatJNI.CkRsa_decryptString(swigCPtr, this, CkByteData.getCPtr(data), data, bUsePrivateKey);
+  public String decryptString(CkByteData binarySig, boolean usePrivateKey) {
+    return chilkatJNI.CkRsa_decryptString(swigCPtr, this, CkByteData.getCPtr(binarySig), binarySig, usePrivateKey);
   }
 
-  public boolean DecryptStringENC(String str, boolean bUsePrivateKey, CkString outStr) {
-    return chilkatJNI.CkRsa_DecryptStringENC(swigCPtr, this, str, bUsePrivateKey, CkString.getCPtr(outStr), outStr);
+  public boolean DecryptStringENC(String encodedSig, boolean usePrivateKey, CkString outStr) {
+    return chilkatJNI.CkRsa_DecryptStringENC(swigCPtr, this, encodedSig, usePrivateKey, CkString.getCPtr(outStr), outStr);
   }
 
-  public String decryptStringENC(String str, boolean bUsePrivateKey) {
-    return chilkatJNI.CkRsa_decryptStringENC(swigCPtr, this, str, bUsePrivateKey);
+  public String decryptStringENC(String encodedSig, boolean usePrivateKey) {
+    return chilkatJNI.CkRsa_decryptStringENC(swigCPtr, this, encodedSig, usePrivateKey);
   }
 
-  public boolean EncryptBytes(CkByteData data, boolean bUsePrivateKey, CkByteData outData) {
-    return chilkatJNI.CkRsa_EncryptBytes(swigCPtr, this, CkByteData.getCPtr(data), data, bUsePrivateKey, CkByteData.getCPtr(outData), outData);
+  public boolean EncryptBytes(CkByteData binaryData, boolean usePrivateKey, CkByteData outData) {
+    return chilkatJNI.CkRsa_EncryptBytes(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, usePrivateKey, CkByteData.getCPtr(outData), outData);
   }
 
   public boolean EncryptBytesENC(CkByteData data, boolean bUsePrivateKey, CkString outStr) {
@@ -215,8 +211,8 @@ public class CkRsa {
     return chilkatJNI.CkRsa_encryptBytesENC(swigCPtr, this, CkByteData.getCPtr(data), data, bUsePrivateKey);
   }
 
-  public boolean EncryptString(String str, boolean bUsePrivateKey, CkByteData outData) {
-    return chilkatJNI.CkRsa_EncryptString(swigCPtr, this, str, bUsePrivateKey, CkByteData.getCPtr(outData), outData);
+  public boolean EncryptString(String stringToEncrypt, boolean usePrivateKey, CkByteData outData) {
+    return chilkatJNI.CkRsa_EncryptString(swigCPtr, this, stringToEncrypt, usePrivateKey, CkByteData.getCPtr(outData), outData);
   }
 
   public boolean EncryptStringENC(String str, boolean bUsePrivateKey, CkString outStr) {
@@ -257,16 +253,16 @@ public class CkRsa {
     return chilkatJNI.CkRsa_GenerateKey(swigCPtr, this, numBits);
   }
 
-  public boolean ImportPrivateKey(String xml) {
-    return chilkatJNI.CkRsa_ImportPrivateKey(swigCPtr, this, xml);
+  public boolean ImportPrivateKey(String xmlKey) {
+    return chilkatJNI.CkRsa_ImportPrivateKey(swigCPtr, this, xmlKey);
   }
 
   public boolean ImportPrivateKeyObj(CkPrivateKey key) {
     return chilkatJNI.CkRsa_ImportPrivateKeyObj(swigCPtr, this, CkPrivateKey.getCPtr(key), key);
   }
 
-  public boolean ImportPublicKey(String xml) {
-    return chilkatJNI.CkRsa_ImportPublicKey(swigCPtr, this, xml);
+  public boolean ImportPublicKey(String xmlKey) {
+    return chilkatJNI.CkRsa_ImportPublicKey(swigCPtr, this, xmlKey);
   }
 
   public boolean ImportPublicKeyObj(CkPublicKey key) {
@@ -321,16 +317,20 @@ public class CkRsa {
     return chilkatJNI.CkRsa_openSslVerifyStringENC(swigCPtr, this, str);
   }
 
-  public boolean SignBytes(CkByteData data, String hashAlg, CkByteData outData) {
-    return chilkatJNI.CkRsa_SignBytes(swigCPtr, this, CkByteData.getCPtr(data), data, hashAlg, CkByteData.getCPtr(outData), outData);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkRsa_SaveLastError(swigCPtr, this, path);
   }
 
-  public boolean SignBytesENC(CkByteData data, String hashAlg, CkString outStr) {
-    return chilkatJNI.CkRsa_SignBytesENC(swigCPtr, this, CkByteData.getCPtr(data), data, hashAlg, CkString.getCPtr(outStr), outStr);
+  public boolean SignBytes(CkByteData binaryData, String hashAlgorithm, CkByteData outData) {
+    return chilkatJNI.CkRsa_SignBytes(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, hashAlgorithm, CkByteData.getCPtr(outData), outData);
   }
 
-  public String signBytesENC(CkByteData data, String hashAlg) {
-    return chilkatJNI.CkRsa_signBytesENC(swigCPtr, this, CkByteData.getCPtr(data), data, hashAlg);
+  public boolean SignBytesENC(CkByteData binaryData, String hashAlgorithm, CkString outStr) {
+    return chilkatJNI.CkRsa_SignBytesENC(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, hashAlgorithm, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String signBytesENC(CkByteData binaryData, String hashAlgorithm) {
+    return chilkatJNI.CkRsa_signBytesENC(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, hashAlgorithm);
   }
 
   public boolean SignHash(CkByteData hashBytes, String hashAlg, CkByteData outBytes) {
@@ -345,16 +345,16 @@ public class CkRsa {
     return chilkatJNI.CkRsa_signHashENC(swigCPtr, this, encodedHash, hashAlg);
   }
 
-  public boolean SignString(String str, String hashAlg, CkByteData outData) {
-    return chilkatJNI.CkRsa_SignString(swigCPtr, this, str, hashAlg, CkByteData.getCPtr(outData), outData);
+  public boolean SignString(String strToBeHashed, String hashAlgorithm, CkByteData outData) {
+    return chilkatJNI.CkRsa_SignString(swigCPtr, this, strToBeHashed, hashAlgorithm, CkByteData.getCPtr(outData), outData);
   }
 
-  public boolean SignStringENC(String str, String hashAlg, CkString outStr) {
-    return chilkatJNI.CkRsa_SignStringENC(swigCPtr, this, str, hashAlg, CkString.getCPtr(outStr), outStr);
+  public boolean SignStringENC(String strToBeHashed, String hashAlgorithm, CkString outStr) {
+    return chilkatJNI.CkRsa_SignStringENC(swigCPtr, this, strToBeHashed, hashAlgorithm, CkString.getCPtr(outStr), outStr);
   }
 
-  public String signStringENC(String str, String hashAlg) {
-    return chilkatJNI.CkRsa_signStringENC(swigCPtr, this, str, hashAlg);
+  public String signStringENC(String strToBeHashed, String hashAlgorithm) {
+    return chilkatJNI.CkRsa_signStringENC(swigCPtr, this, strToBeHashed, hashAlgorithm);
   }
 
   public boolean SnkToXml(String filename, CkString outStr) {
@@ -369,12 +369,12 @@ public class CkRsa {
     return chilkatJNI.CkRsa_UnlockComponent(swigCPtr, this, unlockCode);
   }
 
-  public boolean VerifyBytes(CkByteData data, String hashAlg, CkByteData sig) {
-    return chilkatJNI.CkRsa_VerifyBytes(swigCPtr, this, CkByteData.getCPtr(data), data, hashAlg, CkByteData.getCPtr(sig), sig);
+  public boolean VerifyBytes(CkByteData originalData, String hashAlgorithm, CkByteData signatureBytes) {
+    return chilkatJNI.CkRsa_VerifyBytes(swigCPtr, this, CkByteData.getCPtr(originalData), originalData, hashAlgorithm, CkByteData.getCPtr(signatureBytes), signatureBytes);
   }
 
-  public boolean VerifyBytesENC(CkByteData data, String hashAlg, String encodedSig) {
-    return chilkatJNI.CkRsa_VerifyBytesENC(swigCPtr, this, CkByteData.getCPtr(data), data, hashAlg, encodedSig);
+  public boolean VerifyBytesENC(CkByteData originalData, String hashAlgorithm, String encodedSig) {
+    return chilkatJNI.CkRsa_VerifyBytesENC(swigCPtr, this, CkByteData.getCPtr(originalData), originalData, hashAlgorithm, encodedSig);
   }
 
   public boolean VerifyHash(CkByteData hashBytes, String hashAlg, CkByteData sigBytes) {
@@ -389,12 +389,12 @@ public class CkRsa {
     return chilkatJNI.CkRsa_VerifyPrivateKey(swigCPtr, this, xml);
   }
 
-  public boolean VerifyString(String str, String hashAlg, CkByteData sig) {
-    return chilkatJNI.CkRsa_VerifyString(swigCPtr, this, str, hashAlg, CkByteData.getCPtr(sig), sig);
+  public boolean VerifyString(String originalString, String hashAlgorithm, CkByteData binarySig) {
+    return chilkatJNI.CkRsa_VerifyString(swigCPtr, this, originalString, hashAlgorithm, CkByteData.getCPtr(binarySig), binarySig);
   }
 
-  public boolean VerifyStringENC(String str, String hashAlg, String sig) {
-    return chilkatJNI.CkRsa_VerifyStringENC(swigCPtr, this, str, hashAlg, sig);
+  public boolean VerifyStringENC(String originalString, String hashAlgorithm, String encodedSig) {
+    return chilkatJNI.CkRsa_VerifyStringENC(swigCPtr, this, originalString, hashAlgorithm, encodedSig);
   }
 
 }

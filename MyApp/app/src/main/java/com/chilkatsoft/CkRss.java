@@ -55,6 +55,18 @@ public class CkRss {
     chilkatJNI.CkRss_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkRss_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkRss_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkRss_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkRss_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,24 +91,20 @@ public class CkRss {
     return chilkatJNI.CkRss_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkRss_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkRss_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkRss_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkRss_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkRss_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  public int get_NumChannels() {
+    return chilkatJNI.CkRss_get_NumChannels(swigCPtr, this);
   }
 
-  public String debugLogFilePath() {
-    return chilkatJNI.CkRss_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkRss_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_NumItems() {
+    return chilkatJNI.CkRss_get_NumItems(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -107,24 +115,12 @@ public class CkRss {
     chilkatJNI.CkRss_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkRss_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkRss_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkRss_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkRss_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_NumChannels() {
-    return chilkatJNI.CkRss_get_NumChannels(swigCPtr, this);
-  }
-
-  public int get_NumItems() {
-    return chilkatJNI.CkRss_get_NumItems(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkRss_version(swigCPtr, this);
   }
 
   public CkRss AddNewChannel() {
@@ -214,8 +210,8 @@ public class CkRss {
     return chilkatJNI.CkRss_string(swigCPtr, this, tag);
   }
 
-  public boolean LoadRssFile(String filename) {
-    return chilkatJNI.CkRss_LoadRssFile(swigCPtr, this, filename);
+  public boolean LoadRssFile(String filePath) {
+    return chilkatJNI.CkRss_LoadRssFile(swigCPtr, this, filePath);
   }
 
   public boolean LoadRssString(String rssString) {
@@ -252,6 +248,10 @@ public class CkRss {
 
   public void Remove(String tag) {
     chilkatJNI.CkRss_Remove(swigCPtr, this, tag);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkRss_SaveLastError(swigCPtr, this, path);
   }
 
   public void SetAttr(String tag, String attrName, String value) {

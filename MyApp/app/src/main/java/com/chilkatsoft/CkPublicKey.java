@@ -51,6 +51,26 @@ public class CkPublicKey {
     chilkatJNI.CkPublicKey_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkPublicKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkPublicKey_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkPublicKey_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public void get_KeyType(CkString str) {
+    chilkatJNI.CkPublicKey_get_KeyType(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String keyType() {
+    return chilkatJNI.CkPublicKey_keyType(swigCPtr, this);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkPublicKey_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +95,12 @@ public class CkPublicKey {
     return chilkatJNI.CkPublicKey_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkPublicKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkPublicKey_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkPublicKey_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkPublicKey_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkPublicKey_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkPublicKey_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkPublicKey_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,24 +111,28 @@ public class CkPublicKey {
     chilkatJNI.CkPublicKey_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkPublicKey_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkPublicKey_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkPublicKey_put_LastMethodSuccess(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkPublicKey_version(swigCPtr, this);
   }
 
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkPublicKey_SaveLastError(swigCPtr, this, path);
+  public boolean GetDer(boolean preferPkcs1, CkByteData outBytes) {
+    return chilkatJNI.CkPublicKey_GetDer(swigCPtr, this, preferPkcs1, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public void get_KeyType(CkString str) {
-    chilkatJNI.CkPublicKey_get_KeyType(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean GetEncoded(boolean preferPkcs1, String encoding, CkString outStr) {
+    return chilkatJNI.CkPublicKey_GetEncoded(swigCPtr, this, preferPkcs1, encoding, CkString.getCPtr(outStr), outStr);
   }
 
-  public String keyType() {
-    return chilkatJNI.CkPublicKey_keyType(swigCPtr, this);
+  public String getEncoded(boolean preferPkcs1, String encoding) {
+    return chilkatJNI.CkPublicKey_getEncoded(swigCPtr, this, preferPkcs1, encoding);
+  }
+
+  public String encoded(boolean preferPkcs1, String encoding) {
+    return chilkatJNI.CkPublicKey_encoded(swigCPtr, this, preferPkcs1, encoding);
   }
 
   public boolean GetOpenSslDer(CkByteData outData) {
@@ -137,6 +149,18 @@ public class CkPublicKey {
 
   public String openSslPem() {
     return chilkatJNI.CkPublicKey_openSslPem(swigCPtr, this);
+  }
+
+  public boolean GetPem(boolean preferPkcs1, CkString outStr) {
+    return chilkatJNI.CkPublicKey_GetPem(swigCPtr, this, preferPkcs1, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getPem(boolean preferPkcs1) {
+    return chilkatJNI.CkPublicKey_getPem(swigCPtr, this, preferPkcs1);
+  }
+
+  public String pem(boolean preferPkcs1) {
+    return chilkatJNI.CkPublicKey_pem(swigCPtr, this, preferPkcs1);
   }
 
   public boolean GetPkcs1ENC(String encoding, CkString outStr) {
@@ -183,6 +207,18 @@ public class CkPublicKey {
     return chilkatJNI.CkPublicKey_LoadBase64(swigCPtr, this, keyStr);
   }
 
+  public boolean LoadFromBinary(CkByteData keyBytes) {
+    return chilkatJNI.CkPublicKey_LoadFromBinary(swigCPtr, this, CkByteData.getCPtr(keyBytes), keyBytes);
+  }
+
+  public boolean LoadFromFile(String path) {
+    return chilkatJNI.CkPublicKey_LoadFromFile(swigCPtr, this, path);
+  }
+
+  public boolean LoadFromString(String keyString) {
+    return chilkatJNI.CkPublicKey_LoadFromString(swigCPtr, this, keyString);
+  }
+
   public boolean LoadOpenSslDer(CkByteData data) {
     return chilkatJNI.CkPublicKey_LoadOpenSslDer(swigCPtr, this, CkByteData.getCPtr(data), data);
   }
@@ -219,6 +255,14 @@ public class CkPublicKey {
     return chilkatJNI.CkPublicKey_LoadXmlFile(swigCPtr, this, path);
   }
 
+  public boolean SaveDerFile(boolean preferPkcs1, String path) {
+    return chilkatJNI.CkPublicKey_SaveDerFile(swigCPtr, this, preferPkcs1, path);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkPublicKey_SaveLastError(swigCPtr, this, path);
+  }
+
   public boolean SaveOpenSslDerFile(String path) {
     return chilkatJNI.CkPublicKey_SaveOpenSslDerFile(swigCPtr, this, path);
   }
@@ -227,60 +271,16 @@ public class CkPublicKey {
     return chilkatJNI.CkPublicKey_SaveOpenSslPemFile(swigCPtr, this, path);
   }
 
+  public boolean SavePemFile(boolean preferPkcs1, String path) {
+    return chilkatJNI.CkPublicKey_SavePemFile(swigCPtr, this, preferPkcs1, path);
+  }
+
   public boolean SaveRsaDerFile(String path) {
     return chilkatJNI.CkPublicKey_SaveRsaDerFile(swigCPtr, this, path);
   }
 
   public boolean SaveXmlFile(String path) {
     return chilkatJNI.CkPublicKey_SaveXmlFile(swigCPtr, this, path);
-  }
-
-  public boolean LoadFromBinary(CkByteData keyBytes) {
-    return chilkatJNI.CkPublicKey_LoadFromBinary(swigCPtr, this, CkByteData.getCPtr(keyBytes), keyBytes);
-  }
-
-  public boolean LoadFromString(String keyString) {
-    return chilkatJNI.CkPublicKey_LoadFromString(swigCPtr, this, keyString);
-  }
-
-  public boolean LoadFromFile(String path) {
-    return chilkatJNI.CkPublicKey_LoadFromFile(swigCPtr, this, path);
-  }
-
-  public boolean GetDer(boolean preferPkcs1, CkByteData outBytes) {
-    return chilkatJNI.CkPublicKey_GetDer(swigCPtr, this, preferPkcs1, CkByteData.getCPtr(outBytes), outBytes);
-  }
-
-  public boolean GetPem(boolean preferPkcs1, CkString outStr) {
-    return chilkatJNI.CkPublicKey_GetPem(swigCPtr, this, preferPkcs1, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String getPem(boolean preferPkcs1) {
-    return chilkatJNI.CkPublicKey_getPem(swigCPtr, this, preferPkcs1);
-  }
-
-  public String pem(boolean preferPkcs1) {
-    return chilkatJNI.CkPublicKey_pem(swigCPtr, this, preferPkcs1);
-  }
-
-  public boolean GetEncoded(boolean preferPkcs1, String encoding, CkString outStr) {
-    return chilkatJNI.CkPublicKey_GetEncoded(swigCPtr, this, preferPkcs1, encoding, CkString.getCPtr(outStr), outStr);
-  }
-
-  public String getEncoded(boolean preferPkcs1, String encoding) {
-    return chilkatJNI.CkPublicKey_getEncoded(swigCPtr, this, preferPkcs1, encoding);
-  }
-
-  public String encoded(boolean preferPkcs1, String encoding) {
-    return chilkatJNI.CkPublicKey_encoded(swigCPtr, this, preferPkcs1, encoding);
-  }
-
-  public boolean SaveDerFile(boolean preferPkcs1, String path) {
-    return chilkatJNI.CkPublicKey_SaveDerFile(swigCPtr, this, preferPkcs1, path);
-  }
-
-  public boolean SavePemFile(boolean preferPkcs1, String path) {
-    return chilkatJNI.CkPublicKey_SavePemFile(swigCPtr, this, preferPkcs1, path);
   }
 
 }

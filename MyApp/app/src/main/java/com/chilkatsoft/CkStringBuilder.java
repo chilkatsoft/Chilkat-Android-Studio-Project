@@ -39,12 +39,24 @@ public class CkStringBuilder {
     this(chilkatJNI.new_CkStringBuilder(), true);
   }
 
+  public int get_IntValue() {
+    return chilkatJNI.CkStringBuilder_get_IntValue(swigCPtr, this);
+  }
+
+  public void put_IntValue(int newVal) {
+    chilkatJNI.CkStringBuilder_put_IntValue(swigCPtr, this, newVal);
+  }
+
   public int get_Length() {
     return chilkatJNI.CkStringBuilder_get_Length(swigCPtr, this);
   }
 
   public boolean Append(String value) {
     return chilkatJNI.CkStringBuilder_Append(swigCPtr, this, value);
+  }
+
+  public boolean AppendEncoded(CkByteData binaryData, String encoding) {
+    return chilkatJNI.CkStringBuilder_AppendEncoded(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, encoding);
   }
 
   public boolean AppendInt(int value) {
@@ -55,16 +67,52 @@ public class CkStringBuilder {
     return chilkatJNI.CkStringBuilder_AppendInt64(swigCPtr, this, value);
   }
 
-  public boolean AppendEncoded(CkByteData binaryData, String encoding) {
-    return chilkatJNI.CkStringBuilder_AppendEncoded(swigCPtr, this, CkByteData.getCPtr(binaryData), binaryData, encoding);
+  public boolean AppendSb(CkStringBuilder sb) {
+    return chilkatJNI.CkStringBuilder_AppendSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb);
   }
 
   public void Clear() {
     chilkatJNI.CkStringBuilder_Clear(swigCPtr, this);
   }
 
-  public void Replace(String value, String replacement) {
-    chilkatJNI.CkStringBuilder_Replace(swigCPtr, this, value, replacement);
+  public boolean Contains(String str, boolean caseSensitive) {
+    return chilkatJNI.CkStringBuilder_Contains(swigCPtr, this, str, caseSensitive);
+  }
+
+  public boolean ContentsEqual(String str, boolean caseSensitive) {
+    return chilkatJNI.CkStringBuilder_ContentsEqual(swigCPtr, this, str, caseSensitive);
+  }
+
+  public boolean ContentsEqualSb(CkStringBuilder sb, boolean caseSensitive) {
+    return chilkatJNI.CkStringBuilder_ContentsEqualSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb, caseSensitive);
+  }
+
+  public boolean Decode(String encoding, String charset) {
+    return chilkatJNI.CkStringBuilder_Decode(swigCPtr, this, encoding, charset);
+  }
+
+  public boolean Encode(String encoding, String charset) {
+    return chilkatJNI.CkStringBuilder_Encode(swigCPtr, this, encoding, charset);
+  }
+
+  public boolean EndsWith(String substr, boolean caseSensitive) {
+    return chilkatJNI.CkStringBuilder_EndsWith(swigCPtr, this, substr, caseSensitive);
+  }
+
+  public boolean EntityDecode() {
+    return chilkatJNI.CkStringBuilder_EntityDecode(swigCPtr, this);
+  }
+
+  public boolean GetAfterBetween(String searchAfter, String beginMark, String endMark, CkString outStr) {
+    return chilkatJNI.CkStringBuilder_GetAfterBetween(swigCPtr, this, searchAfter, beginMark, endMark, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getAfterBetween(String searchAfter, String beginMark, String endMark) {
+    return chilkatJNI.CkStringBuilder_getAfterBetween(swigCPtr, this, searchAfter, beginMark, endMark);
+  }
+
+  public String afterBetween(String searchAfter, String beginMark, String endMark) {
+    return chilkatJNI.CkStringBuilder_afterBetween(swigCPtr, this, searchAfter, beginMark, endMark);
   }
 
   public boolean GetAsString(CkString outStr) {
@@ -79,12 +127,112 @@ public class CkStringBuilder {
     return chilkatJNI.CkStringBuilder_asString(swigCPtr, this);
   }
 
-  public boolean Equals(String str, boolean caseSensitive) {
-    return chilkatJNI.CkStringBuilder_Equals(swigCPtr, this, str, caseSensitive);
+  public boolean GetBetween(String beginMark, String endMark, CkString outStr) {
+    return chilkatJNI.CkStringBuilder_GetBetween(swigCPtr, this, beginMark, endMark, CkString.getCPtr(outStr), outStr);
   }
 
-  public boolean Contains(String str, boolean caseSensitive) {
-    return chilkatJNI.CkStringBuilder_Contains(swigCPtr, this, str, caseSensitive);
+  public String getBetween(String beginMark, String endMark) {
+    return chilkatJNI.CkStringBuilder_getBetween(swigCPtr, this, beginMark, endMark);
+  }
+
+  public String between(String beginMark, String endMark) {
+    return chilkatJNI.CkStringBuilder_between(swigCPtr, this, beginMark, endMark);
+  }
+
+  public boolean GetDecoded(String encoding, CkByteData outBytes) {
+    return chilkatJNI.CkStringBuilder_GetDecoded(swigCPtr, this, encoding, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public boolean GetEncoded(String encoding, String charset, CkString outStr) {
+    return chilkatJNI.CkStringBuilder_GetEncoded(swigCPtr, this, encoding, charset, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getEncoded(String encoding, String charset) {
+    return chilkatJNI.CkStringBuilder_getEncoded(swigCPtr, this, encoding, charset);
+  }
+
+  public String encoded(String encoding, String charset) {
+    return chilkatJNI.CkStringBuilder_encoded(swigCPtr, this, encoding, charset);
+  }
+
+  public boolean GetNth(int index, String delimiterChar, boolean exceptDoubleQuoted, boolean exceptEscaped, CkString outStr) {
+    return chilkatJNI.CkStringBuilder_GetNth(swigCPtr, this, index, delimiterChar, exceptDoubleQuoted, exceptEscaped, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String getNth(int index, String delimiterChar, boolean exceptDoubleQuoted, boolean exceptEscaped) {
+    return chilkatJNI.CkStringBuilder_getNth(swigCPtr, this, index, delimiterChar, exceptDoubleQuoted, exceptEscaped);
+  }
+
+  public String nth(int index, String delimiterChar, boolean exceptDoubleQuoted, boolean exceptEscaped) {
+    return chilkatJNI.CkStringBuilder_nth(swigCPtr, this, index, delimiterChar, exceptDoubleQuoted, exceptEscaped);
+  }
+
+  public boolean LastNLines(int numLines, boolean bCrlf, CkString outStr) {
+    return chilkatJNI.CkStringBuilder_LastNLines(swigCPtr, this, numLines, bCrlf, CkString.getCPtr(outStr), outStr);
+  }
+
+  public String lastNLines(int numLines, boolean bCrlf) {
+    return chilkatJNI.CkStringBuilder_lastNLines(swigCPtr, this, numLines, bCrlf);
+  }
+
+  public boolean LoadFile(String path, String charset) {
+    return chilkatJNI.CkStringBuilder_LoadFile(swigCPtr, this, path, charset);
+  }
+
+  public boolean Prepend(String value) {
+    return chilkatJNI.CkStringBuilder_Prepend(swigCPtr, this, value);
+  }
+
+  public int Replace(String value, String replacement) {
+    return chilkatJNI.CkStringBuilder_Replace(swigCPtr, this, value, replacement);
+  }
+
+  public int ReplaceBetween(String beginMark, String endMark, String value, String replacement) {
+    return chilkatJNI.CkStringBuilder_ReplaceBetween(swigCPtr, this, beginMark, endMark, value, replacement);
+  }
+
+  public int ReplaceWord(String value, String replacement) {
+    return chilkatJNI.CkStringBuilder_ReplaceWord(swigCPtr, this, value, replacement);
+  }
+
+  public boolean SetNth(int index, String value, String delimiterChar, boolean exceptDoubleQuoted, boolean exceptEscaped) {
+    return chilkatJNI.CkStringBuilder_SetNth(swigCPtr, this, index, value, delimiterChar, exceptDoubleQuoted, exceptEscaped);
+  }
+
+  public boolean SetString(String value) {
+    return chilkatJNI.CkStringBuilder_SetString(swigCPtr, this, value);
+  }
+
+  public boolean StartsWith(String substr, boolean caseSensitive) {
+    return chilkatJNI.CkStringBuilder_StartsWith(swigCPtr, this, substr, caseSensitive);
+  }
+
+  public boolean ToCRLF() {
+    return chilkatJNI.CkStringBuilder_ToCRLF(swigCPtr, this);
+  }
+
+  public boolean ToLF() {
+    return chilkatJNI.CkStringBuilder_ToLF(swigCPtr, this);
+  }
+
+  public boolean ToLowercase() {
+    return chilkatJNI.CkStringBuilder_ToLowercase(swigCPtr, this);
+  }
+
+  public boolean ToUppercase() {
+    return chilkatJNI.CkStringBuilder_ToUppercase(swigCPtr, this);
+  }
+
+  public boolean Trim() {
+    return chilkatJNI.CkStringBuilder_Trim(swigCPtr, this);
+  }
+
+  public boolean TrimInsideSpaces() {
+    return chilkatJNI.CkStringBuilder_TrimInsideSpaces(swigCPtr, this);
+  }
+
+  public boolean WriteFile(String path, String charset, boolean emitBom) {
+    return chilkatJNI.CkStringBuilder_WriteFile(swigCPtr, this, path, charset, emitBom);
   }
 
 }

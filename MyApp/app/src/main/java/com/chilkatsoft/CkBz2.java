@@ -55,6 +55,34 @@ public class CkBz2 {
     chilkatJNI.CkBz2_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkBz2_get_AbortCurrent(swigCPtr, this);
+  }
+
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkBz2_put_AbortCurrent(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkBz2_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkBz2_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkBz2_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public int get_HeartbeatMs() {
+    return chilkatJNI.CkBz2_get_HeartbeatMs(swigCPtr, this);
+  }
+
+  public void put_HeartbeatMs(int newVal) {
+    chilkatJNI.CkBz2_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkBz2_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -79,24 +107,12 @@ public class CkBz2 {
     return chilkatJNI.CkBz2_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkBz2_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkBz2_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkBz2_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkBz2_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkBz2_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkBz2_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkBz2_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -107,32 +123,12 @@ public class CkBz2 {
     chilkatJNI.CkBz2_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkBz2_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkBz2_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkBz2_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkBz2_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_HeartbeatMs() {
-    return chilkatJNI.CkBz2_get_HeartbeatMs(swigCPtr, this);
-  }
-
-  public void put_HeartbeatMs(int newVal) {
-    chilkatJNI.CkBz2_put_HeartbeatMs(swigCPtr, this, newVal);
-  }
-
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkBz2_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkBz2_put_AbortCurrent(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkBz2_version(swigCPtr, this);
   }
 
   public boolean CompressFile(String inFilename, String toPath) {
@@ -153,6 +149,15 @@ public class CkBz2 {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean CompressMemory(CkByteData inData, CkByteData outBytes) {
+    return chilkatJNI.CkBz2_CompressMemory(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outBytes), outBytes);
+  }
+
+  public CkTask CompressMemoryAsync(CkByteData inData) {
+    long cPtr = chilkatJNI.CkBz2_CompressMemoryAsync(swigCPtr, this, CkByteData.getCPtr(inData), inData);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean CompressMemToFile(CkByteData inData, String toPath) {
     return chilkatJNI.CkBz2_CompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, toPath);
   }
@@ -162,13 +167,8 @@ public class CkBz2 {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean CompressMemory(CkByteData inData, CkByteData outBytes) {
-    return chilkatJNI.CkBz2_CompressMemory(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outBytes), outBytes);
-  }
-
-  public CkTask CompressMemoryAsync(CkByteData inData) {
-    long cPtr = chilkatJNI.CkBz2_CompressMemoryAsync(swigCPtr, this, CkByteData.getCPtr(inData), inData);
-    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkBz2_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UncompressFile(String inFilename, String toPath) {
@@ -189,21 +189,21 @@ public class CkBz2 {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean UncompressMemToFile(CkByteData inData, String toPath) {
-    return chilkatJNI.CkBz2_UncompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, toPath);
-  }
-
-  public CkTask UncompressMemToFileAsync(CkByteData inData, String toPath) {
-    long cPtr = chilkatJNI.CkBz2_UncompressMemToFileAsync(swigCPtr, this, CkByteData.getCPtr(inData), inData, toPath);
-    return (cPtr == 0) ? null : new CkTask(cPtr, true);
-  }
-
   public boolean UncompressMemory(CkByteData inData, CkByteData outBytes) {
     return chilkatJNI.CkBz2_UncompressMemory(swigCPtr, this, CkByteData.getCPtr(inData), inData, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public CkTask UncompressMemoryAsync(CkByteData inData) {
     long cPtr = chilkatJNI.CkBz2_UncompressMemoryAsync(swigCPtr, this, CkByteData.getCPtr(inData), inData);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean UncompressMemToFile(CkByteData inData, String toPath) {
+    return chilkatJNI.CkBz2_UncompressMemToFile(swigCPtr, this, CkByteData.getCPtr(inData), inData, toPath);
+  }
+
+  public CkTask UncompressMemToFileAsync(CkByteData inData, String toPath) {
+    long cPtr = chilkatJNI.CkBz2_UncompressMemToFileAsync(swigCPtr, this, CkByteData.getCPtr(inData), inData, toPath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 

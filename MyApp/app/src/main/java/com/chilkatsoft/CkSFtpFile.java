@@ -51,20 +51,20 @@ public class CkSFtpFile {
     return chilkatJNI.CkSFtpFile_createTimeStr(swigCPtr, this);
   }
 
-  public void get_FileType(CkString str) {
-    chilkatJNI.CkSFtpFile_get_FileType(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String fileType() {
-    return chilkatJNI.CkSFtpFile_fileType(swigCPtr, this);
-  }
-
   public void get_Filename(CkString str) {
     chilkatJNI.CkSFtpFile_get_Filename(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
   public String filename() {
     return chilkatJNI.CkSFtpFile_filename(swigCPtr, this);
+  }
+
+  public void get_FileType(CkString str) {
+    chilkatJNI.CkSFtpFile_get_FileType(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String fileType() {
+    return chilkatJNI.CkSFtpFile_fileType(swigCPtr, this);
   }
 
   public int get_Gid() {

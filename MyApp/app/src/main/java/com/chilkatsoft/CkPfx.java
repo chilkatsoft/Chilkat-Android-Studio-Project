@@ -51,6 +51,18 @@ public class CkPfx {
     chilkatJNI.CkPfx_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkPfx_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkPfx_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkPfx_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkPfx_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +87,20 @@ public class CkPfx {
     return chilkatJNI.CkPfx_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkPfx_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkPfx_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkPfx_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkPfx_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkPfx_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  public int get_NumCerts() {
+    return chilkatJNI.CkPfx_get_NumCerts(swigCPtr, this);
   }
 
-  public String debugLogFilePath() {
-    return chilkatJNI.CkPfx_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkPfx_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_NumPrivateKeys() {
+    return chilkatJNI.CkPfx_get_NumPrivateKeys(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,24 +111,12 @@ public class CkPfx {
     chilkatJNI.CkPfx_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkPfx_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkPfx_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkPfx_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkPfx_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_NumCerts() {
-    return chilkatJNI.CkPfx_get_NumCerts(swigCPtr, this);
-  }
-
-  public int get_NumPrivateKeys() {
-    return chilkatJNI.CkPfx_get_NumPrivateKeys(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkPfx_version(swigCPtr, this);
   }
 
   public boolean AddCert(CkCert cert, boolean includeChain) {
@@ -155,6 +151,10 @@ public class CkPfx {
 
   public boolean LoadPfxFile(String path, String password) {
     return chilkatJNI.CkPfx_LoadPfxFile(swigCPtr, this, path, password);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkPfx_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean ToBinary(String password, CkByteData outBytes) {

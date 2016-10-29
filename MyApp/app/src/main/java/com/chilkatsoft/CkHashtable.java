@@ -43,6 +43,10 @@ public class CkHashtable {
     return chilkatJNI.CkHashtable_AddInt(swigCPtr, this, key, value);
   }
 
+  public boolean AddQueryParams(String queryParams) {
+    return chilkatJNI.CkHashtable_AddQueryParams(swigCPtr, this, queryParams);
+  }
+
   public boolean AddStr(String key, String value) {
     return chilkatJNI.CkHashtable_AddStr(swigCPtr, this, key, value);
   }
@@ -57,6 +61,10 @@ public class CkHashtable {
 
   public boolean Contains(String key) {
     return chilkatJNI.CkHashtable_Contains(swigCPtr, this, key);
+  }
+
+  public boolean GetKeys(CkStringTable strTable) {
+    return chilkatJNI.CkHashtable_GetKeys(swigCPtr, this, CkStringTable.getCPtr(strTable), strTable);
   }
 
   public int LookupInt(String key) {

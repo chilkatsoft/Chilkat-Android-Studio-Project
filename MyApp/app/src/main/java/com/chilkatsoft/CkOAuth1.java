@@ -51,70 +51,6 @@ public class CkOAuth1 {
     chilkatJNI.CkOAuth1_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkOAuth1_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkOAuth1_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkOAuth1_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkOAuth1_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkOAuth1_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkOAuth1_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkOAuth1_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkOAuth1_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkOAuth1_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkOAuth1_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkOAuth1_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkOAuth1_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkOAuth1_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkOAuth1_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkOAuth1_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkOAuth1_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_AuthorizationHeader(CkString str) {
     chilkatJNI.CkOAuth1_get_AuthorizationHeader(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -155,6 +91,18 @@ public class CkOAuth1 {
     chilkatJNI.CkOAuth1_put_ConsumerSecret(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkOAuth1_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkOAuth1_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkOAuth1_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_EncodedSignature(CkString str) {
     chilkatJNI.CkOAuth1_get_EncodedSignature(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -177,6 +125,38 @@ public class CkOAuth1 {
 
   public String hmacKey() {
     return chilkatJNI.CkOAuth1_hmacKey(swigCPtr, this);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkOAuth1_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkOAuth1_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkOAuth1_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkOAuth1_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkOAuth1_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkOAuth1_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkOAuth1_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkOAuth1_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_Nonce(CkString str) {
@@ -291,8 +271,28 @@ public class CkOAuth1 {
     chilkatJNI.CkOAuth1_put_TokenSecret(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkOAuth1_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkOAuth1_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkOAuth1_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkOAuth1_version(swigCPtr, this);
+  }
+
   public boolean AddParam(String name, String value) {
     return chilkatJNI.CkOAuth1_AddParam(swigCPtr, this, name, value);
+  }
+
+  public boolean Generate() {
+    return chilkatJNI.CkOAuth1_Generate(swigCPtr, this);
   }
 
   public boolean GenNonce(int numBytes) {
@@ -303,12 +303,12 @@ public class CkOAuth1 {
     return chilkatJNI.CkOAuth1_GenTimestamp(swigCPtr, this);
   }
 
-  public boolean Generate() {
-    return chilkatJNI.CkOAuth1_Generate(swigCPtr, this);
-  }
-
   public boolean RemoveParam(String name) {
     return chilkatJNI.CkOAuth1_RemoveParam(swigCPtr, this, name);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkOAuth1_SaveLastError(swigCPtr, this, path);
   }
 
 }

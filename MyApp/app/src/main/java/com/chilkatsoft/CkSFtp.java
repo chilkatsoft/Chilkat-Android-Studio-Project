@@ -55,68 +55,12 @@ public class CkSFtp {
     chilkatJNI.CkSFtp_put_EventCallbackObject(swigCPtr, this, CkSFtpProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkSFtp_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSFtp_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkSFtp_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkSFtp_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkSFtp_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkSFtp_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkSFtp_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkSFtp_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkSFtp_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkSFtp_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkSFtp_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkSFtp_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkSFtp_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkSFtp_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkSFtp_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkSFtp_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkSFtp_SaveLastError(swigCPtr, this, path);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSFtp_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public void get_AccumulateBuffer(CkByteData outBytes) {
@@ -173,6 +117,18 @@ public class CkSFtp {
 
   public void put_ConnectTimeoutMs(int newVal) {
     chilkatJNI.CkSFtp_put_ConnectTimeoutMs(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkSFtp_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkSFtp_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkSFtp_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public int get_DisconnectCode() {
@@ -371,6 +327,38 @@ public class CkSFtp {
     chilkatJNI.CkSFtp_put_KeepSessionLog(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkSFtp_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkSFtp_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkSFtp_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkSFtp_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkSFtp_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkSFtp_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkSFtp_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkSFtp_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public int get_MaxPacketSize() {
     return chilkatJNI.CkSFtp_get_MaxPacketSize(swigCPtr, this);
   }
@@ -443,22 +431,6 @@ public class CkSFtp {
     return chilkatJNI.CkSFtp_sessionLog(swigCPtr, this);
   }
 
-  public int get_SoRcvBuf() {
-    return chilkatJNI.CkSFtp_get_SoRcvBuf(swigCPtr, this);
-  }
-
-  public void put_SoRcvBuf(int newVal) {
-    chilkatJNI.CkSFtp_put_SoRcvBuf(swigCPtr, this, newVal);
-  }
-
-  public int get_SoSndBuf() {
-    return chilkatJNI.CkSFtp_get_SoSndBuf(swigCPtr, this);
-  }
-
-  public void put_SoSndBuf(int newVal) {
-    chilkatJNI.CkSFtp_put_SoSndBuf(swigCPtr, this, newVal);
-  }
-
   public void get_SocksHostname(CkString str) {
     chilkatJNI.CkSFtp_get_SocksHostname(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -511,6 +483,46 @@ public class CkSFtp {
     chilkatJNI.CkSFtp_put_SocksVersion(swigCPtr, this, newVal);
   }
 
+  public int get_SoRcvBuf() {
+    return chilkatJNI.CkSFtp_get_SoRcvBuf(swigCPtr, this);
+  }
+
+  public void put_SoRcvBuf(int newVal) {
+    chilkatJNI.CkSFtp_put_SoRcvBuf(swigCPtr, this, newVal);
+  }
+
+  public int get_SoSndBuf() {
+    return chilkatJNI.CkSFtp_get_SoSndBuf(swigCPtr, this);
+  }
+
+  public void put_SoSndBuf(int newVal) {
+    chilkatJNI.CkSFtp_put_SoSndBuf(swigCPtr, this, newVal);
+  }
+
+  public void get_SyncDirectives(CkString str) {
+    chilkatJNI.CkSFtp_get_SyncDirectives(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncDirectives() {
+    return chilkatJNI.CkSFtp_syncDirectives(swigCPtr, this);
+  }
+
+  public void put_SyncDirectives(String newVal) {
+    chilkatJNI.CkSFtp_put_SyncDirectives(swigCPtr, this, newVal);
+  }
+
+  public void get_SyncedFiles(CkString str) {
+    chilkatJNI.CkSFtp_get_SyncedFiles(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String syncedFiles() {
+    return chilkatJNI.CkSFtp_syncedFiles(swigCPtr, this);
+  }
+
+  public void put_SyncedFiles(String newVal) {
+    chilkatJNI.CkSFtp_put_SyncedFiles(swigCPtr, this, newVal);
+  }
+
   public void get_SyncMustMatch(CkString str) {
     chilkatJNI.CkSFtp_get_SyncMustMatch(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -533,18 +545,6 @@ public class CkSFtp {
 
   public void put_SyncMustNotMatch(String newVal) {
     chilkatJNI.CkSFtp_put_SyncMustNotMatch(swigCPtr, this, newVal);
-  }
-
-  public void get_SyncedFiles(CkString str) {
-    chilkatJNI.CkSFtp_get_SyncedFiles(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String syncedFiles() {
-    return chilkatJNI.CkSFtp_syncedFiles(swigCPtr, this);
-  }
-
-  public void put_SyncedFiles(String newVal) {
-    chilkatJNI.CkSFtp_put_SyncedFiles(swigCPtr, this, newVal);
   }
 
   public boolean get_TcpNoDelay() {
@@ -571,24 +571,20 @@ public class CkSFtp {
     chilkatJNI.CkSFtp_put_UtcMode(swigCPtr, this, newVal);
   }
 
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkSFtp_get_AbortCurrent(swigCPtr, this);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkSFtp_get_VerboseLogging(swigCPtr, this);
   }
 
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkSFtp_put_AbortCurrent(swigCPtr, this, newVal);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkSFtp_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public void get_SyncDirectives(CkString str) {
-    chilkatJNI.CkSFtp_get_SyncDirectives(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkSFtp_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String syncDirectives() {
-    return chilkatJNI.CkSFtp_syncDirectives(swigCPtr, this);
-  }
-
-  public void put_SyncDirectives(String newVal) {
-    chilkatJNI.CkSFtp_put_SyncDirectives(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkSFtp_version(swigCPtr, this);
   }
 
   public int AccumulateBytes(String handle, int maxBytes) {
@@ -656,12 +652,12 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean Connect(String hostname, int port) {
-    return chilkatJNI.CkSFtp_Connect(swigCPtr, this, hostname, port);
+  public boolean Connect(String domainName, int port) {
+    return chilkatJNI.CkSFtp_Connect(swigCPtr, this, domainName, port);
   }
 
-  public CkTask ConnectAsync(String hostname, int port) {
-    long cPtr = chilkatJNI.CkSFtp_ConnectAsync(swigCPtr, this, hostname, port);
+  public CkTask ConnectAsync(String domainName, int port) {
+    long cPtr = chilkatJNI.CkSFtp_ConnectAsync(swigCPtr, this, domainName, port);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -674,12 +670,12 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean CopyFileAttr(String localFilename, String remoteFilename, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_CopyFileAttr(swigCPtr, this, localFilename, remoteFilename, bIsHandle);
+  public boolean CopyFileAttr(String localFilename, String remoteFilename, boolean isHandle) {
+    return chilkatJNI.CkSFtp_CopyFileAttr(swigCPtr, this, localFilename, remoteFilename, isHandle);
   }
 
-  public CkTask CopyFileAttrAsync(String localFilename, String remoteFilename, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_CopyFileAttrAsync(swigCPtr, this, localFilename, remoteFilename, bIsHandle);
+  public CkTask CopyFileAttrAsync(String localFilename, String remoteFilename, boolean isHandle) {
+    long cPtr = chilkatJNI.CkSFtp_CopyFileAttrAsync(swigCPtr, this, localFilename, remoteFilename, isHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -694,6 +690,15 @@ public class CkSFtp {
 
   public void Disconnect() {
     chilkatJNI.CkSFtp_Disconnect(swigCPtr, this);
+  }
+
+  public boolean DownloadBd(String remoteFilePath, SWIGTYPE_p_CkBinData binData) {
+    return chilkatJNI.CkSFtp_DownloadBd(swigCPtr, this, remoteFilePath, SWIGTYPE_p_CkBinData.getCPtr(binData));
+  }
+
+  public CkTask DownloadBdAsync(String remoteFilePath, SWIGTYPE_p_CkBinData binData) {
+    long cPtr = chilkatJNI.CkSFtp_DownloadBdAsync(swigCPtr, this, remoteFilePath, SWIGTYPE_p_CkBinData.getCPtr(binData));
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
   public boolean DownloadFile(String handle, String toFilename) {
@@ -714,164 +719,173 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean DownloadSb(String remoteFilePath, String charset, CkStringBuilder sb) {
+    return chilkatJNI.CkSFtp_DownloadSb(swigCPtr, this, remoteFilePath, charset, CkStringBuilder.getCPtr(sb), sb);
+  }
+
+  public CkTask DownloadSbAsync(String remoteFilePath, String charset, CkStringBuilder sb) {
+    long cPtr = chilkatJNI.CkSFtp_DownloadSbAsync(swigCPtr, this, remoteFilePath, charset, CkStringBuilder.getCPtr(sb), sb);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean Eof(String handle) {
     return chilkatJNI.CkSFtp_Eof(swigCPtr, this, handle);
   }
 
-  public CkDateTime GetFileCreateDt(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileCreateDt(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkDateTime GetFileCreateDt(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileCreateDt(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkDateTime(cPtr, true);
   }
 
-  public CkTask GetFileCreateDtAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileCreateDtAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileCreateDtAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileCreateDtAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileCreateTime(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
-    return chilkatJNI.CkSFtp_GetFileCreateTime(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
+  public boolean GetFileCreateTime(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
+    return chilkatJNI.CkSFtp_GetFileCreateTime(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
   }
 
-  public boolean GetFileCreateTimeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileCreateTimeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileCreateTimeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileCreateTimeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileCreateTimeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileCreateTimeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileCreateTimeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileCreateTimeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileCreateTimeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileCreateTimeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileCreateTimeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileCreateTimeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFileCreateTimeStrAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileCreateTimeStrAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileCreateTimeStrAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileCreateTimeStrAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileGroup(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileGroup(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileGroup(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileGroup(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileGroup(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileGroup(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileGroup(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileGroup(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileGroup(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileGroup(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileGroup(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileGroup(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFileGroupAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileGroupAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileGroupAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileGroupAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileLastAccess(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
-    return chilkatJNI.CkSFtp_GetFileLastAccess(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
+  public boolean GetFileLastAccess(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
+    return chilkatJNI.CkSFtp_GetFileLastAccess(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
   }
 
-  public CkDateTime GetFileLastAccessDt(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessDt(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkDateTime GetFileLastAccessDt(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessDt(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkDateTime(cPtr, true);
   }
 
-  public CkTask GetFileLastAccessDtAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessDtAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileLastAccessDtAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessDtAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileLastAccessStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileLastAccessStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileLastAccessStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileLastAccessStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileLastAccessStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileLastAccessStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileLastAccessStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileLastAccessStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileLastAccessStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileLastAccessStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileLastAccessStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileLastAccessStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFileLastAccessStrAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessStrAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileLastAccessStrAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastAccessStrAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileLastModified(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
-    return chilkatJNI.CkSFtp_GetFileLastModified(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
+  public boolean GetFileLastModified(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, SYSTEMTIME outSysTime) {
+    return chilkatJNI.CkSFtp_GetFileLastModified(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, SYSTEMTIME.getCPtr(outSysTime), outSysTime);
   }
 
-  public CkDateTime GetFileLastModifiedDt(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedDt(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkDateTime GetFileLastModifiedDt(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedDt(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkDateTime(cPtr, true);
   }
 
-  public CkTask GetFileLastModifiedDtAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedDtAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileLastModifiedDtAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedDtAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileLastModifiedStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileLastModifiedStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileLastModifiedStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileLastModifiedStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileLastModifiedStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileLastModifiedStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileLastModifiedStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileLastModifiedStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileLastModifiedStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileLastModifiedStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileLastModifiedStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileLastModifiedStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFileLastModifiedStrAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedStrAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileLastModifiedStrAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileLastModifiedStrAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetFileOwner(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileOwner(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileOwner(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileOwner(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileOwner(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileOwner(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileOwner(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileOwner(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileOwner(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileOwner(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileOwner(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileOwner(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFileOwnerAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFileOwnerAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFileOwnerAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFileOwnerAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public int GetFilePermissions(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_GetFilePermissions(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public int GetFilePermissions(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_GetFilePermissions(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public CkTask GetFilePermissionsAsync(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    long cPtr = chilkatJNI.CkSFtp_GetFilePermissionsAsync(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public CkTask GetFilePermissionsAsync(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    long cPtr = chilkatJNI.CkSFtp_GetFilePermissionsAsync(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public int GetFileSize32(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_GetFileSize32(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public int GetFileSize32(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_GetFileSize32(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public long GetFileSize64(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_GetFileSize64(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public long GetFileSize64(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_GetFileSize64(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public boolean GetFileSizeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
-    return chilkatJNI.CkSFtp_GetFileSizeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
+  public boolean GetFileSizeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle, CkString outStr) {
+    return chilkatJNI.CkSFtp_GetFileSizeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getFileSizeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_getFileSizeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String getFileSizeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_getFileSizeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
-  public String fileSizeStr(String filenameOrHandle, boolean bFollowLinks, boolean bIsHandle) {
-    return chilkatJNI.CkSFtp_fileSizeStr(swigCPtr, this, filenameOrHandle, bFollowLinks, bIsHandle);
+  public String fileSizeStr(String pathOrHandle, boolean bFollowLinks, boolean bIsHandle) {
+    return chilkatJNI.CkSFtp_fileSizeStr(swigCPtr, this, pathOrHandle, bFollowLinks, bIsHandle);
   }
 
   public boolean InitializeSftp() {
@@ -904,16 +918,16 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean OpenFile(String remoteFilePath, String access, String createDisp, CkString outStr) {
-    return chilkatJNI.CkSFtp_OpenFile(swigCPtr, this, remoteFilePath, access, createDisp, CkString.getCPtr(outStr), outStr);
+  public boolean OpenFile(String remotePath, String access, String createDisposition, CkString outStr) {
+    return chilkatJNI.CkSFtp_OpenFile(swigCPtr, this, remotePath, access, createDisposition, CkString.getCPtr(outStr), outStr);
   }
 
-  public String openFile(String remoteFilePath, String access, String createDisp) {
-    return chilkatJNI.CkSFtp_openFile(swigCPtr, this, remoteFilePath, access, createDisp);
+  public String openFile(String remotePath, String access, String createDisposition) {
+    return chilkatJNI.CkSFtp_openFile(swigCPtr, this, remotePath, access, createDisposition);
   }
 
-  public CkTask OpenFileAsync(String remoteFilePath, String access, String createDisp) {
-    long cPtr = chilkatJNI.CkSFtp_OpenFileAsync(swigCPtr, this, remoteFilePath, access, createDisp);
+  public CkTask OpenFileAsync(String remotePath, String access, String createDisposition) {
+    long cPtr = chilkatJNI.CkSFtp_OpenFileAsync(swigCPtr, this, remotePath, access, createDisposition);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -940,12 +954,12 @@ public class CkSFtp {
     return chilkatJNI.CkSFtp_ReadFileBytes32(swigCPtr, this, handle, offset, numBytes, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean ReadFileBytes64(String handle, long offset64, int numBytes, CkByteData outBytes) {
-    return chilkatJNI.CkSFtp_ReadFileBytes64(swigCPtr, this, handle, offset64, numBytes, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean ReadFileBytes64(String handle, long offset, int numBytes, CkByteData outBytes) {
+    return chilkatJNI.CkSFtp_ReadFileBytes64(swigCPtr, this, handle, offset, numBytes, CkByteData.getCPtr(outBytes), outBytes);
   }
 
-  public boolean ReadFileBytes64s(String handle, String offset64, int numBytes, CkByteData outBytes) {
-    return chilkatJNI.CkSFtp_ReadFileBytes64s(swigCPtr, this, handle, offset64, numBytes, CkByteData.getCPtr(outBytes), outBytes);
+  public boolean ReadFileBytes64s(String handle, String offset, int numBytes, CkByteData outBytes) {
+    return chilkatJNI.CkSFtp_ReadFileBytes64s(swigCPtr, this, handle, offset, numBytes, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public boolean ReadFileText(String handle, int numBytes, String charset, CkString outStr) {
@@ -961,28 +975,28 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean ReadFileText32(String handle, int offset32, int numBytes, String charset, CkString outStr) {
-    return chilkatJNI.CkSFtp_ReadFileText32(swigCPtr, this, handle, offset32, numBytes, charset, CkString.getCPtr(outStr), outStr);
+  public boolean ReadFileText32(String handle, int offset, int numBytes, String charset, CkString outStr) {
+    return chilkatJNI.CkSFtp_ReadFileText32(swigCPtr, this, handle, offset, numBytes, charset, CkString.getCPtr(outStr), outStr);
   }
 
-  public String readFileText32(String handle, int offset32, int numBytes, String charset) {
-    return chilkatJNI.CkSFtp_readFileText32(swigCPtr, this, handle, offset32, numBytes, charset);
+  public String readFileText32(String handle, int offset, int numBytes, String charset) {
+    return chilkatJNI.CkSFtp_readFileText32(swigCPtr, this, handle, offset, numBytes, charset);
   }
 
-  public boolean ReadFileText64(String handle, long offset64, int numBytes, String charset, CkString outStr) {
-    return chilkatJNI.CkSFtp_ReadFileText64(swigCPtr, this, handle, offset64, numBytes, charset, CkString.getCPtr(outStr), outStr);
+  public boolean ReadFileText64(String handle, long offset, int numBytes, String charset, CkString outStr) {
+    return chilkatJNI.CkSFtp_ReadFileText64(swigCPtr, this, handle, offset, numBytes, charset, CkString.getCPtr(outStr), outStr);
   }
 
-  public String readFileText64(String handle, long offset64, int numBytes, String charset) {
-    return chilkatJNI.CkSFtp_readFileText64(swigCPtr, this, handle, offset64, numBytes, charset);
+  public String readFileText64(String handle, long offset, int numBytes, String charset) {
+    return chilkatJNI.CkSFtp_readFileText64(swigCPtr, this, handle, offset, numBytes, charset);
   }
 
-  public boolean ReadFileText64s(String handle, String offset64, int numBytes, String charset, CkString outStr) {
-    return chilkatJNI.CkSFtp_ReadFileText64s(swigCPtr, this, handle, offset64, numBytes, charset, CkString.getCPtr(outStr), outStr);
+  public boolean ReadFileText64s(String handle, String offset, int numBytes, String charset, CkString outStr) {
+    return chilkatJNI.CkSFtp_ReadFileText64s(swigCPtr, this, handle, offset, numBytes, charset, CkString.getCPtr(outStr), outStr);
   }
 
-  public String readFileText64s(String handle, String offset64, int numBytes, String charset) {
-    return chilkatJNI.CkSFtp_readFileText64s(swigCPtr, this, handle, offset64, numBytes, charset);
+  public String readFileText64s(String handle, String offset, int numBytes, String charset) {
+    return chilkatJNI.CkSFtp_readFileText64s(swigCPtr, this, handle, offset, numBytes, charset);
   }
 
   public boolean RealPath(String originalPath, String composePath, CkString outStr) {
@@ -1043,17 +1057,21 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetCreateDt(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    return chilkatJNI.CkSFtp_SetCreateDt(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkSFtp_SaveLastError(swigCPtr, this, path);
   }
 
-  public CkTask SetCreateDtAsync(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    long cPtr = chilkatJNI.CkSFtp_SetCreateDtAsync(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public boolean SetCreateDt(String pathOrHandle, boolean isHandle, CkDateTime createDateTime) {
+    return chilkatJNI.CkSFtp_SetCreateDt(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(createDateTime), createDateTime);
+  }
+
+  public CkTask SetCreateDtAsync(String pathOrHandle, boolean isHandle, CkDateTime createDateTime) {
+    long cPtr = chilkatJNI.CkSFtp_SetCreateDtAsync(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(createDateTime), createDateTime);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetCreateTime(String pathOrHandle, boolean bIsHandle, SYSTEMTIME createTime) {
-    return chilkatJNI.CkSFtp_SetCreateTime(swigCPtr, this, pathOrHandle, bIsHandle, SYSTEMTIME.getCPtr(createTime), createTime);
+  public boolean SetCreateTime(String pathOrHandle, boolean isHandle, SYSTEMTIME createDateTime) {
+    return chilkatJNI.CkSFtp_SetCreateTime(swigCPtr, this, pathOrHandle, isHandle, SYSTEMTIME.getCPtr(createDateTime), createDateTime);
   }
 
   public boolean SetCreateTimeStr(String pathOrHandle, boolean bIsHandle, String dateTimeStr) {
@@ -1065,17 +1083,17 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetLastAccessDt(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    return chilkatJNI.CkSFtp_SetLastAccessDt(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public boolean SetLastAccessDt(String pathOrHandle, boolean isHandle, CkDateTime accessDateTime) {
+    return chilkatJNI.CkSFtp_SetLastAccessDt(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(accessDateTime), accessDateTime);
   }
 
-  public CkTask SetLastAccessDtAsync(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    long cPtr = chilkatJNI.CkSFtp_SetLastAccessDtAsync(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public CkTask SetLastAccessDtAsync(String pathOrHandle, boolean isHandle, CkDateTime accessDateTime) {
+    long cPtr = chilkatJNI.CkSFtp_SetLastAccessDtAsync(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(accessDateTime), accessDateTime);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetLastAccessTime(String pathOrHandle, boolean bIsHandle, SYSTEMTIME createTime) {
-    return chilkatJNI.CkSFtp_SetLastAccessTime(swigCPtr, this, pathOrHandle, bIsHandle, SYSTEMTIME.getCPtr(createTime), createTime);
+  public boolean SetLastAccessTime(String pathOrHandle, boolean isHandle, SYSTEMTIME accessDateTime) {
+    return chilkatJNI.CkSFtp_SetLastAccessTime(swigCPtr, this, pathOrHandle, isHandle, SYSTEMTIME.getCPtr(accessDateTime), accessDateTime);
   }
 
   public boolean SetLastAccessTimeStr(String pathOrHandle, boolean bIsHandle, String dateTimeStr) {
@@ -1087,17 +1105,17 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetLastModifiedDt(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    return chilkatJNI.CkSFtp_SetLastModifiedDt(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public boolean SetLastModifiedDt(String pathOrHandle, boolean isHandle, CkDateTime modifiedDateTime) {
+    return chilkatJNI.CkSFtp_SetLastModifiedDt(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(modifiedDateTime), modifiedDateTime);
   }
 
-  public CkTask SetLastModifiedDtAsync(String pathOrHandle, boolean bIsHandle, CkDateTime createTime) {
-    long cPtr = chilkatJNI.CkSFtp_SetLastModifiedDtAsync(swigCPtr, this, pathOrHandle, bIsHandle, CkDateTime.getCPtr(createTime), createTime);
+  public CkTask SetLastModifiedDtAsync(String pathOrHandle, boolean isHandle, CkDateTime modifiedDateTime) {
+    long cPtr = chilkatJNI.CkSFtp_SetLastModifiedDtAsync(swigCPtr, this, pathOrHandle, isHandle, CkDateTime.getCPtr(modifiedDateTime), modifiedDateTime);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetLastModifiedTime(String pathOrHandle, boolean bIsHandle, SYSTEMTIME createTime) {
-    return chilkatJNI.CkSFtp_SetLastModifiedTime(swigCPtr, this, pathOrHandle, bIsHandle, SYSTEMTIME.getCPtr(createTime), createTime);
+  public boolean SetLastModifiedTime(String pathOrHandle, boolean isHandle, SYSTEMTIME modifiedDateTime) {
+    return chilkatJNI.CkSFtp_SetLastModifiedTime(swigCPtr, this, pathOrHandle, isHandle, SYSTEMTIME.getCPtr(modifiedDateTime), modifiedDateTime);
   }
 
   public boolean SetLastModifiedTimeStr(String pathOrHandle, boolean bIsHandle, String dateTimeStr) {
@@ -1109,21 +1127,21 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetOwnerAndGroup(String pathOrHandle, boolean bIsHandle, String owner, String group) {
-    return chilkatJNI.CkSFtp_SetOwnerAndGroup(swigCPtr, this, pathOrHandle, bIsHandle, owner, group);
+  public boolean SetOwnerAndGroup(String pathOrHandle, boolean isHandle, String owner, String group) {
+    return chilkatJNI.CkSFtp_SetOwnerAndGroup(swigCPtr, this, pathOrHandle, isHandle, owner, group);
   }
 
-  public CkTask SetOwnerAndGroupAsync(String pathOrHandle, boolean bIsHandle, String owner, String group) {
-    long cPtr = chilkatJNI.CkSFtp_SetOwnerAndGroupAsync(swigCPtr, this, pathOrHandle, bIsHandle, owner, group);
+  public CkTask SetOwnerAndGroupAsync(String pathOrHandle, boolean isHandle, String owner, String group) {
+    long cPtr = chilkatJNI.CkSFtp_SetOwnerAndGroupAsync(swigCPtr, this, pathOrHandle, isHandle, owner, group);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean SetPermissions(String pathOrHandle, boolean bIsHandle, int perm) {
-    return chilkatJNI.CkSFtp_SetPermissions(swigCPtr, this, pathOrHandle, bIsHandle, perm);
+  public boolean SetPermissions(String pathOrHandle, boolean isHandle, int permissions) {
+    return chilkatJNI.CkSFtp_SetPermissions(swigCPtr, this, pathOrHandle, isHandle, permissions);
   }
 
-  public CkTask SetPermissionsAsync(String pathOrHandle, boolean bIsHandle, int perm) {
-    long cPtr = chilkatJNI.CkSFtp_SetPermissionsAsync(swigCPtr, this, pathOrHandle, bIsHandle, perm);
+  public CkTask SetPermissionsAsync(String pathOrHandle, boolean isHandle, int permissions) {
+    long cPtr = chilkatJNI.CkSFtp_SetPermissionsAsync(swigCPtr, this, pathOrHandle, isHandle, permissions);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -1149,12 +1167,21 @@ public class CkSFtp {
     return chilkatJNI.CkSFtp_UnlockComponent(swigCPtr, this, unlockCode);
   }
 
-  public boolean UploadFile(String handle, String localFilePath) {
-    return chilkatJNI.CkSFtp_UploadFile(swigCPtr, this, handle, localFilePath);
+  public boolean UploadBd(SWIGTYPE_p_CkBinData binData, String remoteFilePath) {
+    return chilkatJNI.CkSFtp_UploadBd(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(binData), remoteFilePath);
   }
 
-  public CkTask UploadFileAsync(String handle, String localFilePath) {
-    long cPtr = chilkatJNI.CkSFtp_UploadFileAsync(swigCPtr, this, handle, localFilePath);
+  public CkTask UploadBdAsync(SWIGTYPE_p_CkBinData binData, String remoteFilePath) {
+    long cPtr = chilkatJNI.CkSFtp_UploadBdAsync(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(binData), remoteFilePath);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean UploadFile(String handle, String fromFilename) {
+    return chilkatJNI.CkSFtp_UploadFile(swigCPtr, this, handle, fromFilename);
+  }
+
+  public CkTask UploadFileAsync(String handle, String fromFilename) {
+    long cPtr = chilkatJNI.CkSFtp_UploadFileAsync(swigCPtr, this, handle, fromFilename);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -1167,12 +1194,21 @@ public class CkSFtp {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean WriteFileBytes(String handle, CkByteData data) {
-    return chilkatJNI.CkSFtp_WriteFileBytes(swigCPtr, this, handle, CkByteData.getCPtr(data), data);
+  public boolean UploadSb(CkStringBuilder sb, String remoteFilePath, String charset, boolean includeBom) {
+    return chilkatJNI.CkSFtp_UploadSb(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb, remoteFilePath, charset, includeBom);
   }
 
-  public CkTask WriteFileBytesAsync(String handle, CkByteData data) {
-    long cPtr = chilkatJNI.CkSFtp_WriteFileBytesAsync(swigCPtr, this, handle, CkByteData.getCPtr(data), data);
+  public CkTask UploadSbAsync(CkStringBuilder sb, String remoteFilePath, String charset, boolean includeBom) {
+    long cPtr = chilkatJNI.CkSFtp_UploadSbAsync(swigCPtr, this, CkStringBuilder.getCPtr(sb), sb, remoteFilePath, charset, includeBom);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean WriteFileBytes(String handle, CkByteData byteData) {
+    return chilkatJNI.CkSFtp_WriteFileBytes(swigCPtr, this, handle, CkByteData.getCPtr(byteData), byteData);
+  }
+
+  public CkTask WriteFileBytesAsync(String handle, CkByteData byteData) {
+    long cPtr = chilkatJNI.CkSFtp_WriteFileBytesAsync(swigCPtr, this, handle, CkByteData.getCPtr(byteData), byteData);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 

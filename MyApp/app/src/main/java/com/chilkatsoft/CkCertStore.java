@@ -51,6 +51,26 @@ public class CkCertStore {
     chilkatJNI.CkCertStore_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public boolean get_AvoidWindowsPkAccess() {
+    return chilkatJNI.CkCertStore_get_AvoidWindowsPkAccess(swigCPtr, this);
+  }
+
+  public void put_AvoidWindowsPkAccess(boolean newVal) {
+    chilkatJNI.CkCertStore_put_AvoidWindowsPkAccess(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCertStore_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCertStore_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCertStore_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkCertStore_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +95,16 @@ public class CkCertStore {
     return chilkatJNI.CkCertStore_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCertStore_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCertStore_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkCertStore_version(swigCPtr, this);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCertStore_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCertStore_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCertStore_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCertStore_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public int get_NumCertificates() {
+    return chilkatJNI.CkCertStore_get_NumCertificates(swigCPtr, this);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,28 +115,12 @@ public class CkCertStore {
     chilkatJNI.CkCertStore_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCertStore_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCertStore_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCertStore_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCertStore_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_AvoidWindowsPkAccess() {
-    return chilkatJNI.CkCertStore_get_AvoidWindowsPkAccess(swigCPtr, this);
-  }
-
-  public void put_AvoidWindowsPkAccess(boolean newVal) {
-    chilkatJNI.CkCertStore_put_AvoidWindowsPkAccess(swigCPtr, this, newVal);
-  }
-
-  public int get_NumCertificates() {
-    return chilkatJNI.CkCertStore_get_NumCertificates(swigCPtr, this);
+  public String version() {
+    return chilkatJNI.CkCertStore_version(swigCPtr, this);
   }
 
   public CkCert FindCertByRfc822Name(String name) {
@@ -186,6 +182,10 @@ public class CkCertStore {
 
   public boolean LoadPfxFile(String pfxFilename, String password) {
     return chilkatJNI.CkCertStore_LoadPfxFile(swigCPtr, this, pfxFilename, password);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCertStore_SaveLastError(swigCPtr, this, path);
   }
 
 }

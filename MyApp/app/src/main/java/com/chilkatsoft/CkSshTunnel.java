@@ -55,68 +55,12 @@ public class CkSshTunnel {
     chilkatJNI.CkSshTunnel_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkSshTunnel_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkSshTunnel_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkSshTunnel_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkSshTunnel_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkSshTunnel_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkSshTunnel_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkSshTunnel_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkSshTunnel_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkSshTunnel_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkSshTunnel_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkSshTunnel_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkSshTunnel_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkSshTunnel_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkSshTunnel_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkSshTunnel_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkSshTunnel_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkSshTunnel_SaveLastError(swigCPtr, this, path);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkSshTunnel_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public void get_AcceptLog(CkString str) {
@@ -151,6 +95,18 @@ public class CkSshTunnel {
     chilkatJNI.CkSshTunnel_put_ConnectTimeoutMs(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkSshTunnel_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkSshTunnel_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkSshTunnel_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_DestHostname(CkString str) {
     chilkatJNI.CkSshTunnel_get_DestHostname(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -177,6 +133,14 @@ public class CkSshTunnel {
 
   public void put_DynamicPortForwarding(boolean newVal) {
     chilkatJNI.CkSshTunnel_put_DynamicPortForwarding(swigCPtr, this, newVal);
+  }
+
+  public void get_HostKeyFingerprint(CkString str) {
+    chilkatJNI.CkSshTunnel_get_HostKeyFingerprint(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String hostKeyFingerprint() {
+    return chilkatJNI.CkSshTunnel_hostKeyFingerprint(swigCPtr, this);
   }
 
   public void get_HttpProxyAuthMethod(CkString str) {
@@ -299,6 +263,38 @@ public class CkSshTunnel {
     chilkatJNI.CkSshTunnel_put_KeepTunnelLog(swigCPtr, this, newVal);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkSshTunnel_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkSshTunnel_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkSshTunnel_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkSshTunnel_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkSshTunnel_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkSshTunnel_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkSshTunnel_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkSshTunnel_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public void get_ListenBindIpAddress(CkString str) {
     chilkatJNI.CkSshTunnel_get_ListenBindIpAddress(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -333,22 +329,6 @@ public class CkSshTunnel {
 
   public void put_OutboundBindPort(int newVal) {
     chilkatJNI.CkSshTunnel_put_OutboundBindPort(swigCPtr, this, newVal);
-  }
-
-  public int get_SoRcvBuf() {
-    return chilkatJNI.CkSshTunnel_get_SoRcvBuf(swigCPtr, this);
-  }
-
-  public void put_SoRcvBuf(int newVal) {
-    chilkatJNI.CkSshTunnel_put_SoRcvBuf(swigCPtr, this, newVal);
-  }
-
-  public int get_SoSndBuf() {
-    return chilkatJNI.CkSshTunnel_get_SoSndBuf(swigCPtr, this);
-  }
-
-  public void put_SoSndBuf(int newVal) {
-    chilkatJNI.CkSshTunnel_put_SoSndBuf(swigCPtr, this, newVal);
   }
 
   public void get_SocksHostname(CkString str) {
@@ -403,6 +383,22 @@ public class CkSshTunnel {
     chilkatJNI.CkSshTunnel_put_SocksVersion(swigCPtr, this, newVal);
   }
 
+  public int get_SoRcvBuf() {
+    return chilkatJNI.CkSshTunnel_get_SoRcvBuf(swigCPtr, this);
+  }
+
+  public void put_SoRcvBuf(int newVal) {
+    chilkatJNI.CkSshTunnel_put_SoRcvBuf(swigCPtr, this, newVal);
+  }
+
+  public int get_SoSndBuf() {
+    return chilkatJNI.CkSshTunnel_get_SoSndBuf(swigCPtr, this);
+  }
+
+  public void put_SoSndBuf(int newVal) {
+    chilkatJNI.CkSshTunnel_put_SoSndBuf(swigCPtr, this, newVal);
+  }
+
   public boolean get_TcpNoDelay() {
     return chilkatJNI.CkSshTunnel_get_TcpNoDelay(swigCPtr, this);
   }
@@ -435,20 +431,20 @@ public class CkSshTunnel {
     chilkatJNI.CkSshTunnel_put_TunnelLogPath(swigCPtr, this, newVal);
   }
 
-  public void get_HostKeyFingerprint(CkString str) {
-    chilkatJNI.CkSshTunnel_get_HostKeyFingerprint(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkSshTunnel_get_VerboseLogging(swigCPtr, this);
   }
 
-  public String hostKeyFingerprint() {
-    return chilkatJNI.CkSshTunnel_hostKeyFingerprint(swigCPtr, this);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkSshTunnel_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkSshTunnel_get_AbortCurrent(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkSshTunnel_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkSshTunnel_put_AbortCurrent(swigCPtr, this, newVal);
+  public String version() {
+    return chilkatJNI.CkSshTunnel_version(swigCPtr, this);
   }
 
   public boolean AuthenticatePk(String username, CkSshKey privateKey) {
@@ -500,8 +496,25 @@ public class CkSshTunnel {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean ConnectThroughSsh(CkSsh ssh, String hostname, int port) {
+    return chilkatJNI.CkSshTunnel_ConnectThroughSsh(swigCPtr, this, CkSsh.getCPtr(ssh), ssh, hostname, port);
+  }
+
+  public CkTask ConnectThroughSshAsync(CkSsh ssh, String hostname, int port) {
+    long cPtr = chilkatJNI.CkSshTunnel_ConnectThroughSshAsync(swigCPtr, this, CkSsh.getCPtr(ssh), ssh, hostname, port);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean DisconnectAllClients(boolean waitForThreads) {
     return chilkatJNI.CkSshTunnel_DisconnectAllClients(swigCPtr, this, waitForThreads);
+  }
+
+  public boolean IsSshConnected() {
+    return chilkatJNI.CkSshTunnel_IsSshConnected(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkSshTunnel_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean StopAccepting(boolean waitForThread) {
@@ -510,15 +523,6 @@ public class CkSshTunnel {
 
   public boolean UnlockComponent(String unlockCode) {
     return chilkatJNI.CkSshTunnel_UnlockComponent(swigCPtr, this, unlockCode);
-  }
-
-  public boolean ConnectThroughSsh(CkSsh ssh, String hostname, int port) {
-    return chilkatJNI.CkSshTunnel_ConnectThroughSsh(swigCPtr, this, CkSsh.getCPtr(ssh), ssh, hostname, port);
-  }
-
-  public CkTask ConnectThroughSshAsync(CkSsh ssh, String hostname, int port) {
-    long cPtr = chilkatJNI.CkSshTunnel_ConnectThroughSshAsync(swigCPtr, this, CkSsh.getCPtr(ssh), ssh, hostname, port);
-    return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
 }

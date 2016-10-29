@@ -55,68 +55,20 @@ public class CkRest {
     chilkatJNI.CkRest_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkRest_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AllowHeaderFolding() {
+    return chilkatJNI.CkRest_get_AllowHeaderFolding(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkRest_lastErrorHtml(swigCPtr, this);
+  public void put_AllowHeaderFolding(boolean newVal) {
+    chilkatJNI.CkRest_put_AllowHeaderFolding(swigCPtr, this, newVal);
   }
 
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkRest_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AllowHeaderQB() {
+    return chilkatJNI.CkRest_get_AllowHeaderQB(swigCPtr, this);
   }
 
-  public String lastErrorText() {
-    return chilkatJNI.CkRest_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkRest_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkRest_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkRest_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkRest_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkRest_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkRest_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkRest_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkRest_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkRest_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkRest_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkRest_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkRest_SaveLastError(swigCPtr, this, path);
+  public void put_AllowHeaderQB(boolean newVal) {
+    chilkatJNI.CkRest_put_AllowHeaderQB(swigCPtr, this, newVal);
   }
 
   public void get_Authorization(CkString str) {
@@ -129,6 +81,22 @@ public class CkRest {
 
   public void put_Authorization(String newVal) {
     chilkatJNI.CkRest_put_Authorization(swigCPtr, this, newVal);
+  }
+
+  public int get_ConnectFailReason() {
+    return chilkatJNI.CkRest_get_ConnectFailReason(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkRest_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkRest_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkRest_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public int get_HeartbeatMs() {
@@ -157,6 +125,38 @@ public class CkRest {
 
   public void put_IdleTimeoutMs(int newVal) {
     chilkatJNI.CkRest_put_IdleTimeoutMs(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkRest_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkRest_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkRest_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkRest_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkRest_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkRest_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkRest_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkRest_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public void get_LastRequestHeader(CkString str) {
@@ -191,6 +191,14 @@ public class CkRest {
     chilkatJNI.CkRest_put_PartSelector(swigCPtr, this, newVal);
   }
 
+  public boolean get_PercentDoneOnSend() {
+    return chilkatJNI.CkRest_get_PercentDoneOnSend(swigCPtr, this);
+  }
+
+  public void put_PercentDoneOnSend(boolean newVal) {
+    chilkatJNI.CkRest_put_PercentDoneOnSend(swigCPtr, this, newVal);
+  }
+
   public void get_ResponseHeader(CkString str) {
     chilkatJNI.CkRest_get_ResponseHeader(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -219,16 +227,20 @@ public class CkRest {
     chilkatJNI.CkRest_put_StreamNonChunked(swigCPtr, this, newVal);
   }
 
-  public int get_ConnectFailReason() {
-    return chilkatJNI.CkRest_get_ConnectFailReason(swigCPtr, this);
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkRest_get_VerboseLogging(swigCPtr, this);
   }
 
-  public boolean get_PercentDoneOnSend() {
-    return chilkatJNI.CkRest_get_PercentDoneOnSend(swigCPtr, this);
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkRest_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public void put_PercentDoneOnSend(boolean newVal) {
-    chilkatJNI.CkRest_put_PercentDoneOnSend(swigCPtr, this, newVal);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkRest_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkRest_version(swigCPtr, this);
   }
 
   public boolean AddHeader(String name, String value) {
@@ -241,6 +253,10 @@ public class CkRest {
 
   public boolean AddQueryParams(String queryString) {
     return chilkatJNI.CkRest_AddQueryParams(swigCPtr, this, queryString);
+  }
+
+  public boolean AddQueryParamSb(String name, CkStringBuilder value) {
+    return chilkatJNI.CkRest_AddQueryParamSb(swigCPtr, this, name, CkStringBuilder.getCPtr(value), value);
   }
 
   public boolean ClearAllHeaders() {
@@ -325,6 +341,15 @@ public class CkRest {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean FullRequestSb(String httpVerb, String uriPath, CkStringBuilder requestBody, CkStringBuilder responseBody) {
+    return chilkatJNI.CkRest_FullRequestSb(swigCPtr, this, httpVerb, uriPath, CkStringBuilder.getCPtr(requestBody), requestBody, CkStringBuilder.getCPtr(responseBody), responseBody);
+  }
+
+  public CkTask FullRequestSbAsync(String httpVerb, String uriPath, CkStringBuilder requestBody, CkStringBuilder responseBody) {
+    long cPtr = chilkatJNI.CkRest_FullRequestSbAsync(swigCPtr, this, httpVerb, uriPath, CkStringBuilder.getCPtr(requestBody), requestBody, CkStringBuilder.getCPtr(responseBody), responseBody);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean FullRequestStream(String httpVerb, String uriPath, CkStream stream, CkString outStr) {
     return chilkatJNI.CkRest_FullRequestStream(swigCPtr, this, httpVerb, uriPath, CkStream.getCPtr(stream), stream, CkString.getCPtr(outStr), outStr);
   }
@@ -348,6 +373,15 @@ public class CkRest {
 
   public CkTask FullRequestStringAsync(String httpVerb, String uriPath, String bodyText) {
     long cPtr = chilkatJNI.CkRest_FullRequestStringAsync(swigCPtr, this, httpVerb, uriPath, bodyText);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean ReadRespBd(SWIGTYPE_p_CkBinData responseBody) {
+    return chilkatJNI.CkRest_ReadRespBd(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(responseBody));
+  }
+
+  public CkTask ReadRespBdAsync(SWIGTYPE_p_CkBinData responseBody) {
+    long cPtr = chilkatJNI.CkRest_ReadRespBdAsync(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(responseBody));
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -391,6 +425,15 @@ public class CkRest {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
+  public boolean ReadRespSb(CkStringBuilder responseBody) {
+    return chilkatJNI.CkRest_ReadRespSb(swigCPtr, this, CkStringBuilder.getCPtr(responseBody), responseBody);
+  }
+
+  public CkTask ReadRespSbAsync(CkStringBuilder responseBody) {
+    long cPtr = chilkatJNI.CkRest_ReadRespSbAsync(swigCPtr, this, CkStringBuilder.getCPtr(responseBody), responseBody);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public CkUrl RedirectUrl() {
     long cPtr = chilkatJNI.CkRest_RedirectUrl(swigCPtr, this);
     return (cPtr == 0) ? null : new CkUrl(cPtr, true);
@@ -428,6 +471,19 @@ public class CkRest {
     return chilkatJNI.CkRest_responseHdrValue(swigCPtr, this, index);
   }
 
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkRest_SaveLastError(swigCPtr, this, path);
+  }
+
+  public boolean SendReqBd(String httpVerb, String uriPath, SWIGTYPE_p_CkBinData body) {
+    return chilkatJNI.CkRest_SendReqBd(swigCPtr, this, httpVerb, uriPath, SWIGTYPE_p_CkBinData.getCPtr(body));
+  }
+
+  public CkTask SendReqBdAsync(String httpVerb, String uriPath, SWIGTYPE_p_CkBinData body) {
+    long cPtr = chilkatJNI.CkRest_SendReqBdAsync(swigCPtr, this, httpVerb, uriPath, SWIGTYPE_p_CkBinData.getCPtr(body));
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
   public boolean SendReqBinaryBody(String httpVerb, String uriPath, CkByteData body) {
     return chilkatJNI.CkRest_SendReqBinaryBody(swigCPtr, this, httpVerb, uriPath, CkByteData.getCPtr(body), body);
   }
@@ -461,6 +517,15 @@ public class CkRest {
 
   public CkTask SendReqNoBodyAsync(String httpVerb, String uriPath) {
     long cPtr = chilkatJNI.CkRest_SendReqNoBodyAsync(swigCPtr, this, httpVerb, uriPath);
+    return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SendReqSb(String httpVerb, String uriPath, CkStringBuilder bodySb) {
+    return chilkatJNI.CkRest_SendReqSb(swigCPtr, this, httpVerb, uriPath, CkStringBuilder.getCPtr(bodySb), bodySb);
+  }
+
+  public CkTask SendReqSbAsync(String httpVerb, String uriPath, CkStringBuilder bodySb) {
+    long cPtr = chilkatJNI.CkRest_SendReqSbAsync(swigCPtr, this, httpVerb, uriPath, CkStringBuilder.getCPtr(bodySb), bodySb);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -506,8 +571,20 @@ public class CkRest {
     return chilkatJNI.CkRest_SetAuthOAuth1(swigCPtr, this, CkOAuth1.getCPtr(authProvider), authProvider, useQueryParams);
   }
 
+  public boolean SetAuthOAuth2(CkOAuth2 authProvider) {
+    return chilkatJNI.CkRest_SetAuthOAuth2(swigCPtr, this, CkOAuth2.getCPtr(authProvider), authProvider);
+  }
+
+  public boolean SetMultipartBodyBd(SWIGTYPE_p_CkBinData bodyData) {
+    return chilkatJNI.CkRest_SetMultipartBodyBd(swigCPtr, this, SWIGTYPE_p_CkBinData.getCPtr(bodyData));
+  }
+
   public boolean SetMultipartBodyBinary(CkByteData bodyData) {
     return chilkatJNI.CkRest_SetMultipartBodyBinary(swigCPtr, this, CkByteData.getCPtr(bodyData), bodyData);
+  }
+
+  public boolean SetMultipartBodySb(CkStringBuilder bodySb) {
+    return chilkatJNI.CkRest_SetMultipartBodySb(swigCPtr, this, CkStringBuilder.getCPtr(bodySb), bodySb);
   }
 
   public boolean SetMultipartBodyStream(CkStream stream) {

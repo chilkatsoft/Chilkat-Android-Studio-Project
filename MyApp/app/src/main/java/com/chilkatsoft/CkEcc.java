@@ -51,6 +51,18 @@ public class CkEcc {
     chilkatJNI.CkEcc_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkEcc_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkEcc_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkEcc_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkEcc_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,24 +87,12 @@ public class CkEcc {
     return chilkatJNI.CkEcc_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkEcc_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkEcc_get_LastMethodSuccess(swigCPtr, this);
   }
 
-  public String version() {
-    return chilkatJNI.CkEcc_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkEcc_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkEcc_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkEcc_put_DebugLogFilePath(swigCPtr, this, newVal);
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkEcc_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_VerboseLogging() {
@@ -103,21 +103,26 @@ public class CkEcc {
     chilkatJNI.CkEcc_put_VerboseLogging(swigCPtr, this, newVal);
   }
 
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkEcc_get_LastMethodSuccess(swigCPtr, this);
+  public void get_Version(CkString str) {
+    chilkatJNI.CkEcc_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkEcc_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkEcc_SaveLastError(swigCPtr, this, path);
+  public String version() {
+    return chilkatJNI.CkEcc_version(swigCPtr, this);
   }
 
   public CkPrivateKey GenEccKey(String curveName, CkPrng prng) {
     long cPtr = chilkatJNI.CkEcc_GenEccKey(swigCPtr, this, curveName, CkPrng.getCPtr(prng), prng);
     return (cPtr == 0) ? null : new CkPrivateKey(cPtr, true);
+  }
+
+  public CkPrivateKey GenEccKey2(String curveName, String encodedK, String encoding) {
+    long cPtr = chilkatJNI.CkEcc_GenEccKey2(swigCPtr, this, curveName, encodedK, encoding);
+    return (cPtr == 0) ? null : new CkPrivateKey(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkEcc_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SharedSecretENC(CkPrivateKey privKey, CkPublicKey pubKey, String encoding, CkString outStr) {
@@ -138,11 +143,6 @@ public class CkEcc {
 
   public int VerifyHashENC(String encodedHash, String encodedSig, String encoding, CkPublicKey pubkey) {
     return chilkatJNI.CkEcc_VerifyHashENC(swigCPtr, this, encodedHash, encodedSig, encoding, CkPublicKey.getCPtr(pubkey), pubkey);
-  }
-
-  public CkPrivateKey GenEccKey2(String curveName, String encodedK, String encoding) {
-    long cPtr = chilkatJNI.CkEcc_GenEccKey2(swigCPtr, this, curveName, encodedK, encoding);
-    return (cPtr == 0) ? null : new CkPrivateKey(cPtr, true);
   }
 
 }

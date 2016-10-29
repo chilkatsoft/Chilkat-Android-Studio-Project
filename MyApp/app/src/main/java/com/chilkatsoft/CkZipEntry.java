@@ -55,70 +55,6 @@ public class CkZipEntry {
     chilkatJNI.CkZipEntry_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkZipEntry_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkZipEntry_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkZipEntry_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkZipEntry_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkZipEntry_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkZipEntry_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkZipEntry_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkZipEntry_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkZipEntry_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkZipEntry_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkZipEntry_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkZipEntry_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkZipEntry_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkZipEntry_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkZipEntry_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkZipEntry_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_Comment(CkString str) {
     chilkatJNI.CkZipEntry_get_Comment(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -161,6 +97,18 @@ public class CkZipEntry {
 
   public int get_Crc() {
     return chilkatJNI.CkZipEntry_get_Crc(swigCPtr, this);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkZipEntry_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkZipEntry_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkZipEntry_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public int get_EntryID() {
@@ -223,6 +171,38 @@ public class CkZipEntry {
     return chilkatJNI.CkZipEntry_get_IsDirectory(swigCPtr, this);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkZipEntry_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkZipEntry_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkZipEntry_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkZipEntry_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkZipEntry_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkZipEntry_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkZipEntry_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkZipEntry_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public boolean get_TextFlag() {
     return chilkatJNI.CkZipEntry_get_TextFlag(swigCPtr, this);
   }
@@ -243,6 +223,22 @@ public class CkZipEntry {
     return chilkatJNI.CkZipEntry_uncompressedLengthStr(swigCPtr, this);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkZipEntry_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkZipEntry_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkZipEntry_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkZipEntry_version(swigCPtr, this);
+  }
+
   public boolean AppendData(CkByteData inData) {
     return chilkatJNI.CkZipEntry_AppendData(swigCPtr, this, CkByteData.getCPtr(inData), inData);
   }
@@ -252,12 +248,12 @@ public class CkZipEntry {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean AppendString(String inStr, String charset) {
-    return chilkatJNI.CkZipEntry_AppendString(swigCPtr, this, inStr, charset);
+  public boolean AppendString(String strContent, String charset) {
+    return chilkatJNI.CkZipEntry_AppendString(swigCPtr, this, strContent, charset);
   }
 
-  public CkTask AppendStringAsync(String inStr, String charset) {
-    long cPtr = chilkatJNI.CkZipEntry_AppendStringAsync(swigCPtr, this, inStr, charset);
+  public CkTask AppendStringAsync(String strContent, String charset) {
+    long cPtr = chilkatJNI.CkZipEntry_AppendStringAsync(swigCPtr, this, strContent, charset);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -327,8 +323,12 @@ public class CkZipEntry {
     return chilkatJNI.CkZipEntry_ReplaceData(swigCPtr, this, CkByteData.getCPtr(inData), inData);
   }
 
-  public boolean ReplaceString(String inStr, String charset) {
-    return chilkatJNI.CkZipEntry_ReplaceString(swigCPtr, this, inStr, charset);
+  public boolean ReplaceString(String strContent, String charset) {
+    return chilkatJNI.CkZipEntry_ReplaceString(swigCPtr, this, strContent, charset);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkZipEntry_SaveLastError(swigCPtr, this, path);
   }
 
   public void SetDt(CkDateTime dt) {

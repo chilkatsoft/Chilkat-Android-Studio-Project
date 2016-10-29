@@ -55,70 +55,6 @@ public class CkTar {
     chilkatJNI.CkTar_put_EventCallbackObject(swigCPtr, this, CkTarProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkTar_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkTar_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkTar_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkTar_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkTar_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkTar_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkTar_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkTar_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkTar_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkTar_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkTar_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkTar_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkTar_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkTar_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkTar_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkTar_SaveLastError(swigCPtr, this, path);
-  }
-
   public boolean get_CaptureXmlListing() {
     return chilkatJNI.CkTar_get_CaptureXmlListing(swigCPtr, this);
   }
@@ -137,6 +73,18 @@ public class CkTar {
 
   public void put_Charset(String newVal) {
     chilkatJNI.CkTar_put_Charset(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkTar_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkTar_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkTar_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public int get_DirMode() {
@@ -193,6 +141,38 @@ public class CkTar {
 
   public void put_HeartbeatMs(int newVal) {
     chilkatJNI.CkTar_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkTar_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkTar_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkTar_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkTar_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkTar_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkTar_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkTar_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkTar_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_MatchCaseSensitive() {
@@ -339,6 +319,22 @@ public class CkTar {
     chilkatJNI.CkTar_put_UserName(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkTar_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkTar_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkTar_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkTar_version(swigCPtr, this);
+  }
+
   public void get_WriteFormat(CkString str) {
     chilkatJNI.CkTar_get_WriteFormat(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -365,6 +361,10 @@ public class CkTar {
 
   public boolean AddDirRoot(String dirPath) {
     return chilkatJNI.CkTar_AddDirRoot(swigCPtr, this, dirPath);
+  }
+
+  public boolean AddDirRoot2(String rootPrefix, String rootPath) {
+    return chilkatJNI.CkTar_AddDirRoot2(swigCPtr, this, rootPrefix, rootPath);
   }
 
   public boolean AddFile(String path) {
@@ -394,6 +394,10 @@ public class CkTar {
   public CkTask ListXmlAsync(String tarPath) {
     long cPtr = chilkatJNI.CkTar_ListXmlAsync(swigCPtr, this, tarPath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkTar_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UnlockComponent(String unlockCode) {
@@ -483,10 +487,6 @@ public class CkTar {
   public CkTask WriteTarGzAsync(String gzPath) {
     long cPtr = chilkatJNI.CkTar_WriteTarGzAsync(swigCPtr, this, gzPath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
-  }
-
-  public boolean AddDirRoot2(String rootPrefix, String rootPath) {
-    return chilkatJNI.CkTar_AddDirRoot2(swigCPtr, this, rootPrefix, rootPath);
   }
 
 }

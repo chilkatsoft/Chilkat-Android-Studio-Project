@@ -55,80 +55,16 @@ public class CkAuthAzureAD {
     chilkatJNI.CkAuthAzureAD_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_AccessToken(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_AccessToken(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkAuthAzureAD_lastErrorHtml(swigCPtr, this);
+  public String accessToken() {
+    return chilkatJNI.CkAuthAzureAD_accessToken(swigCPtr, this);
   }
 
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkAuthAzureAD_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkAuthAzureAD_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkAuthAzureAD_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkAuthAzureAD_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkAuthAzureAD_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkAuthAzureAD_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkAuthAzureAD_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkAuthAzureAD_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkAuthAzureAD_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkAuthAzureAD_SaveLastError(swigCPtr, this, path);
-  }
-
-  public void get_TenantId(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_TenantId(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String tenantId() {
-    return chilkatJNI.CkAuthAzureAD_tenantId(swigCPtr, this);
-  }
-
-  public void put_TenantId(String newVal) {
-    chilkatJNI.CkAuthAzureAD_put_TenantId(swigCPtr, this, newVal);
+  public void put_AccessToken(String newVal) {
+    chilkatJNI.CkAuthAzureAD_put_AccessToken(swigCPtr, this, newVal);
   }
 
   public void get_ClientId(CkString str) {
@@ -155,6 +91,54 @@ public class CkAuthAzureAD {
     chilkatJNI.CkAuthAzureAD_put_ClientSecret(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkAuthAzureAD_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkAuthAzureAD_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkAuthAzureAD_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkAuthAzureAD_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkAuthAzureAD_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkAuthAzureAD_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkAuthAzureAD_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
+  public int get_NumSecondsRemaining() {
+    return chilkatJNI.CkAuthAzureAD_get_NumSecondsRemaining(swigCPtr, this);
+  }
+
   public void get_Resource(CkString str) {
     chilkatJNI.CkAuthAzureAD_get_Resource(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -167,24 +151,36 @@ public class CkAuthAzureAD {
     chilkatJNI.CkAuthAzureAD_put_Resource(swigCPtr, this, newVal);
   }
 
-  public void get_AccessToken(CkString str) {
-    chilkatJNI.CkAuthAzureAD_get_AccessToken(swigCPtr, this, CkString.getCPtr(str), str);
+  public void get_TenantId(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_TenantId(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public String accessToken() {
-    return chilkatJNI.CkAuthAzureAD_accessToken(swigCPtr, this);
+  public String tenantId() {
+    return chilkatJNI.CkAuthAzureAD_tenantId(swigCPtr, this);
   }
 
-  public void put_AccessToken(String newVal) {
-    chilkatJNI.CkAuthAzureAD_put_AccessToken(swigCPtr, this, newVal);
-  }
-
-  public int get_NumSecondsRemaining() {
-    return chilkatJNI.CkAuthAzureAD_get_NumSecondsRemaining(swigCPtr, this);
+  public void put_TenantId(String newVal) {
+    chilkatJNI.CkAuthAzureAD_put_TenantId(swigCPtr, this, newVal);
   }
 
   public boolean get_Valid() {
     return chilkatJNI.CkAuthAzureAD_get_Valid(swigCPtr, this);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkAuthAzureAD_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkAuthAzureAD_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkAuthAzureAD_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkAuthAzureAD_version(swigCPtr, this);
   }
 
   public boolean ObtainAccessToken(CkSocket connection) {
@@ -194,6 +190,10 @@ public class CkAuthAzureAD {
   public CkTask ObtainAccessTokenAsync(CkSocket connection) {
     long cPtr = chilkatJNI.CkAuthAzureAD_ObtainAccessTokenAsync(swigCPtr, this, CkSocket.getCPtr(connection), connection);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkAuthAzureAD_SaveLastError(swigCPtr, this, path);
   }
 
 }

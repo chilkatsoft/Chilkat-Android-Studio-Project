@@ -51,38 +51,6 @@ public class CkDsa {
     chilkatJNI.CkDsa_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkDsa_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkDsa_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkDsa_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkDsa_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkDsa_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkDsa_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkDsa_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkDsa_version(swigCPtr, this);
-  }
-
   public void get_DebugLogFilePath(CkString str) {
     chilkatJNI.CkDsa_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -93,26 +61,6 @@ public class CkDsa {
 
   public void put_DebugLogFilePath(String newVal) {
     chilkatJNI.CkDsa_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkDsa_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkDsa_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkDsa_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkDsa_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkDsa_SaveLastError(swigCPtr, this, path);
   }
 
   public int get_GroupSize() {
@@ -171,12 +119,60 @@ public class CkDsa {
     return chilkatJNI.CkDsa_hexY(swigCPtr, this);
   }
 
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkDsa_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkDsa_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkDsa_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkDsa_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkDsa_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkDsa_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkDsa_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkDsa_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
   public void get_Signature(CkByteData outBytes) {
     chilkatJNI.CkDsa_get_Signature(swigCPtr, this, CkByteData.getCPtr(outBytes), outBytes);
   }
 
   public void put_Signature(CkByteData inBytes) {
     chilkatJNI.CkDsa_put_Signature(swigCPtr, this, CkByteData.getCPtr(inBytes), inBytes);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkDsa_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkDsa_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkDsa_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkDsa_version(swigCPtr, this);
   }
 
   public boolean FromDer(CkByteData derData) {
@@ -261,6 +257,10 @@ public class CkDsa {
 
   public String loadText(String path) {
     return chilkatJNI.CkDsa_loadText(swigCPtr, this, path);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkDsa_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean SaveText(String strToSave, String path) {

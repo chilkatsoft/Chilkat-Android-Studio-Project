@@ -55,70 +55,6 @@ public class CkCompression {
     chilkatJNI.CkCompression_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkCompression_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorHtml() {
-    return chilkatJNI.CkCompression_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkCompression_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkCompression_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkCompression_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkCompression_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkCompression_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkCompression_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkCompression_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkCompression_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkCompression_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkCompression_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkCompression_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkCompression_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkCompression_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkCompression_SaveLastError(swigCPtr, this, path);
-  }
-
   public void get_Algorithm(CkString str) {
     chilkatJNI.CkCompression_get_Algorithm(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -143,6 +79,18 @@ public class CkCompression {
     chilkatJNI.CkCompression_put_Charset(swigCPtr, this, newVal);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkCompression_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkCompression_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkCompression_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_EncodingMode(CkString str) {
     chilkatJNI.CkCompression_get_EncodingMode(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -161,6 +109,54 @@ public class CkCompression {
 
   public void put_HeartbeatMs(int newVal) {
     chilkatJNI.CkCompression_put_HeartbeatMs(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkCompression_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkCompression_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkCompression_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkCompression_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkCompression_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkCompression_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkCompression_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkCompression_put_LastMethodSuccess(swigCPtr, this, newVal);
+  }
+
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkCompression_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkCompression_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkCompression_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkCompression_version(swigCPtr, this);
   }
 
   public boolean BeginCompressBytes(CkByteData data, CkByteData outData) {
@@ -322,12 +318,12 @@ public class CkCompression {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean DecompressBytesENC(String str, CkByteData outData) {
-    return chilkatJNI.CkCompression_DecompressBytesENC(swigCPtr, this, str, CkByteData.getCPtr(outData), outData);
+  public boolean DecompressBytesENC(String encodedCompressedData, CkByteData outData) {
+    return chilkatJNI.CkCompression_DecompressBytesENC(swigCPtr, this, encodedCompressedData, CkByteData.getCPtr(outData), outData);
   }
 
-  public CkTask DecompressBytesENCAsync(String str) {
-    long cPtr = chilkatJNI.CkCompression_DecompressBytesENCAsync(swigCPtr, this, str);
+  public CkTask DecompressBytesENCAsync(String encodedCompressedData) {
+    long cPtr = chilkatJNI.CkCompression_DecompressBytesENCAsync(swigCPtr, this, encodedCompressedData);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -362,16 +358,16 @@ public class CkCompression {
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean DecompressStringENC(String str, CkString outStr) {
-    return chilkatJNI.CkCompression_DecompressStringENC(swigCPtr, this, str, CkString.getCPtr(outStr), outStr);
+  public boolean DecompressStringENC(String encodedCompressedData, CkString outStr) {
+    return chilkatJNI.CkCompression_DecompressStringENC(swigCPtr, this, encodedCompressedData, CkString.getCPtr(outStr), outStr);
   }
 
-  public String decompressStringENC(String str) {
-    return chilkatJNI.CkCompression_decompressStringENC(swigCPtr, this, str);
+  public String decompressStringENC(String encodedCompressedData) {
+    return chilkatJNI.CkCompression_decompressStringENC(swigCPtr, this, encodedCompressedData);
   }
 
-  public CkTask DecompressStringENCAsync(String str) {
-    long cPtr = chilkatJNI.CkCompression_DecompressStringENCAsync(swigCPtr, this, str);
+  public CkTask DecompressStringENCAsync(String encodedCompressedData) {
+    long cPtr = chilkatJNI.CkCompression_DecompressStringENCAsync(swigCPtr, this, encodedCompressedData);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -549,6 +545,10 @@ public class CkCompression {
   public CkTask MoreDecompressStringENCAsync(String str) {
     long cPtr = chilkatJNI.CkCompression_MoreDecompressStringENCAsync(swigCPtr, this, str);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkCompression_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UnlockComponent(String unlockCode) {

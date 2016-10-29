@@ -55,68 +55,12 @@ public class CkMht {
     chilkatJNI.CkMht_put_EventCallbackObject(swigCPtr, this, CkBaseProgress.getCPtr(progress), progress);
   }
 
-  public void get_LastErrorHtml(CkString str) {
-    chilkatJNI.CkMht_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  public boolean get_AbortCurrent() {
+    return chilkatJNI.CkMht_get_AbortCurrent(swigCPtr, this);
   }
 
-  public String lastErrorHtml() {
-    return chilkatJNI.CkMht_lastErrorHtml(swigCPtr, this);
-  }
-
-  public void get_LastErrorText(CkString str) {
-    chilkatJNI.CkMht_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorText() {
-    return chilkatJNI.CkMht_lastErrorText(swigCPtr, this);
-  }
-
-  public void get_LastErrorXml(CkString str) {
-    chilkatJNI.CkMht_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String lastErrorXml() {
-    return chilkatJNI.CkMht_lastErrorXml(swigCPtr, this);
-  }
-
-  public void get_Version(CkString str) {
-    chilkatJNI.CkMht_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkMht_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkMht_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkMht_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkMht_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkMht_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkMht_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
-  public boolean get_LastMethodSuccess() {
-    return chilkatJNI.CkMht_get_LastMethodSuccess(swigCPtr, this);
-  }
-
-  public void put_LastMethodSuccess(boolean newVal) {
-    chilkatJNI.CkMht_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkMht_SaveLastError(swigCPtr, this, path);
+  public void put_AbortCurrent(boolean newVal) {
+    chilkatJNI.CkMht_put_AbortCurrent(swigCPtr, this, newVal);
   }
 
   public void get_BaseUrl(CkString str) {
@@ -161,6 +105,18 @@ public class CkMht {
 
   public void put_DebugHtmlBefore(String newVal) {
     chilkatJNI.CkMht_put_DebugHtmlBefore(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkMht_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkMht_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkMht_put_DebugLogFilePath(swigCPtr, this, newVal);
   }
 
   public boolean get_DebugTagCleaning() {
@@ -217,6 +173,38 @@ public class CkMht {
 
   public void put_IgnoreNoCache(boolean newVal) {
     chilkatJNI.CkMht_put_IgnoreNoCache(swigCPtr, this, newVal);
+  }
+
+  public void get_LastErrorHtml(CkString str) {
+    chilkatJNI.CkMht_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorHtml() {
+    return chilkatJNI.CkMht_lastErrorHtml(swigCPtr, this);
+  }
+
+  public void get_LastErrorText(CkString str) {
+    chilkatJNI.CkMht_get_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorText() {
+    return chilkatJNI.CkMht_lastErrorText(swigCPtr, this);
+  }
+
+  public void get_LastErrorXml(CkString str) {
+    chilkatJNI.CkMht_get_LastErrorXml(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String lastErrorXml() {
+    return chilkatJNI.CkMht_lastErrorXml(swigCPtr, this);
+  }
+
+  public boolean get_LastMethodSuccess() {
+    return chilkatJNI.CkMht_get_LastMethodSuccess(swigCPtr, this);
+  }
+
+  public void put_LastMethodSuccess(boolean newVal) {
+    chilkatJNI.CkMht_put_LastMethodSuccess(swigCPtr, this, newVal);
   }
 
   public boolean get_NoScripts() {
@@ -423,6 +411,22 @@ public class CkMht {
     chilkatJNI.CkMht_put_UseInline(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkMht_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkMht_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkMht_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkMht_version(swigCPtr, this);
+  }
+
   public void get_WebSiteLogin(CkString str) {
     chilkatJNI.CkMht_get_WebSiteLogin(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -459,14 +463,6 @@ public class CkMht {
     chilkatJNI.CkMht_put_WebSitePassword(swigCPtr, this, newVal);
   }
 
-  public boolean get_AbortCurrent() {
-    return chilkatJNI.CkMht_get_AbortCurrent(swigCPtr, this);
-  }
-
-  public void put_AbortCurrent(boolean newVal) {
-    chilkatJNI.CkMht_put_AbortCurrent(swigCPtr, this, newVal);
-  }
-
   public void AddCacheRoot(String dir) {
     chilkatJNI.CkMht_AddCacheRoot(swigCPtr, this, dir);
   }
@@ -487,39 +483,39 @@ public class CkMht {
     chilkatJNI.CkMht_ExcludeImagesMatching(swigCPtr, this, pattern);
   }
 
-  public boolean GetAndSaveEML(String url, String emlFilename) {
-    return chilkatJNI.CkMht_GetAndSaveEML(swigCPtr, this, url, emlFilename);
+  public boolean GetAndSaveEML(String url_or_htmlFilepath, String emlPath) {
+    return chilkatJNI.CkMht_GetAndSaveEML(swigCPtr, this, url_or_htmlFilepath, emlPath);
   }
 
-  public CkTask GetAndSaveEMLAsync(String url, String emlFilename) {
-    long cPtr = chilkatJNI.CkMht_GetAndSaveEMLAsync(swigCPtr, this, url, emlFilename);
+  public CkTask GetAndSaveEMLAsync(String url_or_htmlFilepath, String emlPath) {
+    long cPtr = chilkatJNI.CkMht_GetAndSaveEMLAsync(swigCPtr, this, url_or_htmlFilepath, emlPath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetAndSaveMHT(String url, String mhtFilename) {
-    return chilkatJNI.CkMht_GetAndSaveMHT(swigCPtr, this, url, mhtFilename);
+  public boolean GetAndSaveMHT(String url_or_htmlFilepath, String mhtPath) {
+    return chilkatJNI.CkMht_GetAndSaveMHT(swigCPtr, this, url_or_htmlFilepath, mhtPath);
   }
 
-  public CkTask GetAndSaveMHTAsync(String url, String mhtFilename) {
-    long cPtr = chilkatJNI.CkMht_GetAndSaveMHTAsync(swigCPtr, this, url, mhtFilename);
+  public CkTask GetAndSaveMHTAsync(String url_or_htmlFilepath, String mhtPath) {
+    long cPtr = chilkatJNI.CkMht_GetAndSaveMHTAsync(swigCPtr, this, url_or_htmlFilepath, mhtPath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetAndZipEML(String url, String zipEntryFilename, String zipFilename) {
-    return chilkatJNI.CkMht_GetAndZipEML(swigCPtr, this, url, zipEntryFilename, zipFilename);
+  public boolean GetAndZipEML(String url_or_htmlFilepath, String zipEntryFilename, String zipFilename) {
+    return chilkatJNI.CkMht_GetAndZipEML(swigCPtr, this, url_or_htmlFilepath, zipEntryFilename, zipFilename);
   }
 
-  public CkTask GetAndZipEMLAsync(String url, String zipEntryFilename, String zipFilename) {
-    long cPtr = chilkatJNI.CkMht_GetAndZipEMLAsync(swigCPtr, this, url, zipEntryFilename, zipFilename);
+  public CkTask GetAndZipEMLAsync(String url_or_htmlFilepath, String zipEntryFilename, String zipFilename) {
+    long cPtr = chilkatJNI.CkMht_GetAndZipEMLAsync(swigCPtr, this, url_or_htmlFilepath, zipEntryFilename, zipFilename);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetAndZipMHT(String url, String zipEntryFilename, String zipFilename) {
-    return chilkatJNI.CkMht_GetAndZipMHT(swigCPtr, this, url, zipEntryFilename, zipFilename);
+  public boolean GetAndZipMHT(String url_or_htmlFilepath, String zipEntryFilename, String zipFilename) {
+    return chilkatJNI.CkMht_GetAndZipMHT(swigCPtr, this, url_or_htmlFilepath, zipEntryFilename, zipFilename);
   }
 
-  public CkTask GetAndZipMHTAsync(String url, String zipEntryFilename, String zipFilename) {
-    long cPtr = chilkatJNI.CkMht_GetAndZipMHTAsync(swigCPtr, this, url, zipEntryFilename, zipFilename);
+  public CkTask GetAndZipMHTAsync(String url_or_htmlFilepath, String zipEntryFilename, String zipFilename) {
+    long cPtr = chilkatJNI.CkMht_GetAndZipMHTAsync(swigCPtr, this, url_or_htmlFilepath, zipEntryFilename, zipFilename);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -535,37 +531,37 @@ public class CkMht {
     return chilkatJNI.CkMht_cacheRoot(swigCPtr, this, index);
   }
 
-  public boolean GetEML(String url, CkString outStr) {
-    return chilkatJNI.CkMht_GetEML(swigCPtr, this, url, CkString.getCPtr(outStr), outStr);
+  public boolean GetEML(String url_or_htmlFilepath, CkString outStr) {
+    return chilkatJNI.CkMht_GetEML(swigCPtr, this, url_or_htmlFilepath, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getEML(String url) {
-    return chilkatJNI.CkMht_getEML(swigCPtr, this, url);
+  public String getEML(String url_or_htmlFilepath) {
+    return chilkatJNI.CkMht_getEML(swigCPtr, this, url_or_htmlFilepath);
   }
 
-  public String eML(String url) {
-    return chilkatJNI.CkMht_eML(swigCPtr, this, url);
+  public String eML(String url_or_htmlFilepath) {
+    return chilkatJNI.CkMht_eML(swigCPtr, this, url_or_htmlFilepath);
   }
 
-  public CkTask GetEMLAsync(String url) {
-    long cPtr = chilkatJNI.CkMht_GetEMLAsync(swigCPtr, this, url);
+  public CkTask GetEMLAsync(String url_or_htmlFilepath) {
+    long cPtr = chilkatJNI.CkMht_GetEMLAsync(swigCPtr, this, url_or_htmlFilepath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
-  public boolean GetMHT(String url, CkString outStr) {
-    return chilkatJNI.CkMht_GetMHT(swigCPtr, this, url, CkString.getCPtr(outStr), outStr);
+  public boolean GetMHT(String url_or_htmlFilepath, CkString outStr) {
+    return chilkatJNI.CkMht_GetMHT(swigCPtr, this, url_or_htmlFilepath, CkString.getCPtr(outStr), outStr);
   }
 
-  public String getMHT(String url) {
-    return chilkatJNI.CkMht_getMHT(swigCPtr, this, url);
+  public String getMHT(String url_or_htmlFilepath) {
+    return chilkatJNI.CkMht_getMHT(swigCPtr, this, url_or_htmlFilepath);
   }
 
-  public String mHT(String url) {
-    return chilkatJNI.CkMht_mHT(swigCPtr, this, url);
+  public String mHT(String url_or_htmlFilepath) {
+    return chilkatJNI.CkMht_mHT(swigCPtr, this, url_or_htmlFilepath);
   }
 
-  public CkTask GetMHTAsync(String url) {
-    long cPtr = chilkatJNI.CkMht_GetMHTAsync(swigCPtr, this, url);
+  public CkTask GetMHTAsync(String url_or_htmlFilepath) {
+    long cPtr = chilkatJNI.CkMht_GetMHTAsync(swigCPtr, this, url_or_htmlFilepath);
     return (cPtr == 0) ? null : new CkTask(cPtr, true);
   }
 
@@ -623,6 +619,10 @@ public class CkMht {
 
   public void RestoreDefaults() {
     chilkatJNI.CkMht_RestoreDefaults(swigCPtr, this);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkMht_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean UnlockComponent(String unlockCode) {

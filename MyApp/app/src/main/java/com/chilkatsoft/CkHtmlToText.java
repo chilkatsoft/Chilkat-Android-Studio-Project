@@ -51,6 +51,26 @@ public class CkHtmlToText {
     chilkatJNI.CkHtmlToText_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkHtmlToText_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkHtmlToText_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkHtmlToText_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
+  public boolean get_DecodeHtmlEntities() {
+    return chilkatJNI.CkHtmlToText_get_DecodeHtmlEntities(swigCPtr, this);
+  }
+
+  public void put_DecodeHtmlEntities(boolean newVal) {
+    chilkatJNI.CkHtmlToText_put_DecodeHtmlEntities(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkHtmlToText_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,52 +95,12 @@ public class CkHtmlToText {
     return chilkatJNI.CkHtmlToText_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkHtmlToText_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkHtmlToText_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkHtmlToText_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkHtmlToText_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkHtmlToText_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkHtmlToText_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkHtmlToText_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkHtmlToText_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkHtmlToText_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkHtmlToText_SaveLastError(swigCPtr, this, path);
-  }
-
-  public boolean get_DecodeHtmlEntities() {
-    return chilkatJNI.CkHtmlToText_get_DecodeHtmlEntities(swigCPtr, this);
-  }
-
-  public void put_DecodeHtmlEntities(boolean newVal) {
-    chilkatJNI.CkHtmlToText_put_DecodeHtmlEntities(swigCPtr, this, newVal);
   }
 
   public int get_RightMargin() {
@@ -139,6 +119,22 @@ public class CkHtmlToText {
     chilkatJNI.CkHtmlToText_put_SuppressLinks(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkHtmlToText_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkHtmlToText_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkHtmlToText_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkHtmlToText_version(swigCPtr, this);
+  }
+
   public boolean IsUnlocked() {
     return chilkatJNI.CkHtmlToText_IsUnlocked(swigCPtr, this);
   }
@@ -149,6 +145,10 @@ public class CkHtmlToText {
 
   public String readFileToString(String filename, String srcCharset) {
     return chilkatJNI.CkHtmlToText_readFileToString(swigCPtr, this, filename, srcCharset);
+  }
+
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkHtmlToText_SaveLastError(swigCPtr, this, path);
   }
 
   public boolean ToText(String html, CkString outStr) {
@@ -163,8 +163,8 @@ public class CkHtmlToText {
     return chilkatJNI.CkHtmlToText_UnlockComponent(swigCPtr, this, code);
   }
 
-  public boolean WriteStringToFile(String str, String filename, String charset) {
-    return chilkatJNI.CkHtmlToText_WriteStringToFile(swigCPtr, this, str, filename, charset);
+  public boolean WriteStringToFile(String stringToWrite, String filename, String charset) {
+    return chilkatJNI.CkHtmlToText_WriteStringToFile(swigCPtr, this, stringToWrite, filename, charset);
   }
 
 }

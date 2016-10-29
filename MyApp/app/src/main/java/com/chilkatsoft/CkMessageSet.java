@@ -51,8 +51,8 @@ public class CkMessageSet {
     chilkatJNI.CkMessageSet_put_HasUids(swigCPtr, this, newVal);
   }
 
-  public boolean ContainsId(int id) {
-    return chilkatJNI.CkMessageSet_ContainsId(swigCPtr, this, id);
+  public boolean ContainsId(int msgId) {
+    return chilkatJNI.CkMessageSet_ContainsId(swigCPtr, this, msgId);
   }
 
   public boolean FromCompactString(String str) {

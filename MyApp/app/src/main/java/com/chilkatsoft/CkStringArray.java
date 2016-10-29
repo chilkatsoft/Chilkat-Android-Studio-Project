@@ -51,6 +51,30 @@ public class CkStringArray {
     chilkatJNI.CkStringArray_LastErrorText(swigCPtr, this, CkString.getCPtr(str), str);
   }
 
+  public int get_Count() {
+    return chilkatJNI.CkStringArray_get_Count(swigCPtr, this);
+  }
+
+  public boolean get_Crlf() {
+    return chilkatJNI.CkStringArray_get_Crlf(swigCPtr, this);
+  }
+
+  public void put_Crlf(boolean newVal) {
+    chilkatJNI.CkStringArray_put_Crlf(swigCPtr, this, newVal);
+  }
+
+  public void get_DebugLogFilePath(CkString str) {
+    chilkatJNI.CkStringArray_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String debugLogFilePath() {
+    return chilkatJNI.CkStringArray_debugLogFilePath(swigCPtr, this);
+  }
+
+  public void put_DebugLogFilePath(String newVal) {
+    chilkatJNI.CkStringArray_put_DebugLogFilePath(swigCPtr, this, newVal);
+  }
+
   public void get_LastErrorHtml(CkString str) {
     chilkatJNI.CkStringArray_get_LastErrorHtml(swigCPtr, this, CkString.getCPtr(str), str);
   }
@@ -75,56 +99,12 @@ public class CkStringArray {
     return chilkatJNI.CkStringArray_lastErrorXml(swigCPtr, this);
   }
 
-  public void get_Version(CkString str) {
-    chilkatJNI.CkStringArray_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String version() {
-    return chilkatJNI.CkStringArray_version(swigCPtr, this);
-  }
-
-  public void get_DebugLogFilePath(CkString str) {
-    chilkatJNI.CkStringArray_get_DebugLogFilePath(swigCPtr, this, CkString.getCPtr(str), str);
-  }
-
-  public String debugLogFilePath() {
-    return chilkatJNI.CkStringArray_debugLogFilePath(swigCPtr, this);
-  }
-
-  public void put_DebugLogFilePath(String newVal) {
-    chilkatJNI.CkStringArray_put_DebugLogFilePath(swigCPtr, this, newVal);
-  }
-
-  public boolean get_VerboseLogging() {
-    return chilkatJNI.CkStringArray_get_VerboseLogging(swigCPtr, this);
-  }
-
-  public void put_VerboseLogging(boolean newVal) {
-    chilkatJNI.CkStringArray_put_VerboseLogging(swigCPtr, this, newVal);
-  }
-
   public boolean get_LastMethodSuccess() {
     return chilkatJNI.CkStringArray_get_LastMethodSuccess(swigCPtr, this);
   }
 
   public void put_LastMethodSuccess(boolean newVal) {
     chilkatJNI.CkStringArray_put_LastMethodSuccess(swigCPtr, this, newVal);
-  }
-
-  public boolean SaveLastError(String path) {
-    return chilkatJNI.CkStringArray_SaveLastError(swigCPtr, this, path);
-  }
-
-  public int get_Count() {
-    return chilkatJNI.CkStringArray_get_Count(swigCPtr, this);
-  }
-
-  public boolean get_Crlf() {
-    return chilkatJNI.CkStringArray_get_Crlf(swigCPtr, this);
-  }
-
-  public void put_Crlf(boolean newVal) {
-    chilkatJNI.CkStringArray_put_Crlf(swigCPtr, this, newVal);
   }
 
   public int get_Length() {
@@ -147,6 +127,22 @@ public class CkStringArray {
     chilkatJNI.CkStringArray_put_Unique(swigCPtr, this, newVal);
   }
 
+  public boolean get_VerboseLogging() {
+    return chilkatJNI.CkStringArray_get_VerboseLogging(swigCPtr, this);
+  }
+
+  public void put_VerboseLogging(boolean newVal) {
+    chilkatJNI.CkStringArray_put_VerboseLogging(swigCPtr, this, newVal);
+  }
+
+  public void get_Version(CkString str) {
+    chilkatJNI.CkStringArray_get_Version(swigCPtr, this, CkString.getCPtr(str), str);
+  }
+
+  public String version() {
+    return chilkatJNI.CkStringArray_version(swigCPtr, this);
+  }
+
   public boolean Append(String str) {
     return chilkatJNI.CkStringArray_Append(swigCPtr, this, str);
   }
@@ -163,12 +159,12 @@ public class CkStringArray {
     return chilkatJNI.CkStringArray_Contains(swigCPtr, this, str);
   }
 
-  public int Find(String str, int firstIndex) {
-    return chilkatJNI.CkStringArray_Find(swigCPtr, this, str, firstIndex);
+  public int Find(String findStr, int startIndex) {
+    return chilkatJNI.CkStringArray_Find(swigCPtr, this, findStr, startIndex);
   }
 
-  public int FindFirstMatch(String str, int firstIndex) {
-    return chilkatJNI.CkStringArray_FindFirstMatch(swigCPtr, this, str, firstIndex);
+  public int FindFirstMatch(String matchPattern, int startIndex) {
+    return chilkatJNI.CkStringArray_FindFirstMatch(swigCPtr, this, matchPattern, startIndex);
   }
 
   public boolean GetString(int index, CkString outStr) {
@@ -199,12 +195,12 @@ public class CkStringArray {
     return chilkatJNI.CkStringArray_lastString(swigCPtr, this);
   }
 
-  public boolean LoadFromFile(String filename) {
-    return chilkatJNI.CkStringArray_LoadFromFile(swigCPtr, this, filename);
+  public boolean LoadFromFile(String path) {
+    return chilkatJNI.CkStringArray_LoadFromFile(swigCPtr, this, path);
   }
 
-  public boolean LoadFromFile2(String filename, String charset) {
-    return chilkatJNI.CkStringArray_LoadFromFile2(swigCPtr, this, filename, charset);
+  public boolean LoadFromFile2(String path, String charset) {
+    return chilkatJNI.CkStringArray_LoadFromFile2(swigCPtr, this, path, charset);
   }
 
   public void LoadFromText(String str) {
@@ -239,16 +235,20 @@ public class CkStringArray {
     chilkatJNI.CkStringArray_ReplaceAt(swigCPtr, this, index, str);
   }
 
-  public boolean SaveNthToFile(int index, String filename) {
-    return chilkatJNI.CkStringArray_SaveNthToFile(swigCPtr, this, index, filename);
+  public boolean SaveLastError(String path) {
+    return chilkatJNI.CkStringArray_SaveLastError(swigCPtr, this, path);
   }
 
-  public boolean SaveToFile(String filename) {
-    return chilkatJNI.CkStringArray_SaveToFile(swigCPtr, this, filename);
+  public boolean SaveNthToFile(int index, String saveToPath) {
+    return chilkatJNI.CkStringArray_SaveNthToFile(swigCPtr, this, index, saveToPath);
   }
 
-  public boolean SaveToFile2(String filename, String charset) {
-    return chilkatJNI.CkStringArray_SaveToFile2(swigCPtr, this, filename, charset);
+  public boolean SaveToFile(String path) {
+    return chilkatJNI.CkStringArray_SaveToFile(swigCPtr, this, path);
+  }
+
+  public boolean SaveToFile2(String saveToPath, String charset) {
+    return chilkatJNI.CkStringArray_SaveToFile2(swigCPtr, this, saveToPath, charset);
   }
 
   public boolean SaveToText(CkString outStr) {
@@ -283,12 +283,12 @@ public class CkStringArray {
     return chilkatJNI.CkStringArray_strAt(swigCPtr, this, index);
   }
 
-  public void Subtract(CkStringArray sa) {
-    chilkatJNI.CkStringArray_Subtract(swigCPtr, this, CkStringArray.getCPtr(sa), sa);
+  public void Subtract(CkStringArray stringArrayObj) {
+    chilkatJNI.CkStringArray_Subtract(swigCPtr, this, CkStringArray.getCPtr(stringArrayObj), stringArrayObj);
   }
 
-  public void Union(CkStringArray sa) {
-    chilkatJNI.CkStringArray_Union(swigCPtr, this, CkStringArray.getCPtr(sa), sa);
+  public void Union(CkStringArray stringArrayObj) {
+    chilkatJNI.CkStringArray_Union(swigCPtr, this, CkStringArray.getCPtr(stringArrayObj), stringArrayObj);
   }
 
 }
